@@ -1,4 +1,11 @@
-*{
+@import "tailwindcss/preflight"; /* old base */
+@import "tailwindcss/tailwind.css";
+@font-face {
+    font-family: 'AntonSC';
+    src: url('/fonts/AntonSC-Regular.woff2') format('woff2'),
+        url('/fonts/AntonSC-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 body,html{
     width: 100%;
@@ -8,5 +15,3 @@ body,html{
 ::-webkit-scrollbar {
     display: none;
 }
-
-@import "tailwindcss";
