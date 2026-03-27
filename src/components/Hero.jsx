@@ -3,7 +3,7 @@ import Heroimg from "@/assets/hero1.jpg";
 import { Star } from "lucide-react";
 function Hero() {
   return (
-    <div className="bg-black rounded-2xl md:gap-5 md:h-[clamp(530px,60vw,620px)] pt-28 md:pt-0  w-full xl:h-[clamp(700px,49vw,100rem)]  flex md:flex-row flex-col md:items-center justify-between  border-box overflow-hidden">
+    <div className="bg-black md:rounded-2xl md:gap-5 md:h-[clamp(530px,60vw,620px)] pt-28 md:pt-0  w-full xl:h-[clamp(700px,49vw,100rem)]  flex md:flex-row flex-col md:items-center justify-between  border-box overflow-hidden">
       <div className="h-[clamp(300px, calc(100cqw * 0.75), 780px)] @container bg-amber-200   md:h-full md:w-1/2 order-2 md:order-1">
         <img
           src={Heroimg}
