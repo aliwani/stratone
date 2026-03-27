@@ -1,10 +1,17 @@
-@import "tailwindcss/preflight"; /* old base */
-@import "tailwindcss/tailwind.css";
+@import "tailwindcss";
+     /* v4 me yahi use hota hai, preflight auto include hota hai */
+@theme{
+    --breakpoint-md:810px;
+    --breakpoint-xl:1199px;
+    --breakpoint-myxl:1680px;
+    --breakpoint-my2xl:2000px;
+    --font-antonSC: "AntonSC"
+}
 @font-face {
     font-family: 'AntonSC';
     src: url('/fonts/AntonSC-Regular.woff2') format('woff2'),
         url('/fonts/AntonSC-Regular.woff') format('woff');
-    font-weight: normal;
+    font-weight:600 ;
     font-style: normal;
 }
 body,html{

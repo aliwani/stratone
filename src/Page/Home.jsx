@@ -1,13 +1,15 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
+import AboutSection from '../components/AboutSection'
 
 function Home() {
   return (
     
-    <div className='h-full w-full bg-white overflow-y-hidden' >
+    <div className='h-full w-screen mt-1 px-1 bg-white border-box' >
         <Navbar/>
       <Hero/>
+      {/* <AboutSection/> */}
     </div>
  
   )
