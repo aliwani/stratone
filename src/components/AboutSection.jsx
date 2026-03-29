@@ -1,16 +1,13 @@
 import React from "react";
 import aboutImg from "@/assets/aboutImage.jpg";
 import teamData from "@/Features/team/data";
+import SectionHeader from "./SectionHeader";
 function AboutSection() {
   return (
-    <section className="bg-black   w-full py-30 md:py-38 xl:py-50 px-5 border-box overflow-hidden">
-      <div className="  flex items-center justify-between font-antonSC text-white">
-        <span>01</span>
-        <span></span>
-        <span>built on vision</span>
-      </div>
+    <section className="bg-black flex flex-col gap-25   w-full py-30 md:py-38 xl:py-50 px-5 md:px-7.5 xl:px-10 border-box overflow-hidden">
+    <SectionHeader Num="[01]" Text="Built on vision" />
       <div className="relative  flex flex-col items-center justify-center">
-        <div className="flex items-center justify-center w-full">
+        <div className="flex items-center justify-center  w-full">
           <h2 className=" font-antonSC text-white text-[40px] md:text-[64px] xl:text-[120px] leading-none">
             About Stratone
           </h2>
@@ -20,7 +17,7 @@ function AboutSection() {
           <div className="pt-5 md:pt-0 h-[clamp(10rem,94vw,55rem)] md:h-112.5 w-full">
             <img src={aboutImg} alt="" className="h-full w-full" />
           </div>
-          <p className="font-clashRegular italic text-white text-lg text-wrap px-5 text-center">
+          <p className="font-clashRegular italic text-white text-lg text-wrap  text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
             aspernatur quasi voluptates minus necessitatibus, atque molestias
             voluptatem pariatur labore nam iusto earum nemo blanditiis totam
