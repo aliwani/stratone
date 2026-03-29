@@ -3,11 +3,15 @@ import SectionHeader from "./SectionHeader";
 import servicesData from "../Features/services/data";
 import ServiceSelect from "./ServiceSelect";
 import WorkCard from "./WorkCard";
+import PricingButton from "./PricingButton";
 function WhatWeDo() {
   const [activeindx, setactiveindx] = useState(1);
-  const [activeText, setactiveText] = useState(0);
+  const [activeText, setactiveText] = useState(1);
+  const isDesktop = window.innerWidth > 809;
 
-  const activeService = servicesData[activeindx - 1] || servicesData[0];
+  const activeService = isDesktop
+    ? servicesData[activeindx - 1] || servicesData[0]
+    : servicesData[activeText - 1] || servicesData[0];
   return (
     <div className="relative z-0 w-full h-full  bg-black px-5 md:px-7.5 xl:px-10">
       <video
@@ -36,13 +40,7 @@ function WhatWeDo() {
                 />
               ))}
             </div>
-            <button  className="bg-white h-10 w-37.5 md:w-45 md:h-12.5 p-0.5">
-              <div className="flex items-center justify-center w-full h-full bg-black rounded-lg">
-                <span className="font-clashRegular md:text-lg text-white uppercase tracking-wider">
-                  see pricing
-                </span>
-              </div>
-            </button>
+            <PricingButton width="37.5" text="see pricing" />
           </div>
           <WorkCard img={activeService.img} list={activeService.list} />
         </div>
