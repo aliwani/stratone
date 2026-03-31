@@ -4,6 +4,7 @@ import SectionHeader from "./SectionHeader";
 import Header from "./Header";
 import PricingButton from "./PricingButton";
 import ProjectBtn from "./ProjectBtn";
+import InfiniteScroll from "./InfiniteScroll";
 
 function Ourwork() {
   return (
@@ -12,6 +13,7 @@ function Ourwork() {
       <div className="flex flex-col h-full w-full">
         <Header heading="our work" />
         <Skiper16 />
+        <InfiniteScroll/>
         <div className="flex md:flex-row flex-col justify-center items-center gap-5 mt-5">
           <ProjectBtn text="view all projects" />
           <PricingButton text="contact us" />

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ProjectBtn({text}) {
+function ProjectBtn({text }) {
   return (
       <div>
       <button className={`bg-white h-10 w-45 md:w-58 md:h-12.5 p-0.5`}>

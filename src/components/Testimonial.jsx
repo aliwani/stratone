@@ -1,14 +1,28 @@
-import React from 'react'
-import SectionHeader from './SectionHeader'
-import Header from './Header'
+import React from "react";
+import SectionHeader from "./SectionHeader";
+import Header from "./Header";
+import TestimonialCard from "./TestimonialCard";
+import TestimonialTrust from "./TestimonialTrust";
+import testimonials from "@/data/Testimonial.js";
 
 function Testimonial() {
+
   return (
-    <div className='w-full h-full flex flex-col gap-15 bg-black overflow-hidden' >
+    <div className="w-full h-full flex flex-col gap-15 py-40 px-5 md:px-7.5 xl:px-10 bg-black overflow-hidden">
       <SectionHeader Num="[05]" Text="echoes of trust" />
-      <Header heading="What our clients say"/>
+      <Header heading="What our clients say" />
+
+      <div className="grid grid-cols-1 auto-rows-fr md:grid-cols-2 xl:grid-cols-4 md:grid-rows-2 xl:grid-rows-1 gap-0.5 p-0.5  w-full bg-white   h-fit">
+        <TestimonialTrust />
+
+        {testimonials.map((person, idx) => {
+            
+         return <TestimonialCard key={person.id} person={person} />;
+        })}
+     
+      </div>
     </div>
-  )
+  );
 }
 
-export default Testimonial
+export default Testimonial;

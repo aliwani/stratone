@@ -17,6 +17,15 @@
     --font-clashRegular: "ClashGrotesk-Regular";
     --font-clashSemi: "ClashGrotesk-Semibold";
     --font-clashBold: "ClashGrotesk-Bold";
+    --animate-scroll-right: scrollRight 10s linear infinite;
+    @keyframes scrollRight {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
 }
 @font-face {
     font-family: 'AntonSC';

@@ -1,0 +1,14 @@
+import React from 'react'
+import SectionHeader from './SectionHeader'
+import PricingCard from './PricingCard'
+
+function Pricing() {
+  return (
+    <div className='w-full flex items-center flex-col gap-18 bg-black py-40 px-5 md:px-7.5 xl:px-10'>
+      <SectionHeader Num="[06]" Text="our pricing" />
+      <PricingCard/>
+    </div>
+  )
+}
+
+export default Pricing

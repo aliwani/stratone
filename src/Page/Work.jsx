@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Service() {
+function Work() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function Service() {
   )
 }
 
-export default Service
+export default Work
