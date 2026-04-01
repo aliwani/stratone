@@ -1,6 +1,6 @@
 import React from "react";
-import SectionHeader from "./SectionHeader";
-import Header from "./Header";
+import SectionHeader from "../resuables/SectionHeader";
+import Header from "../resuables/Header";
 import ChooseCard from "./ChooseCard";
 import ChooseSmallCard from "./ChooseSmallCard";
 

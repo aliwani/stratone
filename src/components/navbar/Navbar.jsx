@@ -7,7 +7,7 @@ function Navbar() {
       <div className='font-antonSC text-white text-3xl'>
         Stratone 
       </div>
-      <div className='flex items-center justify-center  bg-white h-8 w-15 md:h-9.75 md:w-17  ' >
+      <div  className='flex items-center justify-center  bg-white h-8 w-15 md:h-9.75 md:w-17  ' >
         <span className='bg-black font-clashRegular font-semibold tracking-wider rounded px-1.5 py-1 md:px-2 md:py-1.5 text-sm md:text-[16px] text-white' >MENU</span>
       </div>
 

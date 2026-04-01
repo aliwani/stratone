@@ -1,6 +1,6 @@
 import React from "react";
 import PricingButton from "./PricingButton";
-import ProjectBtn from "./ProjectBtn";
+import ProjectBtn from "../resuables/ProjectBtn";
 import PriceSectionBtn from "./PriceSectionBtn";
 import priceData from "@/data/Pricingdata.js";
 

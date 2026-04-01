@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import SectionHeader from "./SectionHeader";
+import SectionHeader from "./resuables/SectionHeader";
 import servicesData from "../Features/services/data";
 import ServiceSelect from "./ServiceSelect";
 import WorkCard from "./WorkCard";
-import PricingButton from "./PricingButton";
+import PricingButton from "./pricing/PricingButton";
 function WhatWeDo() {
   const [activeindx, setactiveindx] = useState(1);
   const [activeText, setactiveText] = useState(1);

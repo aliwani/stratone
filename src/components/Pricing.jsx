@@ -1,6 +1,6 @@
 import React from 'react'
-import SectionHeader from './SectionHeader'
-import PricingCard from './PricingCard'
+import SectionHeader from './resuables/SectionHeader'
+import PricingCard from './pricing/PricingCard'
 
 function Pricing() {
   return (

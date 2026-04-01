@@ -3,13 +3,13 @@ import img from "@/assets/contact.jpg";
 import { ArrowRight } from "lucide-react";
 function ContactUs() {
   return (
-    <div className="relative  flex-col h-133 md:h-[195] xl:h-287.5  w-full z-0  py-40 px-5 md:px-7.5 xl:px-10    ">
+    <div className="relative  flex-col h-133 md:h-195 xl:h-287.5  w-full z-0  py-40 px-5 md:px-7.5 xl:px-10 overflow-hidden   ">
       <img
         src={img}
-        className="absolute  top-0 -z-1 left-0 h-133 md:h-195 xl:h-287.5 w-full object-cover"
+        className="absolute  top-0 -z-1 right-0 h-133 md:h-195 xl:h-287.5 w-[99.7%] mx-0.5  object-cover"
         alt=""
       />
-      <div className="absolute inset-0 -z-1 bg-linear-to-t from-black/80 via-black/40 to-transparent" />
+      <div className="absolute inset-0 -z-1 mx-1 bg-linear-to-l h-full bg-black opacity-50" />
 
       <div className="flex flex-col   font-antonSC leading-none   text-white text-[60px] md:text-[110px] xl:text-[200px]">
         <h1 className="">let's build</h1>

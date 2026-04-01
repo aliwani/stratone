@@ -1,8 +1,8 @@
 import React from "react";
 import aboutImg from "@/assets/aboutImage.jpg";
 import teamData from "@/Features/team/data";
-import SectionHeader from "./SectionHeader";
-import Header from "./Header";
+import SectionHeader from "./resuables/SectionHeader";
+import Header from "./resuables/Header";
 function AboutSection() {
   return (
     <section className="bg-black flex flex-col gap-10 md:gap-18 xl:gap-20   w-full py-30 md:py-38 xl:py-50 px-5 md:px-7.5 xl:px-10 border-box overflow-hidden">

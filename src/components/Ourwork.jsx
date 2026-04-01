@@ -1,9 +1,9 @@
 import React from "react";
 import { Skiper16 } from "./ui/skiper-ui/skiper16";
-import SectionHeader from "./SectionHeader";
-import Header from "./Header";
-import PricingButton from "./PricingButton";
-import ProjectBtn from "./ProjectBtn";
+import SectionHeader from "./resuables/SectionHeader";
+import Header from "./resuables/Header";
+import PricingButton from "./pricing/PricingButton";
+import ProjectBtn from "./resuables/ProjectBtn";
 import InfiniteScroll from "./InfiniteScroll";
 
 function Ourwork() {

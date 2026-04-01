@@ -3,7 +3,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import ReactLenis from "lenis/react";
 import React, { useEffect, useState, useRef } from "react";
-import PricingButton from "../../PricingButton";
+import PricingButton from "../../pricing/PricingButton";
 import { div } from "framer-motion/client";
 
 const projects = [

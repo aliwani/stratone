@@ -1,8 +1,8 @@
 import React from "react";
-import SectionHeader from "./SectionHeader";
-import Header from "./Header";
-import TestimonialCard from "./TestimonialCard";
-import TestimonialTrust from "./TestimonialTrust";
+import SectionHeader from "./resuables/SectionHeader";
+import Header from "./resuables/Header";
+import TestimonialCard from "./testimonials/TestimonialCard";
+import TestimonialTrust from "./testimonials/TestimonialTrust";
 import testimonials from "@/data/Testimonial.js";
 
 function Testimonial() {
