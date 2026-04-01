@@ -125,7 +125,7 @@ const Skiper16 = () => {
     <ReactLenis root>
       <main
         ref={container}
-        className="relative flex w-full flex-col items-center justify-center pb-10.5 md:pb-62.5 "
+        className="relative flex w-full flex-col items-center justify-center pb-5 md:pb-62.5 "
       >
         {projects.map((project, i) => {
           const targetScale = Math.max(

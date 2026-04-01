@@ -5,7 +5,7 @@ function TestimonialCard({person}) {
     
     
   return (
-    <div className="flex flex-col justify-start gap-5  bg-black rounded-2xl p-5 xl:p-8  w-full">
+    <div className="flex flex-col h-fit md:h-auto justify-start gap-5  bg-black rounded-2xl p-5 xl:p-8  w-full">
              <div className="flex items-start   justify-between   gap-3">
                <div className="h-11 w-11 md:h-12 md:w-12  bg-white rounded-full  overflow-hidden shrink-0">
                  <img className="h-full w-full object-cover" src={person.img} alt="" />

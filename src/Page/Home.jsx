@@ -13,7 +13,6 @@ import Footer from '../components/Footer'
 function Home() {
   return (
     <div className='h-full w-screen md:mt-0.5 pl-0.5 md:px-0.5 bg-white border-box' >
-        <Navbar/>
       <Hero/>
       <AboutSection/>
       <WhatWeDo/>
@@ -21,8 +20,7 @@ function Home() {
       <ChooseUS/>
       <Testimonial/>
       <Pricing/>
-      <ContactUs/>
-      <Footer/>
+     
     </div>
  
   )

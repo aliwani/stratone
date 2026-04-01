@@ -21,12 +21,20 @@ function WhatWeDo() {
         autoPlay
         loop
         muted
-        preload="none"
+        playsInline 
+        webkit-playsinline="true"
+        disablePictureInPicture 
+        controls={false} 
+        style={{
+          pointerEvents: "none", 
+          userSelect: "none",
+          WebkitUserSelect: "none",
+        }}
       />
-      <section className="z-10 flex flex-col py-40 gap-8 h-full">
+      <section className="z-10 flex flex-col py-20 md:py-40 gap-8 h-full">
         <SectionHeader Num="[02]" Text="What we do" />
-        <div className="flex flex-col md:flex-row justify-between gap-10  md:gap-5 ">
-          <div className="w-auto h-full flex flex-col gap-12">
+        <div className="flex flex-col md:flex-row justify-between gap-8  md:gap-5 ">
+          <div className="w-auto h-full flex flex-col gap-7 md:gap-12">
             <div className="py-1.5 ">
               {servicesData.map((services, idx) => (
                 <ServiceSelect

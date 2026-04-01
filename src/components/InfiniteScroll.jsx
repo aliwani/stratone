@@ -1,26 +1,31 @@
 function InfiniteScroll() {
   return (
-    <div className="relative overflow-hidden   py-4 md:py-6 mt-15  ">
+    <div className="relative overflow-hidden py-4 md:py-6 mt-5 mb-5 md:mt-15">
+      
+      {/* gradients */}
       <div className="absolute left-0 top-0 w-20 h-full bg-linear-to-r from-black to-transparent z-10" />
       <div className="absolute right-0 top-0 w-20 h-full bg-linear-to-l from-black to-transparent z-10" />
+
       <div className="flex w-max animate-scroll-right items-center text-white">
+        
         {/* ORIGINAL */}
-        <div className="min-w-full pr-12 flex items-center justify-between gap-8 md:gap-12 lg:gap-16 text-lg sm:text-xl md:text-2xl lg:text-3xl whitespace-nowrap">
-          <span className="w-1/5">Ali</span>
-          <span className="w-1/5">Wani</span>
-          <span className="w-1/5">Dani</span>
-          <span className="w-1/5">Rani</span>
-          <span className="w-1/5">Tani</span>
+        <div className="min-w-full flex items-center justify-between  gap-[clamp(1.5rem,8vw,9rem)] text-[clamp(30px,3vw,40px)] whitespace-nowrap">
+          <span className="shrink-0">Ali</span>
+          <span className="shrink-0">Wani</span>
+          <span className="shrink-0">Dani</span>
+          <span className="shrink-0">Rani</span>
+         
         </div>
 
         {/* DUPLICATE */}
-        <div className="min-w-full pr-12 flex items-center justify-between gap-8 md:gap-12 lg:gap-16 text-lg sm:text-xl md:text-2xl lg:text-3xl whitespace-nowrap">
-          <span className="w-1/5">Ali</span>
-          <span className="w-1/5">Wani</span>
-          <span className="w-1/5">Dani</span>
-          <span className="w-1/5">Rani</span>
-          <span className="w-1/5">Tani</span>
+        <div className="min-w-full flex items-center justify-between gap-[clamp(1.5rem,8vw,9rem)] text-[clamp(30px,3vw,40px)] whitespace-nowrap">
+          <span className="shrink-0">Ali</span>
+          <span className="shrink-0">Wani</span>
+          <span className="shrink-0">Dani</span>
+          <span className="shrink-0">Rani</span>
+ 
         </div>
+
       </div>
     </div>
   );

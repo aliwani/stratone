@@ -8,7 +8,7 @@ import InfiniteScroll from "./InfiniteScroll";
 
 function Ourwork() {
   return (
-    <section className="flex flex-col gap-10 w-full py-40 px-5 md:px-7.5 xl:px-10 bg-black h-full">
+    <section className="flex flex-col gap-10 w-full py-30 md:py-40 px-5 md:px-7.5 xl:px-10 bg-black h-full">
       <SectionHeader Num="[03]" Text="Stories We’ve Told" />
       <div className="flex flex-col h-full w-full">
         <Header heading="our work" />
