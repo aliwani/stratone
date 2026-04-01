@@ -24,11 +24,11 @@ function Hero() {
           </span>
           <div></div>
         </div>
-        <div className="flex flex-col items-center gap-2 justify-center w-full overflow-hidden  h-fit border-box ">
-          <h1 className="font-antonSC w-full text-[calc(100cqw*0.2)] md:text-[clamp(5rem,11vw,30rem)] xl:text-[clamp(5rem,11.5vw,32rem)]  overflow-hidden leading-[0.95]  ">
+        <div className="flex flex-col items-start gap-2 justify-center w-full overflow-hidden  h-fit border-box ">
+          <h1 className="font-antonSC w-fit text-[calc(100cqw*0.2)] md:text-[clamp(5rem,11.1vw,30rem)] xl:text-[clamp(5rem,11.7vw,32rem)]  overflow-hidden leading-[0.95]  ">
             NARRATIVE
           </h1>
-          <div className="w-full flex md:flex-row flex-col gap-2  overflow-x-hidden">
+          <div className="w-full flex md:flex-row flex-col gap-2 items-start overflow-x-hidden">
             <div className=" h-[clamp(135px,56vw,280px)] p-1 md:h-[clamp(8rem,17vw,50rem)] min-[475px]:w-105] md:w-1/2   bg-white  text-black order-2 md:order-1 ">
               <img
                 className="rounded-2xl object-cover h-full w-full"
@@ -37,11 +37,11 @@ function Hero() {
               />
             </div>
 
-            <div className=" flex  md:flex-col h-fit   min-w-0 md:w-1/2  items-start justify-start gap-1 md:gap-1 leading-none order-1 md:order-2 ">
-              <h1 className="font-antonSC text-[calc(100cqw*0.19)]   md:text-[clamp(4rem,8.5vw,20rem)] w-full leading-none overflow-hidden align-middle m-0 p-0 ">
+            <div className=" flex  md:flex-col h-fit   min-w-0 md:w-fit  items-start justify-start gap-1 md:gap-1 leading-none order-1 md:order-2 ">
+              <h1 className="font-antonSC text-[calc(100cqw*0.19)] md:text-[clamp(3.9rem,8.5vw,20rem)]  xl:text-[clamp(4rem,8.9vw,20rem)] w-fit leading-none overflow-hidden align-middle m-0 p-0 ">
                 MEETS
               </h1>
-              <h1 className="font-antonSC text-[calc(100cqw*0.19)] md:text-[clamp(3.9rem,8vw,20rem)] max-w-full overflow-hidden leading-none w-full">
+              <h1 className="font-antonSC text-[calc(100cqw*0.19)] md:text-[clamp(3.9rem,8vw,20rem)] xl:text-[clamp(3.9rem,8.5vw,20rem)] w-fit overflow-hidden leading-none ">
                 DESIGN
               </h1>
             </div>
