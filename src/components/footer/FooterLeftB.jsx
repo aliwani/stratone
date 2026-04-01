@@ -1,5 +1,5 @@
 import React from "react";
-import Img from "@/assets/footerimg.jpg";
+import Img from "@/assets/footerImg.jpg";
 
 function FooterLeftB() {
   return (
