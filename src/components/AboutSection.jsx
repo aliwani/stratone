@@ -1,6 +1,6 @@
 import React from "react";
 import aboutImg from "@/assets/aboutImage.jpg";
-import teamData from "@/Features/team/data";
+import teamMembers from "../data/Team";
 import SectionHeader from "./resuables/SectionHeader";
 import Header from "./resuables/Header";
 function AboutSection() {
@@ -28,7 +28,7 @@ function AboutSection() {
               Our team
             </span>
             <div className="bg-white grid grid-cols-2 md:flex py-0.5 px-0.5 gap-0.5 w-full h-full ">
-              {teamData.map((team, idx) => {
+              {teamMembers.map((team, idx) => {
                 return <div key={idx} className="h-[clamp(10rem,68vw,390px)] w-full md:w-19 md:h-20 xl:w-25 xl:h-26 bg-black"></div>;
               })}
               <div className="hidden md:block h-6 w-full md:w-19 md:h-20  xl:w-24 xl:h-26 rounded-2xl bg-black"></div>
