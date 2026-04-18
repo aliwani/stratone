@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import SectionHeader from "./resuables/SectionHeader";
 import servicesData from "../Features/services/data";
 import ServiceSelect from "./ServiceSelect";
-import WorkCard from "./WorkCard";
+import WorkSectionCard from "./WorkSectionCard";
 import PricingButton from "./pricing/PricingButton";
 function WhatWeDo() {
   const [activeindx, setactiveindx] = useState(1);
@@ -50,7 +50,7 @@ function WhatWeDo() {
             </div>
             <PricingButton width="37.5" text="see pricing" />
           </div>
-          <WorkCard img={activeService.img} list={activeService.list} />
+          <WorkSectionCard img={activeService.img} list={activeService.list} />
         </div>
       </section>
     </div>

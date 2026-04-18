@@ -4,31 +4,9 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import ReactLenis from "lenis/react";
 import React, { useEffect, useState, useRef } from "react";
 import PricingButton from "../../pricing/PricingButton";
-import { div } from "framer-motion/client";
 import OurWorkCard from "@/components/OurWorkCard";
+import projects from "@/data/Work";
 
-const projects = [
-  {
-    title: "Project 1",
-    src: "https://picsum.photos/id/1015/800/600",
-  },
-  {
-    title: "Project 2",
-    src: "https://picsum.photos/id/1016/800/600",
-  },
-  {
-    title: "Project 3",
-    src: "https://picsum.photos/id/1018/800/600",
-  },
-  {
-    title: "Project 4",
-    src: "https://picsum.photos/id/1020/800/600",
-  },
-  {
-    title: "Project 5",
-    src: "https://picsum.photos/id/1024/800/600",
-  },
-];
 const StickyCard_001 = ({ i, title, src, progress, range, targetScale }) => {
   const container = useRef(null);
 

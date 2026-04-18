@@ -1,6 +1,6 @@
 import React from "react";
 
-function WorkCard({img ,list}) {
+function WorkSectionCard({img ,list}) {
   return (
     <div className="flex flex-col gap-4 md:gap-6 xl:gap-10 md:w-55  xl:min-w-84 p-2 ">
       <div className="w-full md:h-41.25 xl:h-57.5 p-0.5 md:p-1 bg-white">
@@ -32,4 +32,4 @@ function WorkCard({img ,list}) {
   );
 }
 
-export default WorkCard;
+export default WorkSectionCard;
