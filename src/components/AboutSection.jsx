@@ -46,7 +46,7 @@ function AboutSection() {
                   </div>
                 );
               })}
-              <div onClick={} className="cursor-pointer hidden md:flex px-2 h-6  md:w-19 md:h-20 text-xl flex-col  xl:w-24 xl:h-26 rounded-lg text-white uppercase font-Meduim w-full items-center justify-center bg-black">
+              <div className="cursor-pointer hidden md:flex px-2 h-6  md:w-19 md:h-20 text-xl flex-col  xl:w-24 xl:h-26 rounded-lg text-white uppercase font-Meduim w-full items-center justify-center bg-black">
                 <span>View </span>
                 <span>team</span>
               </div>
