@@ -10,7 +10,7 @@ function ProjectBtn({text }) {
           </span>
         </div>
       </button>
-      ;
+      
     </div>
   )
 }

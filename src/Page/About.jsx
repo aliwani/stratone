@@ -5,7 +5,7 @@ import SectionHeader from "../components/resuables/SectionHeader";
 import About1 from "../components/AboutPage/About1";
 import About2 from "../components/AboutPage/About2";
 import About3 from "../components/AboutPage/About3";
-import Faqs from "../components/AboutPage/FAQS";
+import Faqs from "../components/FAQS";
 
 function About() {
   

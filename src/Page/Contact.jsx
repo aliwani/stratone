@@ -1,6 +1,6 @@
-import Faqs from '@/components/AboutPage/FAQS'
+import Faqs from '@/components/FAQS'
+import FormSection from '@/components/contactPage/FormSection'
 import Hero from '@/components/contactPage/Hero'
-import SectionHeader from '@/components/resuables/SectionHeader'
 import React from 'react'
 
 function Contact() {
@@ -8,7 +8,7 @@ function Contact() {
     <div className='h-full w-screen bg-[#111111]  border-box overflow-hidden'>
       <Hero/>
       <div className='px-5 md:px-7.5 xl:px-10'>
-      <SectionHeader Num="[01]" Text="get in touch" />
+        <FormSection/>
       <Faqs Num="[02]"/>
       </div>
     </div>

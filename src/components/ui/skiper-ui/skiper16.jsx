@@ -5,6 +5,7 @@ import ReactLenis from "lenis/react";
 import React, { useEffect, useState, useRef } from "react";
 import PricingButton from "../../pricing/PricingButton";
 import { div } from "framer-motion/client";
+import OurWorkCard from "@/components/OurWorkCard";
 
 const projects = [
   {
@@ -51,32 +52,7 @@ const StickyCard_001 = ({ i, title, src, progress, range, targetScale }) => {
       className={`${isMobile ? "relative pt-5 pb-5 flex items-center justify-center" : "sticky -top-30  pb-20 flex items-center justify-center"} `}
     >
       {isMobile ? (
-        <div className=" relative bg-white  p-0.5 gap-0.5 flex flex-col  md:h-130 md:w-[clamp(740px,70vw,850px)] origin-top  overflow-hidden">
-          {" "}
-          <div className="w-full h-full ">
-            <img
-              src={src}
-              alt={title}
-              className="h-full w-full object-cover rounded-md"
-            />
-          </div>
-          <div className="w-full p-5 h-full gap-8 flex flex-col justify-start items-start bg-black  rounded-md ">
-            <h2 className="font-antonSC text-[20px]  text-white">
-              synthesis technology
-            </h2>
-            <div className="flex flex-col gap-5">
-              <div className=" flex flex-col  text-white text-[16px]">
-                <span className=" font-clashRegular text-[#dbd9d9]">
-                  YEAR <span className="font-clashSemi">: 2025</span>
-                </span>
-                <span className=" font-clashRegular text-[#dbd9d9]">
-                  CATEGORY<span className="font-clashSemi">: UI / UX</span>{" "}
-                </span>
-              </div>
-              <PricingButton  text="view detail" />
-            </div>
-          </div>
-        </div>
+        <OurWorkCard title={title} src={src}/>
       ) : (
         <motion.div
           style={{

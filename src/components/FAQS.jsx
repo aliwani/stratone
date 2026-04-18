@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import SectionHeader from "../resuables/SectionHeader";
+import SectionHeader from "./resuables/SectionHeader";
 import arrow from "@/assets/right.png";
 import { Plus } from "lucide-react";
-import faqs from "../../data/Faqs";
+import faqs from "../data/Faqs";
 
 function Faqs({Num}) {
   const [hover, sethover] = useState(false);
