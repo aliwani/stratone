@@ -2,7 +2,7 @@ import Heroimg from "@/assets/test1.jpeg";
 import test2 from "@/assets/text2.jpeg";
 import test3 from "@/assets/sqaureCheck.jpeg";
 
-import { Star } from "lucide-react";
+import { Crosshair, Star } from "lucide-react";
 
 function Hero() {
   const isPc = window.innerWidth;
@@ -18,11 +18,25 @@ function Hero() {
         />
       </div>
       <div className="w-full md:w-1/2 md:pr-12 md:pb-0 pb-12  flex flex-col items-start justify-end h-full order-1 md:order-2  text-white font-black overflow-hidden px-5 md:px-0 @container">
-        <div className="w-full flex items-start justify-between overflow-hidden">
-          <span className="font-clashLight text-[14px] text-wrap   md:text-[18px]">
-            From Raw Ideas to Iconic Brands
+        <div className="w-full flex flex-col gap-5 md:flex-row items-start mb-7 justify-between overflow-hidden">
+
+         <div className="flex items-start justify-center gap-3">
+          <Crosshair size={16}/>
+           <span className="font-clashLight w-60 leading-none text-[14px] tracking-widest text-wrap uppercase  md:text-[18px]">
+           transforming ideas into Iconic Brands
           </span>
-          <div></div>
+         </div>
+       <div className="flex gap-2 items-center justify-center">
+           <div className="flex">
+            <Star fill="white" strokeWidth={0} size={18}/>
+            <Star fill="white" strokeWidth={0} size={18}/>
+            <Star fill="white" strokeWidth={0} size={18}/>
+            <Star fill="white" strokeWidth={0} size={18}/>
+            <Star fill="white" strokeWidth={0} size={18}/>
+            </div>
+            <span className="leading-none text-white text-sm md:text-lg w-20 md:w-50 font-clashExtraLight tracking-wider">Designing stories that matter</span>
+       </div>
+
         </div>
         <div className="flex flex-col items-start gap-2 justify-center w-full overflow-hidden  h-fit border-box ">
           <h1 className="font-antonSC w-fit text-[calc(100cqw*0.2)] md:text-[clamp(5rem,11.1vw,30rem)] xl:text-[clamp(5rem,11.7vw,32rem)]  overflow-hidden leading-[0.95]  ">

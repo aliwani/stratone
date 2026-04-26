@@ -14,14 +14,14 @@ function AboutSection() {
           <div className="pt-5 md:pt-0 h-[clamp(10rem,94vw,55rem)] md:h-112.5 w-full">
             <img src={aboutImg} alt="" className="h-full w-full" />
           </div>
-          <p className="font-clashRegular antialiased italic text-white leading-none px-7 md:px-0 text-lg text-wrap  text-center">
+          <p className="font-clashRegular antialiased mb-3 tracking-wider text-white/90 leading-none px-7 md:px-0 text-[20px] text-wrap  text-center">
             Stratone is a creative agency built at the intersection of brand,
             design, and culture. We partner with visionary teams to build
             identities, systems, and stories that move people and markets. Our
             mission is to shape meaningful experiences that are rooted in
             strategy and refined through design.
           </p>
-          <div className="font-clashSemi  subpixel-antialiased  uppercase flex flex-wrap justify-center items-center gap-5 w-full leading-none  text-white text-[16px] md:text-lg">
+          <div className="font-clashSemi  tracking-wider  uppercase flex flex-wrap justify-center items-center gap-5 w-full leading-none  text-white text-[16px] md:text-lg">
             <a href="">Instagram.</a>
             <a href="">Facebook.</a>
             <a href="">Linked In.</a>

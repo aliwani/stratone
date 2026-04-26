@@ -14,7 +14,7 @@ function NavDiv({ setIsOpen, isOpen }) {
     >
       <div className="h-fit w-70 flex flex-col md:flex-row md:h-85 md:w-160 absolute top-19 right-5 md:right-7.5 xl:right-10 p-0.5  gap-0.5 bg-white">
         <div className=" h-65 md:h-full w-full md:w-3/5 flex flex-col  p-5  bg-black  rounded-lg  justify-between gap-1 ">
-          <div className="flex flex-col  justify-between">
+          <div className="flex flex-col  justify-between gap-1">
             {firstCol.map((link, idx) => {
               return (
                 <Navlinks
