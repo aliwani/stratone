@@ -10,7 +10,7 @@ function PricingCard() {
       { priceData.map((dets, idx) => {
         
 
-       return <div key={dets.id} className="flex flex-col justify-between md:gap-8 xl:gap-10 w-full h-full p-5 bg-black rounded-2xl">
+       return <div key={dets.id} className="flex flex-col justify-between md:gap-8 xl:gap-10 w-full h-full p-5 bg-[#111111]  rounded-2xl">
           <div className="flex flex-col gap-4 xl:gap-7">
             <div className="flex flex-col gap-1">
               <h3 className="font-clashMeduim font-semibold uppercase tracking-wide text-[#EDEDED] text-[16px] md:text-lg">

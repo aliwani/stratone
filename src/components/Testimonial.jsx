@@ -8,7 +8,7 @@ import testimonials from "@/data/Testimonial.js";
 function Testimonial() {
 
   return (
-    <div className="w-full h-full flex flex-col gap-8 md:gap-15 py-8 md:py-40 px-5 md:px-7.5 xl:px-10 bg-black overflow-hidden">
+    <div className="w-full h-full flex flex-col gap-8 md:gap-15 py-8 md:py-40 px-5 md:px-7.5 xl:px-10 bg-[#111111]  overflow-hidden">
       <SectionHeader Num="[05]" Text="echoes of trust" />
       <Header heading="What our clients say" />
 

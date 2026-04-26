@@ -2,7 +2,7 @@ import React from "react";
 
 function FooterRightB() {
   return (
-    <div className="flex flex-col  md:flex-row justify-between gap-10 :gap-5 bg-black rounded-2xl  w-full md:w-3/5 min-h-66 md:h-full p-5  md:p-7.5 xl:p-10">
+    <div className="flex flex-col  md:flex-row justify-between gap-10 :gap-5 bg-[#111111] rounded-2xl  w-full md:w-3/5 min-h-66 md:h-full p-5  md:p-7.5 xl:p-10">
       <div className="flex flex-col  order-2 md:order-1 gap-5 justify-between w-full md:w-1/2 h-full text-white text-[16px] font-clashRegular  md:text-lg text-wrap tracking-wider leading-tight">
         <div className="flex gap-2 w-full">
           <span>ali</span>

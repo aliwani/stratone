@@ -44,7 +44,7 @@ function ContactInfo() {
           life better than we imagined.
         </span>
         <div className="flex  gap-3 w-full h-full">
-          <div className="h-12.5 w-12.5 bg-black">
+          <div className="h-12.5 w-12.5 bg-[#111111] ">
             <img className="h-full w-full " src="" alt="" />
           </div>
           <div className="flex flex-col leading-none text-white">

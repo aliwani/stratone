@@ -12,7 +12,7 @@ function OurWorkCard({title,src}) {
           className="h-full w-full object-cover rounded-md"
         />
       </div>
-      <div className="w-full p-5 h-full gap-8 flex flex-col justify-start items-start bg-black  rounded-md ">
+      <div className="w-full p-5 h-full gap-8 flex flex-col justify-start items-start bg-[#111111]   rounded-md ">
         <h2 className="font-antonSC text-[20px]  text-white">
           synthesis technology
         </h2>

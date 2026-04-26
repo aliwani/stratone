@@ -9,7 +9,7 @@ function Hero() {
   const src = isPc > 809 ? Heroimg : test3;
 
   return (
-    <div className="bg-black md:rounded-t-2xl md:gap-5 md:h-[clamp(530px,60vw,620px)] pt-35 md:pt-0  w-full xl:h-[clamp(700px,49vw,100rem)]  flex md:flex-row flex-col md:items-center justify-between  border-box overflow-hidden">
+    <div className="bg-[#111111] md:rounded-t-2xl md:gap-5 md:h-[clamp(530px,60vw,620px)] pt-35 md:pt-0  w-full xl:h-[clamp(700px,49vw,100rem)]  flex md:flex-row flex-col md:items-center justify-between  border-box overflow-hidden">
       <div className="md:h-full md:w-1/2 order-2 md:order-1">
         <img
           src={src}
@@ -22,7 +22,7 @@ function Hero() {
 
          <div className="flex items-start justify-center gap-3">
           <Crosshair size={16}/>
-           <span className="font-clashLight w-60 leading-none text-[14px] tracking-widest text-wrap uppercase  md:text-[18px]">
+           <span className="font-clashLight min-w-60 leading-none text-[18px] tracking-widest text-wrap uppercase  md:text-[18px]">
            transforming ideas into Iconic Brands
           </span>
          </div>
@@ -34,7 +34,7 @@ function Hero() {
             <Star fill="white" strokeWidth={0} size={18}/>
             <Star fill="white" strokeWidth={0} size={18}/>
             </div>
-            <span className="leading-none text-white text-sm md:text-lg max-w-40 md:w-50 font-clashExtraLight tracking-wider">Designing stories that matter</span>
+            <span className="leading-none text-white text-[16px] md:text-lg min-w-40 w-45 md:w-50 font-clashExtraLight tracking-wider">Designing stories that matter</span>
        </div>
 
         </div>
@@ -43,7 +43,7 @@ function Hero() {
             NARRATIVE
           </h1>
           <div className="w-full flex md:flex-row flex-col gap-2 items-start overflow-x-hidden">
-            <div className=" h-[clamp(135px,56vw,280px)] p-1 md:h-[clamp(8rem,17vw,50rem)] min-[475px]:w-105] md:w-1/2   bg-white  text-black order-2 md:order-1 ">
+            <div className=" h-[clamp(135px,56vw,280px)] p-1 md:h-[clamp(8rem,17vw,50rem)] w-full min-[475px]:w-105 md:w-1/2   bg-white  text-black order-2 md:order-1 ">
               <img
                 className="rounded-2xl object-cover h-full w-full"
                 src={test2}

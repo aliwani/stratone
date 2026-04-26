@@ -13,7 +13,7 @@ function WhatWeDo() {
     ? servicesData[activeindx - 1] || servicesData[0]
     : servicesData[activeText - 1] || servicesData[0];
   return (
-    <div className="relative z-0 w-full h-full  bg-black px-5 md:px-7.5 xl:px-10">
+    <div className="relative z-0 w-full h-full  bg-[#111111]  px-5 md:px-7.5 xl:px-10">
       <video
         src="/video/tester.mp4"
         type="video/mp4"

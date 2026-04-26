@@ -5,7 +5,7 @@ import SectionHeader from "./resuables/SectionHeader";
 import Header from "./resuables/Header";
 function AboutSection() {
   return (
-    <section className="bg-black flex flex-col gap-10 md:gap-18 xl:gap-20   w-full py-30 md:py-38 xl:py-50 px-5 md:px-7.5 xl:px-10 border-box overflow-hidden">
+    <section className="bg-[#111111]  flex flex-col gap-10 md:gap-18 xl:gap-20   w-full py-30 md:py-38 xl:py-50 px-5 md:px-7.5 xl:px-10 border-box overflow-hidden">
       <SectionHeader Num="[01]" Text="Built on vision" />
       <div className="relative  flex flex-col items-center justify-center">
         <Header heading="about stratone" />

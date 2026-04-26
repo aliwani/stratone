@@ -3,7 +3,7 @@ import { Rocket } from "lucide-react";
 
 function ChooseSmallSingle() {
   return (
-    <div className="w-full h-44.5 md:h-full xl:h-1/3 p-7.5 flex flex-col justify-center md:gap-3 xl:gap-8 text-white bg-black rounded-lg md:rounded-3xl">
+    <div className="w-full h-44.5 md:h-full xl:h-1/3 p-7.5 flex flex-col justify-center md:gap-3 xl:gap-8 text-white bg-[#111111]  rounded-lg md:rounded-3xl">
       <div>
         <Rocket xl:size={60} size={50} />
       </div>

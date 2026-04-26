@@ -9,7 +9,7 @@ function FooterLeftB() {
         src={Img}
         alt=""
       />
-      <div className="absolute inset-0 -z-1  bg-linear-to-l h-full bg-black opacity-50 rounded-2xl" />
+      <div className="absolute inset-0 -z-1  bg-linear-to-l h-full bg-[#111111]  opacity-50 rounded-2xl" />
 
       <div className="flex flex-col  gap-3 xl:gap-5 pb-7.5">
         <span

@@ -9,7 +9,7 @@ function ContactUs() {
         className="absolute  top-0 -z-1 right-0 h-133 md:h-195 xl:h-287.5 w-[99.7%] mx-0.5  object-cover"
         alt=""
       />
-      <div className="absolute inset-0 -z-1 mx-1 bg-linear-to-l h-full bg-black opacity-50" />
+      <div className="absolute inset-0 -z-1 mx-1 bg-linear-to-l h-full bg-[#111111]  opacity-50" />
 
       <div className="flex flex-col   font-antonSC leading-none   text-white text-[60px] md:text-[110px] xl:text-[200px]">
         <h1 className="">let's build</h1>
@@ -23,10 +23,10 @@ function ContactUs() {
 
       <div className="h-15 md:h-26 cursor-pointer  xl:h-32.5 max-w-100 md:max-w-190 xl:max-w-315 flex items-center justify-center mt-5">
         <div className="bg-white flex p-0.5 md:p-1 h-full gap-0.5 md:gap-1 w-62.5 md:w-95 xl:w-117">
-          <div className="font-antonSC text-[36px] md:text-[42px] xl:text-[60px] flex items-center justify-center text-white bg-black w-3/4 rounded-sm md:rounded-lg xl:rounded-xl h-full">
+          <div className="font-antonSC text-[36px] md:text-[42px] xl:text-[60px] flex items-center justify-center text-white bg-[#111111] w-3/4 rounded-sm md:rounded-lg xl:rounded-xl h-full">
             get in touch
           </div>
-          <div className="flex items-center justify-center bg-black w-1/4 rounded-sm md:rounded-lg xl:rounded-xl  h-full">
+          <div className="flex items-center justify-center bg-[#111111]  w-1/4 rounded-sm md:rounded-lg xl:rounded-xl  h-full">
             <ArrowRight size={45} color="white" />
           </div>
         </div>

@@ -46,7 +46,7 @@ const StickyCard_001 = ({ i, title, src, progress, range, targetScale }) => {
               className="h-full w-full object-cover rounded-2xl"
             />
           </div>
-          <div className="w-2/5 p-7.5 h-full gap-20 flex flex-col justify-center bg-black  rounded-2xl ">
+          <div className="w-2/5 p-7.5 h-full gap-20 flex flex-col justify-center bg-[#111111]   rounded-2xl ">
             <h2 className="font-antonSC text-[26px] pb-50 text-white">
               synthesis technology
             </h2>
