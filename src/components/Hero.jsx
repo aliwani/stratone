@@ -9,7 +9,7 @@ function Hero() {
   const src = isPc > 809 ? Heroimg : test3;
 
   return (
-    <div className="bg-black md:rounded-t-2xl md:gap-5 md:h-[clamp(530px,60vw,620px)] pt-40 md:pt-0  w-full xl:h-[clamp(700px,49vw,100rem)]  flex md:flex-row flex-col md:items-center justify-between  border-box overflow-hidden">
+    <div className="bg-black md:rounded-t-2xl md:gap-5 md:h-[clamp(530px,60vw,620px)] pt-35 md:pt-0  w-full xl:h-[clamp(700px,49vw,100rem)]  flex md:flex-row flex-col md:items-center justify-between  border-box overflow-hidden">
       <div className="md:h-full md:w-1/2 order-2 md:order-1">
         <img
           src={src}
@@ -18,7 +18,7 @@ function Hero() {
         />
       </div>
       <div className="w-full md:w-1/2 md:pr-12 md:pb-0 pb-12  flex flex-col items-start justify-end h-full order-1 md:order-2  text-white font-black overflow-hidden px-5 md:px-0 @container">
-        <div className="w-full flex flex-col gap-5 md:flex-row items-start mb-7 justify-between overflow-hidden">
+        <div className="w-full flex flex-col gap-6 md:flex-row items-start mb-7 justify-between overflow-hidden">
 
          <div className="flex items-start justify-center gap-3">
           <Crosshair size={16}/>
@@ -26,7 +26,7 @@ function Hero() {
            transforming ideas into Iconic Brands
           </span>
          </div>
-       <div className="flex gap-2 items-center justify-center">
+       <div className=" flex gap-2 items-center  justify-center">
            <div className="flex">
             <Star fill="white" strokeWidth={0} size={18}/>
             <Star fill="white" strokeWidth={0} size={18}/>
@@ -34,7 +34,7 @@ function Hero() {
             <Star fill="white" strokeWidth={0} size={18}/>
             <Star fill="white" strokeWidth={0} size={18}/>
             </div>
-            <span className="leading-none text-white text-sm md:text-lg w-20 md:w-50 font-clashExtraLight tracking-wider">Designing stories that matter</span>
+            <span className="leading-none text-white text-sm md:text-lg max-w-40 md:w-50 font-clashExtraLight tracking-wider">Designing stories that matter</span>
        </div>
 
         </div>
