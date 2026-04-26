@@ -13,6 +13,6 @@ export const ROUTES = [
     { path: "/Work", name:"Work", element: Work },
     { path: "/Contact", name:"Contact", element: Contact },
     { path: "/Blog", name:"Blog", element: Blog },
-    { path: "/404", name:"404", element: Page404 },
     { path: "/Policy", name:"Privacy Policy", element: PrivacyPolicy },
+    { path: "/404", name:"404", element: Page404 },
 ];
