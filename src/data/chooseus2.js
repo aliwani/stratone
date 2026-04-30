@@ -1,0 +1,14 @@
+const highlightsData = [
+  {
+    id: 0,
+    title: "Seasoned Professionals",
+    desc: "Every project is handled by experts who have been in the field and know what actually works.",
+  },
+  {
+    id: 1,
+    title: "Full-Service Capability",
+    desc: "One agency. Websites, videos, marketing, design, and Shopify — all under one roof.",
+  },
+];
+
+export default highlightsData;

@@ -4,7 +4,7 @@ import servicesData from "../Features/services/data";
 import WorkSectionCard from "./WorkSectionCard";
 import PricingButton from "./pricing/PricingButton";
 import ServiceSelect from "./ServiceSelect";
-function WhatWeDo() {
+function WhatWeDo({handleScroll}) {
   const [activeindx, setactiveindx] = useState(1);
   const [activeText, setactiveText] = useState(1);
   const isDesktop = window.innerWidth > 809;
@@ -48,7 +48,7 @@ function WhatWeDo() {
                 />
               ))}
             </div>
-            <PricingButton width="37.5" text="see pricing" />
+            <PricingButton   handleScroll={handleScroll} width="37.5" text="see pricing" />
           </div>
           <WorkSectionCard img={activeService.img} list={activeService.list} />
         </div>

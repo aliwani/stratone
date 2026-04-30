@@ -18,11 +18,11 @@ function Hero() {
         />
       </div>
       <div className="w-full md:w-1/2 md:pr-12 md:pb-0 pb-12  flex flex-col items-start justify-end h-full order-1 md:order-2  text-white font-black overflow-hidden px-5 md:px-0 @container">
-        <div className="w-full flex flex-col gap-6 md:flex-row items-start mb-7 justify-between overflow-hidden">
+        <div className="w-full flex flex-col gap-4 md:gap-6 xl:flex-row items-start mb-7 justify-between overflow-hidden">
 
          <div className="flex items-start justify-center gap-3">
           <Crosshair size={16}/>
-           <span className="font-clashLight min-w-60 leading-none text-[18px] tracking-widest text-wrap uppercase  md:text-[18px]">
+           <span className="font-clashLight min-w-60 leading-none text-[14px] tracking-widest text-wrap uppercase  md:text-[16px]">
            transforming ideas into Iconic Brands
           </span>
          </div>
@@ -34,13 +34,13 @@ function Hero() {
             <Star fill="white" strokeWidth={0} size={18}/>
             <Star fill="white" strokeWidth={0} size={18}/>
             </div>
-            <span className="leading-none text-white text-[16px] md:text-lg min-w-40 w-45 md:w-50 font-clashExtraLight tracking-wider">Designing stories that matter</span>
+            <span className="leading-none text-white text-[16px] md:text-lg min-w-40 w-45 md:w-fit font-clashExtraLight tracking-wider">Designing stories that matter</span>
        </div>
 
         </div>
         <div className="flex flex-col items-start gap-2 justify-center w-full overflow-hidden  h-fit border-box ">
-          <h1 className="font-antonSC w-fit text-[calc(100cqw*0.2)] md:text-[clamp(5rem,11.1vw,30rem)] xl:text-[clamp(5rem,11.7vw,32rem)]  overflow-hidden leading-[0.95]  ">
-            NARRATIVE
+          <h1 className="font-antonSC w-fit text-[calc(100cqw*0.2)] md:text-[clamp(5rem,12.1vw,30rem)] xl:text-[clamp(5rem,12.8vw,33rem)]  overflow-hidden leading-[0.95]  ">
+            STRATEGY
           </h1>
           <div className="w-full flex md:flex-row flex-col gap-2 items-start overflow-x-hidden">
             <div className=" h-[clamp(135px,56vw,280px)] p-1 md:h-[clamp(8rem,17vw,50rem)] w-full min-[475px]:w-105 md:w-1/2   bg-white  text-black order-2 md:order-1 ">
@@ -55,8 +55,8 @@ function Hero() {
               <h1 className="font-antonSC text-[calc(100cqw*0.19)] md:text-[clamp(3.9rem,8.5vw,20rem)]  xl:text-[clamp(4rem,8.9vw,20rem)] w-fit leading-none overflow-hidden align-middle m-0 p-0 ">
                 MEETS
               </h1>
-              <h1 className="font-antonSC text-[calc(100cqw*0.19)] md:text-[clamp(3.9rem,8vw,20rem)] xl:text-[clamp(3.9rem,8.5vw,20rem)] w-fit overflow-hidden leading-none ">
-                DESIGN
+              <h1 className="font-antonSC text-[calc(100cqw*0.19)] md:text-[clamp(3.9rem,8.7vw,20rem)] xl:text-[clamp(3.9rem,9vw,20rem)] w-fit overflow-hidden leading-none ">
+                VISION
               </h1>
             </div>
           </div>

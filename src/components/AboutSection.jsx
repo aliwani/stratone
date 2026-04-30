@@ -15,11 +15,7 @@ function AboutSection() {
             <img src={aboutImg} alt="" className="h-full w-full" />
           </div>
           <p className="font-clashRegular antialiased mb-3 tracking-wider text-white/90 leading-none px-7 md:px-0 text-[20px] text-wrap  text-center">
-            Stratone is a creative agency built at the intersection of brand,
-            design, and culture. We partner with visionary teams to build
-            identities, systems, and stories that move people and markets. Our
-            mission is to shape meaningful experiences that are rooted in
-            strategy and refined through design.
+        Stratone is a full-service creative agency built for brands that refuse to be ordinary. We combine strategic thinking with bold execution to craft identities, digital experiences, and high-performing assets  from websites and Shopify stores to video content and marketing campaigns. Founded on the belief that every brand deserves world-class creative work, our team brings together developers, designers, editors, and strategists who are obsessed with one thing: building your brand from the ground up and making it impossible to ignore.
           </p>
           <div className="font-clashSemi  tracking-wider  uppercase flex flex-wrap justify-center items-center gap-5 w-full leading-none  text-white text-[16px] md:text-lg">
             <a href="">Instagram.</a>

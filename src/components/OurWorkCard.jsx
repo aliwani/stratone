@@ -1,7 +1,7 @@
 import React from "react";
 import PricingButton from "./pricing/PricingButton";
 
-function OurWorkCard({title,src}) {
+function OurWorkCard({year, category,title,src}) {
   return (
     <div className=" relative bg-white  p-0.5 gap-0.5 flex flex-col  md:h-130 md:w-[clamp(740px,70vw,850px)] origin-top  overflow-hidden">
       {" "}
@@ -14,15 +14,15 @@ function OurWorkCard({title,src}) {
       </div>
       <div className="w-full p-5 h-full gap-8 flex flex-col justify-start items-start bg-[#111111]   rounded-md ">
         <h2 className="font-antonSC text-[20px]  text-white">
-          synthesis technology
+          {title}
         </h2>
         <div className="flex flex-col gap-5">
           <div className=" flex flex-col  text-white text-[16px]">
             <span className=" font-clashRegular text-[#dbd9d9]">
-              YEAR <span className="font-clashSemi">: 2025</span>
+              YEAR <span className="font-clashSemi">: {year}</span>
             </span>
             <span className=" font-clashRegular text-[#dbd9d9]">
-              CATEGORY<span className="font-clashSemi">: UI / UX</span>{" "}
+              CATEGORY<span className="font-clashSemi">: {category}</span>{" "}
             </span>
           </div>
           <PricingButton text="view detail" />

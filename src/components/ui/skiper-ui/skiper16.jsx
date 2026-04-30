@@ -7,7 +7,7 @@ import PricingButton from "../../pricing/PricingButton";
 import OurWorkCard from "@/components/OurWorkCard";
 import projects from "@/data/Work";
 
-const StickyCard_001 = ({ i, title, src, progress, range, targetScale }) => {
+const StickyCard_001 = ({ i,year, category, title, src, progress, range, targetScale }) => {
   const container = useRef(null);
 
   const scale = useTransform(progress, range, [1, targetScale]);
@@ -27,17 +27,17 @@ const StickyCard_001 = ({ i, title, src, progress, range, targetScale }) => {
   return (
     <div
       ref={container}
-      className={`${isMobile ? "relative pt-5 pb-5 flex items-center justify-center" : "sticky -top-30  pb-20 flex items-center justify-center"} `}
+      className={`${isMobile ? "relative pt-5 pb-5 flex items-center justify-center" : "sticky mt-40 -top-40  pb-20 flex items-center justify-center"} `}
     >
       {isMobile ? (
-        <OurWorkCard title={title} src={src}/>
+        <OurWorkCard year={year} category={category} title={title} src={src}/>
       ) : (
         <motion.div
           style={{
             scale,
             top: `calc(-5vh + ${i * 20 + 250}px)`,
           }}
-          className=" relative bg-white  -top-1/4 p-1 gap-1 flex flex-row  md:h-130 md:w-[clamp(740px,70vw,850px)] origin-top  overflow-hidden"
+          className=" relative bg-white  p-1 gap-1 flex flex-row  md:h-130 md:w-[clamp(740px,70vw,850px)] origin-top  overflow-hidden"
         >
           <div className="w-3/5 h-full ">
             <img
@@ -48,15 +48,15 @@ const StickyCard_001 = ({ i, title, src, progress, range, targetScale }) => {
           </div>
           <div className="w-2/5 p-7.5 h-full gap-20 flex flex-col justify-center bg-[#111111]   rounded-2xl ">
             <h2 className="font-antonSC text-[26px] pb-50 text-white">
-              synthesis technology
+             {title}
             </h2>
             <div className="flex flex-col gap-5">
               <div className=" flex flex-col  text-white text-[18px]">
                 <span className=" font-clashRegular text-[#dbd9d9]">
-                  YEAR <span className="font-clashSemi">: 2025</span>
+                  YEAR <span className="font-clashSemi">: {year}</span>
                 </span>
                 <span className=" font-clashRegular text-[#dbd9d9]">
-                  CATEGORY<span className="font-clashSemi">: UI / UX</span>{" "}
+                  CATEGORY<span className="font-clashSemi">: {category}</span>{" "}
                 </span>
               </div>
               <PricingButton text="view detail" />
@@ -103,19 +103,3 @@ const Skiper16 = () => {
 };
 
 export { Skiper16, StickyCard_001 };
-
-/**
- * Skiper 16 StickyCard_001 — React + Framer Motion
- * We respect the original creators. This is an inspired rebuild with our own taste and does not claim any ownership.
- *
- * License & Usage:
- * - Free to use and modify in both personal and commercial projects.
- * - Attribution to Skiper UI is required when using the free version.
- * - No attribution required with Skiper UI Pro.
- *
- * Feedback and contributions are welcome.
- *
- * Author: @gurvinder-singh02
- * Website: https://gxuri.in
- * Twitter: https://x.com/Gur__vi
- */

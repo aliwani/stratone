@@ -3,7 +3,7 @@ import SectionHeader from "../resuables/SectionHeader";
 import Header from "../resuables/Header";
 import ChooseCard from "./ChooseCard";
 import ChooseSmallCard from "./ChooseSmallCard";
-
+import highlightsData from "@/data/chooseus2";
 function ChooseUS() {
   return (
     <div className="h-full w-full overflow-hidden flex flex-col gap-15 bg-[#111111]  px-5 md:px-7.5 xl:px-10">
@@ -11,8 +11,11 @@ function ChooseUS() {
       <div className="w-full flex flex-col gap-8 md:gap-18 rounded-3xl">
         <Header heading="Why choose us" />
         <div className="grid grid-cols-2 xl:grid-cols-3 mb-20 gap-0.5 min-h-178.25 md:h-212 xl:h-185 w-full bg-white p-0.5">
-          <ChooseCard />
-          <ChooseCard />
+         {
+          highlightsData.map((data,idx)=>{
+           return <ChooseCard key={data.id} title={data.title} desc={data.desc} />
+          })
+         }
           <ChooseSmallCard />
         </div>
       </div>

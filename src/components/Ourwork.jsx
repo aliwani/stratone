@@ -2,9 +2,9 @@ import React from "react";
 import { Skiper16 } from "./ui/skiper-ui/skiper16";
 import SectionHeader from "./resuables/SectionHeader";
 import Header from "./resuables/Header";
-import PricingButton from "./pricing/PricingButton";
 import ProjectBtn from "./resuables/ProjectBtn";
 import InfiniteScroll from "./InfiniteScroll";
+import Contactbtn from "./resuables/ContactBtn";
 
 function Ourwork() {
   return (
@@ -16,7 +16,7 @@ function Ourwork() {
         <InfiniteScroll/>
         <div className="flex md:flex-row flex-col justify-center items-center gap-5 mt-5">
           <ProjectBtn text="view all projects" />
-          <PricingButton text="contact us" />
+          <Contactbtn text="contact us" />
         </div>
       </div>
     </section>
