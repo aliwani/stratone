@@ -12,6 +12,7 @@ function WhatWeDo({handleScroll}) {
   const activeService = isDesktop
     ? servicesData[activeindx - 1] || servicesData[0]
     : servicesData[activeText - 1] || servicesData[0];
+    
   return (
     <div className="relative z-0 w-full h-full  bg-[#111111]  px-5 md:px-7.5 xl:px-10">
       <video

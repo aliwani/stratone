@@ -1,10 +1,15 @@
+import marketingImg from "@/assets/workimages/marketingImg.png"
+import DevelopmentImg from "@/assets/workimages/developmentWorkImg.png"
+import shopifyImg from "@/assets/workimages/testinnew.png"
+import editingImg from "@/assets/workimages/editingWorkImg.png"
+
 const projects = [
   {
     id: 0,
     title: "NexArc Studio",
     year: "2026",
     category: "Social Media Marketing",
-    src: "https://picsum.photos/id/1015/800/600",
+    src: marketingImg,
   },
   {
     id: 1,
@@ -18,21 +23,21 @@ const projects = [
     title: "NexArc Studio",
     year: "2026",
     category: "Video Editing",
-    src: "https://picsum.photos/id/1018/800/600",
+    src: editingImg,
   },
   {
     id: 3,
     title: "Usama Will Tell",
     year: "2025",
     category: "Shopify Store Development",
-    src: "https://picsum.photos/id/1020/800/600",
+    src: shopifyImg,
   },
   {
     id: 4,
     title: "Saffi Will Tell",
     year: "2026",
     category: "Website & App Development",
-    src: "https://picsum.photos/id/1024/800/600",
+    src: DevelopmentImg,
   },
 ];
 

@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react'
 
 function Navbar({isOpen, setIsOpen}) {
  console.log(isOpen);
@@ -6,7 +5,7 @@ function Navbar({isOpen, setIsOpen}) {
   return (
     <div className='fixed z-99 top-0 w-full h-25 flex justify-between items-center px-5 md:px-7.5 xl:px-10   '>
       <div className='font-antonSC text-white text-3xl'>
-        Stratone 
+       <a href="/"> Stratone </a>
       </div>
       <div onClick={()=> !isOpen ? setIsOpen(true) : setIsOpen(false)} className='flex items-center justify-center p-0.5  bg-white  h-8 w-16 md:h-9.75 md:w-18  ' >
         <span className='bg-black font-clashRegular w-full flex items-center justify-center h-full font-semibold tracking-wider rounded  text-sm md:text-[16px] text-white' >{isOpen ? "CLOSE" : "MENU"}</span>

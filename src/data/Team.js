@@ -1,12 +1,17 @@
+import aliImg from "@/assets/team/aliImg.jpeg";
+import taimoorImg from "@/assets/team/taimoorImg.png";
+import saffiImg from "@/assets/team/saffiImg.png";
+import usamaImg from "@/assets/team/usamaImg.png";
+import essarImg from "@/assets/team/essarImg.png";
+import danyalImg from "@/assets/team/danyalImg.jpeg";
 const teamMembers = [
   {
     id: 1,
-    name: "Sarah Ahmed",
-    designation: "Chief Executive Officer",
-    dateOfBirth: "June 13, 2008 /",
-    city: "Islamabad",
-    image:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+    name: "danyal ishfaq",
+    designation: "Marketing Head",
+    dateOfBirth: "May 20, 2003 /",
+    city: "Azad Kashmir",
+    image: danyalImg,
     socials: [
       { linkedin: "https://linkedin.com/in/fatimakhan" },
       { twitter: "https://twitter.com/fatimakhan" },
@@ -16,12 +21,11 @@ const teamMembers = [
   },
   {
     id: 2,
-    name: "Muhammad Ali",
+    name: "saffi-ul-haq",
     designation: "Lead Developer",
     dateOfBirth: "July 27, 2001 /",
-    city: "Muzaffarabad",
-    image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    city: "Azad Kashmir",
+    image: saffiImg,
     socials: [
       { linkedin: "https://linkedin.com/in/fatimakhan" },
       { twitter: "https://twitter.com/fatimakhan" },
@@ -31,12 +35,11 @@ const teamMembers = [
   },
   {
     id: 3,
-    name: "Fatima Khan",
-    designation: "UI/UX Designer",
+    name: "ali ishfaq",
+    designation: "Web developer",
     dateOfBirth: "Dec 25, 1990 /",
     city: "Muzaffarabad",
-    image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+    image: aliImg,
     socials: [
       { linkedin: "https://linkedin.com/in/fatimakhan" },
       { twitter: "https://twitter.com/fatimakhan" },
@@ -46,12 +49,39 @@ const teamMembers = [
   },
   {
     id: 4,
-    name: "Omar Farooq",
-    designation: "Marketing Manager",
+    name: "usama mir",
+    designation: "Ecommerce Developer",
     dateOfBirth: "Nov 5, 1980 /",
     city: "Muzaffarabad",
-    image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
+    image: usamaImg,
+    socials: [
+      { linkedin: "https://linkedin.com/in/fatimakhan" },
+      { twitter: "https://twitter.com/fatimakhan" },
+      { dribbble: "https://dribbble.com/fatimakhan" },
+      { email: "fatima@company.com" },
+    ],
+  },
+  {
+    id: 6,
+    name: "essar fatima",
+    designation: "Graphic Designer",
+    dateOfBirth: "Nov 5, 1980 /",
+    city: "Muzaffarabad",
+    image: essarImg,
+    socials: [
+      { linkedin: "https://linkedin.com/in/fatimakhan" },
+      { twitter: "https://twitter.com/fatimakhan" },
+      { dribbble: "https://dribbble.com/fatimakhan" },
+      { email: "fatima@company.com" },
+    ],
+  },
+  {
+    id: 5,
+    name: "taimoor khurshid",
+    designation: "Social Media Manager",
+    dateOfBirth: "Nov 5, 1980 /",
+    city: "Muzaffarabad",
+    image: taimoorImg,
     socials: [
       { linkedin: "https://linkedin.com/in/fatimakhan" },
       { twitter: "https://twitter.com/fatimakhan" },
