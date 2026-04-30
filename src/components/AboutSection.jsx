@@ -43,7 +43,7 @@ function AboutSection() {
                     className="h-[clamp(10rem,68vw,390px)] overflow-x-hidden w-full md:w-19 md:h-20 xl:w-25 xl:h-26 bg-black"
                   >
                     <img
-                      className="h-[140px]  w-full object-cover "
+                      className="h-full md:h-35  w-full object-cover "
                       src={team.image}
                       alt=""
                     />
