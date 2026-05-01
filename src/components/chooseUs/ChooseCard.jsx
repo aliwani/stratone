@@ -1,8 +1,10 @@
 import React from "react";
 
-function ChooseCard({title,desc}) {
+function ChooseCard({img,title,desc}) {
   return (
-    <div className="xl:h-full md:h-[570x] min-h-50  order-2 md:order-1 xl:order-2 px-5 leading-none gap-3 flex flex-col items-center py-7 justify-end text-[22px] md:text-[26px] xl:text-[34px] text-white rounded-lg md:rounded-3xl bg-[#111111] ">
+    <div className={`relative xl:h-full md:h-[570x] min-h-50  z-0   order-2 md:order-1 xl:order-2 px-5 leading-none gap-3 flex flex-col items-center py-7 justify-end text-[22px] md:text-[26px] xl:text-[34px] text-white rounded-lg md:rounded-3xl `}>
+      <img src={img} alt=""  className="absolute top-0 left-0 -z-2 lg:rounded-lg md:rounded-3xl h-full w-full object-cover"/>
+      <div className="absolute top-0 left-0 bg-black h-full w-full opacity-70 bg-linear-to-t  -z-1"></div>
       <h1 className="font-antonSC tracking-wide text-center">
         {title}
       </h1>

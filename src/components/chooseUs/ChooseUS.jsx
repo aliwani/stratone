@@ -13,7 +13,7 @@ function ChooseUS() {
         <div className="grid grid-cols-2 xl:grid-cols-3 mb-20 gap-0.5 min-h-178.25 md:h-212 xl:h-185 w-full bg-white p-0.5">
          {
           highlightsData.map((data,idx)=>{
-           return <ChooseCard key={data.id} title={data.title} desc={data.desc} />
+           return <ChooseCard key={data.id} img={data.img} title={data.title} desc={data.desc} />
           })
          }
           <ChooseSmallCard />

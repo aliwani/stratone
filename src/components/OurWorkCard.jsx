@@ -3,13 +3,13 @@ import PricingButton from "./pricing/PricingButton";
 
 function OurWorkCard({year, category,title,src}) {
   return (
-    <div className=" relative bg-white  p-0.5 gap-0.5 flex flex-col  md:h-130 md:w-[clamp(740px,70vw,850px)] origin-top  overflow-hidden">
+    <div className=" relative bg-white  p-0.5 gap-0.5 flex flex-col  md:h-130 md:w-[clamp(740px,70vw,850px)]   overflow-hidden">
       {" "}
-      <div className="w-full h-full ">
+      <div className="w-full ">
         <img
           src={src}
           alt={title}
-          className="h-full w-full object-cover rounded-md"
+          className=" w-full object-cover rounded-md"
         />
       </div>
       <div className="w-full p-5 h-full gap-8 flex flex-col justify-start items-start bg-[#111111]   rounded-md ">

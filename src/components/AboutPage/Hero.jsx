@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useCallback, useRef } from "react";
-import Img from "@/assets/AboutHero.jpg";
 import circleImg from "@/assets/circles.svg";
 
 function Hero() {

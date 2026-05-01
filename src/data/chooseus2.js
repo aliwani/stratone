@@ -1,8 +1,10 @@
+import bgImg from "@/assets/SeasonedProfessionals.png";
 const highlightsData = [
   {
     id: 0,
     title: "Seasoned Professionals",
     desc: "Every project is handled by experts who have been in the field and know what actually works.",
+    img: bgImg,
   },
   {
     id: 1,

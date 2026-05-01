@@ -3,7 +3,7 @@ import taimoorImg from "@/assets/team/taimoorImg.png";
 import saffiImg from "@/assets/team/saffiImg.png";
 import usamaImg from "@/assets/team/usamaImg.png";
 import essarImg from "@/assets/team/essarImg.png";
-import danyalImg from "@/assets/team/danyalImg.jpeg";
+import danyalImg from "@/assets/team/danyalImg.png";
 const teamMembers = [
   {
     id: 1,

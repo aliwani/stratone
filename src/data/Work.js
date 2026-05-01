@@ -2,6 +2,7 @@ import marketingImg from "@/assets/workimages/marketingImg.png"
 import DevelopmentImg from "@/assets/workimages/developmentWorkImg.png"
 import shopifyImg from "@/assets/workimages/testinnew.png"
 import editingImg from "@/assets/workimages/editingWorkImg.png"
+import workImg from "@/assets/workimages/workImg.png"
 
 const projects = [
   {
@@ -16,7 +17,7 @@ const projects = [
     title: "Essar Will Tell",
     year: "2026",
     category: "Graphic Design",
-    src: "https://picsum.photos/id/1016/800/600",
+    src: workImg,
   },
   {
     id: 2,
