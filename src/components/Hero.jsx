@@ -1,12 +1,11 @@
 import Heroimg from "@/assets/test1.jpeg";
 import eye from "@/assets/eye.png";
 import test3 from "@/assets/heroImg.png"
-import test4 from "@/assets/heroImg2.png"
 import { Crosshair, Star } from "lucide-react";
 
 function Hero() {
   const isPc = window.innerWidth;
-  const src = isPc > 809 ? test4 : test3;
+  const src = isPc > 809 ? test3 : test3;
 
   return (
     <div className="bg-[#111111] md:rounded-t-2xl md:gap-5 md:h-[clamp(530px,60vw,620px)] pt-35 md:pt-0  w-full xl:h-[clamp(700px,49vw,100rem)]  flex md:flex-row flex-col md:items-center justify-between  border-box overflow-hidden">
