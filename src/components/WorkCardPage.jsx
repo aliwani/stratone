@@ -1,8 +1,8 @@
 import React from "react";
 import projects from "@/data/Work";
 import { useParams } from "react-router-dom";
-import WorkCardInfo from "./workpage/workcard/WorkCardInfo";
-import WorkCardHero from "./workpage/workcard/WorkCardHero";
+import WorkCardInfo from "./workcard/WorkCardInfo";
+import WorkCardHero from "./workcard/WorkCardHero";
 function WorkCardPage() {
   const { slug } = useParams();
   const project = projects.find((item) => item.slug === slug);

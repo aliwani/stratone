@@ -1,5 +1,5 @@
 import React from "react";
-import SectionHeader from "../../resuables/SectionHeader";
+import SectionHeader from "../resuables/SectionHeader";
 import WorkCardInfoSectionLeft from "./WorkCardInfoSectionLeft";
 import WorkCardInfoSectionRight from "./WorkCardInfoSectionRight";
 
