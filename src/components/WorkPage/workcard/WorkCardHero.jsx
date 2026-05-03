@@ -6,7 +6,7 @@ function WorkCardHero({ project }) {
   return (
     <div
       style={{ backgroundImage: `url(${project.src})` }}
-      className={` bg-contain w-full min-h-110    md:h-135 xl:h-188 rounded-2xl  px-10`}
+      className={` bg-cover w-full min-h-85    md:h-125 xl:h-188 rounded-none md:rounded-2xl`}
     ></div>
   );
 }
