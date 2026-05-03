@@ -56,7 +56,7 @@ const servicesData = [
   {
     id: 3,
     num: "(04)",
-    title: "Shopify Store Development",
+    title: "Shopify Store",
     img: shopifyImg,
     list: [
       "Shopify Store Setup",
