@@ -5,7 +5,7 @@ import Contact from "@/Page/Contact";
 import About from "@/Page/About";
 import Page404 from "@/Page/Page404";
 import PrivacyPolicy from "@/Page/PrivacyPolicy";
-import WorkCardPage from "@/components/workpage/WorkCardPage";
+import WorkCardPage from "@/components/WorkCardPage";
 
 export const ROUTES = [
   { path: "/", name: "Home", element: Home },
