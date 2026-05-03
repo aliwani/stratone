@@ -2,7 +2,7 @@ import marketingImg from "@/assets/workimages/marketingImg.png"
 import DevelopmentImg from "@/assets/workimages/developmentWorkImg.png"
 import shopifyImg from "@/assets/workimages/testinnew.png"
 import editingImg from "@/assets/workimages/editingWorkImg.png"
-import workImg from "@/assets/workimages/designerworktester.png"
+import workImg from "@/assets/workimages/designWork.png"
 
 const projects = [
   {
