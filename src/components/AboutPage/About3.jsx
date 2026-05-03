@@ -4,9 +4,9 @@ import Img from "@/assets/test1.jpeg";
 import teamMembers from "../../data/Team";
 function About3() {
   return (
-    <div className="h-full w-full ">
+    <div id="team" className="h-full w-full ">
       <SectionHeader Num="[03]" Text="meet the team" />
-      <div className="grid grid-cols-1 md:grid-cols-2 mt-12 gap-10 ">
+      <div  className="grid grid-cols-1 md:grid-cols-2 mt-12 gap-10 ">
         {teamMembers.map((member, index) => (
           <div key={member.id} className="flex w-full bg-[#222222]">
             <div className="w-[43%] md:w-60 h-70">

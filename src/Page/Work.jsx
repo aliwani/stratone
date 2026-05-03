@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import projects from "@/data/Work";
 import OurWorkSectionCard from "@/components/WorkPage/OurWorkSectionCard";
 import OurWorkCard from "@/components/OurWorkCard";
+import { Outlet, useParams } from "react-router-dom";
 function Work() {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -16,6 +17,7 @@ function Work() {
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+  
   return (
     <div className="bg-white h-full w-screen p-0.5 pb-0">
       <section className="bg-[#111111] rounded-2xl flex flex-col items-center py-35 md:py-50">
@@ -26,8 +28,11 @@ function Work() {
               {projects.map((project, idx) => (
                 <OurWorkSectionCard
                   key={idx}
+                  slug={project.slug}
                   title={project.title}
                   src={project.src}
+                  year={project.year}
+                  category={project.category}
                 />
               ))}
             </div>
@@ -35,15 +40,19 @@ function Work() {
             <div className="flex flex-col gap-5  ">
               {projects.map((project, idx) => (
                 <OurWorkCard
+                slug={project.slug}
                   key={idx}
                   title={project.title}
                   src={project.src}
+                  year={project.year}
+                  category={project.category}
                 />
               ))}
             </div>
           )}
         </div>
       </section>
+      <Outlet/>
     </div>
   );
 }

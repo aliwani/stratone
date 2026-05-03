@@ -1,7 +1,7 @@
 import React from "react";
-import PricingButton from "./pricing/PricingButton";
+import WorkCardButton from "./resuables/WorkCardButton";
 
-function OurWorkCard({year, category,title,src}) {
+function OurWorkCard({slug,year, category,title,src}) {
   return (
     <div className=" relative bg-white  p-0.5 gap-0.5 flex flex-col  md:h-130 md:w-[clamp(740px,70vw,850px)]   overflow-hidden">
       {" "}
@@ -25,7 +25,7 @@ function OurWorkCard({year, category,title,src}) {
               CATEGORY<span className="font-clashSemi">: {category}</span>{" "}
             </span>
           </div>
-          <PricingButton text="view detail" />
+          <WorkCardButton slug={slug} text="view detail" />
         </div>
       </div>
     </div>

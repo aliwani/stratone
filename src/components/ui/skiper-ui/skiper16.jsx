@@ -3,11 +3,11 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import ReactLenis from "lenis/react";
 import React, { useEffect, useState, useRef } from "react";
-import PricingButton from "../../pricing/PricingButton";
 import OurWorkCard from "@/components/OurWorkCard";
 import projects from "@/data/Work";
+import WorkCardButton from "@/components/resuables/WorkCardButton";
 
-const StickyCard_001 = ({ i,year, category, title, src, progress, range, targetScale }) => {
+const StickyCard_001 = ({ i,year,slug, category, title, src, progress, range, targetScale }) => {
   const container = useRef(null);
 
   const scale = useTransform(progress, range, [1, targetScale]);
@@ -30,7 +30,7 @@ const StickyCard_001 = ({ i,year, category, title, src, progress, range, targetS
       className={`${isMobile ? "relative pt-5 pb-5 flex items-center justify-center" : "sticky mt-40 -top-40  pb-20 flex items-center justify-center"} `}
     >
       {isMobile ? (
-        <OurWorkCard year={year} category={category} title={title} src={src}/>
+        <OurWorkCard slug={slug} year={year} category={category} title={title} src={src}/>
       ) : (
         <motion.div
           style={{
@@ -59,7 +59,7 @@ const StickyCard_001 = ({ i,year, category, title, src, progress, range, targetS
                   CATEGORY<span className="font-clashSemi">: {category}</span>{" "}
                 </span>
               </div>
-              <PricingButton text="view detail" />
+              <WorkCardButton slug={slug} text="view detail" />
             </div>
           </div>
         </motion.div>
@@ -81,7 +81,7 @@ const Skiper16 = () => {
         ref={container}
         className="relative flex w-full flex-col items-center justify-center pb-5 md:pb-62.5 "
       >
-        {projects.map((project, i) => {
+        {projects.slice(0,5).map((project, i) => {
           const targetScale = Math.max(
             0.5,
             1 - (projects.length - i - 1) * 0.1,

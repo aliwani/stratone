@@ -41,7 +41,7 @@ function Hero() {
           <h1 className="font-antonSC w-fit text-[calc(100cqw*0.2)] md:text-[clamp(5rem,12.1vw,30rem)] xl:text-[clamp(5rem,12.8vw,33rem)]  overflow-hidden leading-[0.95]  ">
             STRATEGY
           </h1>
-          <div className="w-full flex md:flex-row flex-col gap-2 items-start overflow-x-hidden">
+          <div className="w-full flex md:flex-row flex-col gap-2 items-start md:items-end overflow-x-hidden">
             <div className=" h-[clamp(135px,56vw,280px)] p-0.5 md:h-[clamp(8rem,17vw,50rem)] w-full min-[475px]:w-105 md:w-1/2   bg-white  text-black order-2 md:order-1 ">
               <img
                 className="rounded-2xl object-cover h-full w-full"
@@ -50,11 +50,11 @@ function Hero() {
               />
             </div>
 
-            <div className=" flex  md:flex-col h-fit   min-w-0 md:w-fit  items-start justify-start gap-1 md:gap-0  leading-none order-1 md:order-2 ">
-              <h1 className="font-antonSC text-[calc(100cqw*0.21)] md:text-[clamp(3.9rem,8.5vw,20rem)]  xl:text-[clamp(4rem,8.9vw,20rem)] w-fit leading-none overflow-hidden   ">
+            <div className=" flex  md:flex-col h-fit   min-w-0 md:w-fit  items-start justify-between gap-1 md:gap-2 xl:gap-3   order-1 md:order-2 ">
+              <h1 className="font-antonSC text-[calc(100cqw*0.21)] md:text-[clamp(3.9rem,8.5vw,20rem)]  xl:text-[clamp(4rem,8.9vw,20rem)] w-fit leading-none md:leading-[clamp(3.9rem,8.1vw,20rem)] overflow-hidden   ">
                 MEETS
               </h1>
-              <h1 className="font-antonSC text-[calc(100cqw*0.21)] md:text-[clamp(3.9rem,8.7vw,20rem)] xl:text-[clamp(3.9rem,9vw,20rem)] w-fit overflow-hidden leading-none ">
+              <h1 className="font-antonSC text-[calc(100cqw*0.21)] md:text-[clamp(3.9rem,8.7vw,20rem)] xl:text-[clamp(3.9rem,9vw,20rem)] w-fit leading-none overflow-hidden md:leading-[clamp(3.9rem,8.1vw,20rem)] ">
                 VISION
               </h1>
             </div>

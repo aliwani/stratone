@@ -4,7 +4,7 @@ import Navlinks from "./Navlinks";
 import NavlinksBottom from "./NavlinksBottom";
 function NavDiv({ setIsOpen, isOpen }) {
   const firstCol = ROUTES.slice(0, 5);
-  const secondCol = ROUTES.slice(5);
+  const secondCol = ROUTES.slice(5,7);
 
   return (
     <div

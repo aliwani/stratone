@@ -10,7 +10,7 @@ function Ourwork() {
   return (
     <section className="flex flex-col gap-10 w-full py-30 md:py-40 px-5 md:px-7.5 xl:px-10 bg-[#111111]  h-full">
       <SectionHeader Num="[03]" Text="Stories We’ve Told" />
-      <div className="flex flex-col h-full w-full">
+      <div className="flex items-center flex-col h-full w-full">
         <Header heading="our work" />
         <Skiper16 />
         <InfiniteScroll/>

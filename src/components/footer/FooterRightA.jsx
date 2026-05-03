@@ -1,10 +1,10 @@
 import React from "react";
-import footImg from "@/assets/testerFooter.svg"
+import footImg from "@/assets/test/2.png"
 
 function FooterRightA() {
   return (
     <div className="bg-[#111111]  flex items-center justify-center rounded-2xl w-full p-5 md:w-2/5 md:min-w-95 md:w-max-w-300  md:h-full ">
-      <img src={footImg} className="h-auto w-full" alt="" />
+      <img src={footImg} className="h-full w-full" alt="" />
     </div>
   );
 }

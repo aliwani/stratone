@@ -1,5 +1,6 @@
 import React from "react";
 import img from "@/assets/contact.jpg";
+import img2 from "@/assets/test/3.png";
 import { ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 function ContactUs() {
@@ -17,7 +18,9 @@ function ContactUs() {
         <h1 className="">let's build</h1>
         <div className="flex items-end justify-end gap-0.5 md:gap-1 xl:gap-2 h-15 max-w-100 md:h-25 xl:h-50  md:max-w-190 xl:max-w-335">
           <h1>s</h1>
-          <div className="h-11 w-10 md:h-22 md:w-30 xl:h-38 xl:w-40  mb-1.5 xl:mb-3.5   bg-white"></div>
+          <div className={`h-11 w-12 md:h-22 md:w-24 xl:h-38 xl:w-40  mb-1.5 xl:mb-3.5   `}>
+            <img src={img2} className="h-full w-full" alt="" />
+          </div>
           <h1>mething</h1>
         </div>
         <h1 className="md:pl-25 xl:pl-44">timeless</h1>

@@ -2,8 +2,8 @@ import aboutImg from "@/assets/test/aboutimg.png";
 import teamMembers from "../data/Team";
 import SectionHeader from "./resuables/SectionHeader";
 import Header from "./resuables/Header";
+import { Link    } from "react-router-dom";
 function AboutSection() {
-
   return (
     <section className="bg-[#111111]  flex flex-col gap-10 md:gap-18 xl:gap-20   w-full py-30 md:py-38 xl:py-50 px-5 md:px-7.5 xl:px-10 border-box overflow-hidden">
       <SectionHeader Num="[01]" Text="Built on vision" />
@@ -51,10 +51,10 @@ function AboutSection() {
                 );
               })}
 
-              <div className="cursor-pointer hidden md:flex px-2 h-6  md:w-19 md:h-20 text-xl flex-col  xl:w-24 xl:h-26 rounded-lg text-white uppercase font-Meduim w-full items-center justify-center bg-black">
+              <Link to="/about#team" className="cursor-pointer hidden md:flex px-2 h-6  md:w-19 md:h-20 text-xl flex-col  xl:w-24 xl:h-26 rounded-lg leading-none text-white uppercase font-Meduim w-full items-center justify-center bg-black">
                 <span>View </span>
                 <span>team</span>
-              </div>
+              </Link>
             </div>
           </div>
         </div>

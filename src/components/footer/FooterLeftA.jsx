@@ -3,7 +3,7 @@ import { ROUTES } from "@/configs/route.js";
 import FooterLinks from "./FooterLinks";
 function FooterLeftA() {
   const firstCol = ROUTES.slice(0, 5);
-  const secondCol = ROUTES.slice(5);
+  const secondCol = ROUTES.slice(5,7);
   return (
     <div className="bg-[#111111]  rounded-2xl w-full md:w-3/5    h-54 md:h-full  p-5 md:p-7.5 xl:p-10">
       <div className="flex flex-col w-full md:w-fit gap-3">
