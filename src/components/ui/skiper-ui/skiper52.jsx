@@ -3,44 +3,9 @@
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
-import { div } from "framer-motion/client";
-import { Rocket } from "lucide-react";
-
+import images from "@/data/AboutWorkPhaseData";
 const Skiper52 = () => {
-  const images = [
-    {
-      src: "https://picsum.photos/seed/illustration1/800/1200",
-      alt: "Phase 01",
-      code: "#23",
-      title: "Development & Testing",
-      description:
-        "Our team builds with performance and scalability in mind. We handle front-end and CMS development, testing across devices, and SEO prep.",
-    },
-    {
-      src: "https://picsum.photos/seed/illustration2/800/1200",
-      alt: "Phase 02",
-      code: "#23",
-      title: "Design & Prototyping",
-      description:
-        "We create stunning visual designs and interactive prototypes that bring your ideas to life before development begins.",
-    },
-    {
-      src: "https://picsum.photos/seed/illustration3/800/1200",
-      alt: "Phase 03",
-      code: "#23",
-      title: "Strategy & Planning",
-      description:
-        "Every great project starts with solid strategy. We analyze your needs and plan the perfect approach.",
-    },
-    {
-      src: "https://picsum.photos/seed/illustration5/800/1200",
-      alt: "Phase 04",
-      code: "#23",
-      title: "Launch & Support",
-      description:
-        "We ensure smooth deployment and provide ongoing support to keep your project running perfectly.",
-    },
-  ];
+  
 
   return (
     <div className="flex h-full w-full items-center justify-center overflow-hidden bg-white py-0.5 mb-30">
