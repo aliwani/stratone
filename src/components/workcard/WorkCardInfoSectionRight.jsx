@@ -2,40 +2,40 @@ import { div } from "framer-motion/client";
 import { Dice1 } from "lucide-react";
 import React from "react";
 
-function WorkCardInfoSectionRight() {
+function WorkCardInfoSectionRight({project}) {
   return (
-    <div className="sticky flex top-25 right-0 flex-col gap-12 w-1/4 h-fit ">
-      <div className="flex flex-col w-full bg-white h-115 p-0.5 gap-px">
-        <div className="flex flex-col items-start justify-between p-7 h-1/4 w-full bg-black rounded-2xl">
+    <div className=" md:sticky flex order-1 md:order-2 top-25 right-0 flex-col gap-12 md:w-1/4 w-full  h-fit ">
+      <div className="grid grid-cols-2 md:grid-cols-1  w-full bg-white h-fit p-0.5 gap-px">
+        <div className="flex flex-col  items-start  p-7 h-full  w-full bg-[#111111] rounded-2xl">
           <span className="font-clashRegular font-medium tracking-wider text-white text-lg">
             Category:
           </span>
           <span className="font-antonSC text-xl text-white tracking-wider">
-            e-commerce platform
+           {project.category}
           </span>
         </div>
-        <div className="flex flex-col items-start justify-between p-7 h-1/4 w-full bg-black rounded-2xl">
+        <div className="flex flex-col items-start  p-7 h-full  w-full bg-[#111111] rounded-2xl">
           <span className="font-clashRegular font-medium tracking-wider text-white text-lg">
             Year:
           </span>
           <span className="font-antonSC text-xl text-white tracking-wider">
-            2024
+            {project.year}
           </span>
         </div>
-        <div className="flex flex-col items-start justify-between p-7 h-1/4 w-full bg-black rounded-2xl">
+        <div className="flex flex-col items-start  p-7 h-full  w-full bg-[#111111] rounded-2xl">
           <span className="font-clashRegular font-medium tracking-wider text-white text-lg">
             Client:
           </span>
           <span className="font-antonSC text-xl text-white tracking-wider">
-            NexArc-Studio
+            {project.client}
           </span>
         </div>
-        <div className="flex flex-col items-start justify-between p-7 h-1/4 w-full bg-black rounded-2xl">
+        <div className="flex flex-col items-start  p-7 h-full  w-full bg-[#111111] rounded-2xl">
           <span className="font-clashRegular font-medium tracking-wider text-white text-lg">
             Location:
           </span>
           <span className="font-antonSC text-xl text-white tracking-wider">
-            Islamabad, Pakistan
+            {project.location}
           </span>
         </div>
       </div>

@@ -1,31 +1,130 @@
-import React from "react";
-import ProjectBtn from "./resuables/ProjectBtn";
+import React, { useState } from "react";
 import FormBtn from "./resuables/FormBtn";
 
 function Form() {
-  const handleForm = (e)=>{
-    e.preventDefault()
+  // 1. Har field ka state banaya
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  // 2. Status track karne ke liye — idle, loading, success, error
+  const [status, setStatus] = useState("idle");
+
+  // 3. Ek function jo har input change pe chale
+  function handleChange(e) {
+    setForm({ ...form, [e.target.name]: e.target.value });
   }
+
+  // 4. Submit function — backend ko request bhejta hai
+  async function handleForm(e) {
+    e.preventDefault();
+    setStatus("loading");
+
+    try {
+      const response = await fetch(
+        `${import.meta.env.VITE_API_URL}/api/contact`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(form),
+        }
+      );
+
+      if (response.ok) {
+        setStatus("success");
+        // Form clear kar do submit ke baad
+        setForm({ name: "", email: "", subject: "", message: "" });
+      } else {
+        setStatus("error");
+      }
+    } catch (err) {
+      setStatus("error");
+    }
+  }
+
   return (
-    <div className="w-full md:w-1/2 h-157 bg-white p-0.5 ">
-      <form onSubmit={(e)=> handleForm(e)} className=" w-full h-full flex flex-col gap-5 text-white p-5 md:p-7.5 xl:p-12.5 text-lg font-clashRegular tracking-wider font-meduim rounded-2xl bg-[#111111]">
+    <div className="w-full md:w-1/2 h-157 bg-white p-0.5">
+      <form
+        onSubmit={handleForm}
+        className="w-full h-full flex flex-col gap-5 text-white p-5 md:p-7.5 xl:p-12.5 text-lg font-clashRegular tracking-wider font-meduim rounded-2xl bg-[#111111]"
+      >
         <div className="flex flex-col gap-2">
-          <label for="name">Name*</label>
-          <input className="placeholder:text-sm py-2 font-clashMeduim   px-4 rounded-sm bg-[#202020]" placeholder="Riley Brooks" type="text" id="name" />
+          {/* htmlFor — React mein for ki jagah htmlFor likhte hain */}
+          <label htmlFor="name">Name*</label>
+          <input
+            className="placeholder:text-sm py-2 font-clashMeduim px-4 rounded-sm bg-[#202020]"
+            placeholder="Riley Brooks"
+            type="text"
+            id="name"
+            name="name"           // 5. name attribute zaroori hai handleChange ke liye
+            value={form.name}     // 6. controlled input — state se value aati hai
+            onChange={handleChange}
+            required
+          />
         </div>
+
         <div className="flex flex-col gap-2">
-          <label for="email">Email address*</label>
-          <input className=" placeholder:text-sm py-2 font-clashMeduim   px-4 rounded-sm bg-[#202020]" placeholder="example@example.com" type="email" id="email" />
+          <label htmlFor="email">Email address*</label>
+          <input
+            className="placeholder:text-sm py-2 font-clashMeduim px-4 rounded-sm bg-[#202020]"
+            placeholder="example@example.com"
+            type="email"
+            id="email"
+            name="email"
+            value={form.email}
+            onChange={handleChange}
+            required
+          />
         </div>
+
         <div className="flex flex-col gap-2">
-          <label for="subject">Subject*</label>
-          <input className=" placeholder:text-sm py-2 font-clashMeduim   px-4 rounded-sm bg-[#202020]" placeholder="Whats' the subject" type="text" id="subject" />
+          <label htmlFor="subject">Subject*</label>
+          <input
+            className="placeholder:text-sm py-2 font-clashMeduim px-4 rounded-sm bg-[#202020]"
+            placeholder="What's the subject"
+            type="text"
+            id="subject"
+            name="subject"
+            value={form.subject}
+            onChange={handleChange}
+            required
+          />
         </div>
+
         <div className="flex flex-col gap-2">
-          <label for="message">Message</label>
-          <textarea className=" placeholder:text-sm py-2 font-clashMeduim   px-4 h-25 rounded-sm bg-[#202020]" placeholder="Tell us the purpose" type="" id="message" />
+          <label htmlFor="message">Message</label>
+          <textarea
+            className="placeholder:text-sm py-2 font-clashMeduim px-4 h-25 rounded-sm bg-[#202020]"
+            placeholder="Tell us the purpose"
+            id="message"
+            name="message"
+            value={form.message}
+            onChange={handleChange}
+          />
         </div>
-        <FormBtn text="Submit"/>
+
+        {/* 7. Status messages */}
+        {status === "success" && (
+          <p className="text-green-400 text-sm">
+            Message submitted succesfully! will contact you soon.
+          </p>
+        )}
+        {status === "error" && (
+          <p className="text-red-400 text-sm">
+            Something went wrong! Try again.
+          </p>
+        )}
+
+        {/* 8. Button disable hoga jab loading ho */}
+        <FormBtn
+          text={status === "loading" ? "Submitting..." : "Submit"}
+          disabled={status === "loading"}
+        />
       </form>
     </div>
   );

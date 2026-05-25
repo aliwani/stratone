@@ -2,7 +2,6 @@ import React, { useRef } from 'react'
 import Hero from '../components/Hero'
 import AboutSection from '../components/AboutSection'
 import WhatWeDo from '../components/WhatWeDo'
-import Ourwork from '../components/Ourwork'
 import ChooseUS from '../components/chooseUs/ChooseUS'
 import Testimonial from '../components/Testimonial'
 import Pricing from '../components/Pricing'
@@ -20,7 +19,6 @@ function Home() {
       <Hero/>
       <AboutSection/>
       <WhatWeDo handleScroll={handleScroll}/>
-      <Ourwork/>
       <ChooseUS/>
       <Testimonial/>
       <Pricing sectionRef={sectionRef}/>

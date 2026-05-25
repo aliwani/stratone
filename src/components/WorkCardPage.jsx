@@ -10,7 +10,7 @@ function WorkCardPage() {
     <div className="px-0.5 ">
       <div className="flex flex-col justify-center items-center  *: bg-[#111111] rounded-t-2xl">
         <WorkCardHero project={project} />
-        <WorkCardInfo />
+        <WorkCardInfo project={project} />
       </div>
     </div>
   );

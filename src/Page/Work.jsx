@@ -30,7 +30,7 @@ function Work() {
                   key={idx}
                   slug={project.slug}
                   title={project.title}
-                  src={project.src}
+                  src={project.HeroSrc}
                   year={project.year}
                   category={project.category}
                 />

@@ -13,7 +13,7 @@ function OurWorkCard({slug,year, category,title,src}) {
         />
       </div>
       <div className="w-full p-5 h-full gap-8 flex flex-col justify-start items-start bg-[#111111]   rounded-md ">
-        <h2 className="font-antonSC text-[20px]  text-white">
+        <h2 className="font-antonSC text-[20px] text-wrap text-white">
           {title}
         </h2>
         <div className="flex flex-col gap-5">

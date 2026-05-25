@@ -1,7 +1,7 @@
 import React from "react";
 import { ROUTES } from "@/configs/route.js";
 import FooterLinks from "./FooterLinks";
-function FooterLeftA() {
+function  FooterLeftA() {
   const firstCol = ROUTES.slice(0, 5);
   const secondCol = ROUTES.slice(5,7);
   return (

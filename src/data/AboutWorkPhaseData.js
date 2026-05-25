@@ -1,4 +1,4 @@
-import phaseImg1 from "@/assets/phase1.png"
+import phaseImg1 from "@/assets/phase22312312.png"
 import phaseImg2 from "@/assets/phase2.png"
 import phaseImg3 from "@/assets/phase3.png"
 import phaseImg4 from "@/assets/phase4.png"

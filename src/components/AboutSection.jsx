@@ -2,7 +2,8 @@ import aboutImg from "@/assets/test/aboutimg.png";
 import teamMembers from "../data/Team";
 import SectionHeader from "./resuables/SectionHeader";
 import Header from "./resuables/Header";
-import { Link    } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 function AboutSection() {
   return (
     <section className="bg-[#111111]  flex flex-col gap-10 md:gap-18 xl:gap-20   w-full py-30 md:py-38 xl:py-50 px-5 md:px-7.5 xl:px-10 border-box overflow-hidden">
@@ -11,8 +12,16 @@ function AboutSection() {
         <Header heading="about stratone" />
         <div className="md:w-95 xl:w-125  flex flex-col items-center justify-center gap-5">
           <div className="hidden md:block h-10 w-full"></div>
-          <div className="pt-5 md:pt-0 h-full  w-full">
-            <img src={aboutImg} alt="" className="h-full w-full" />
+          <div className="pt-5 overflow-hidden md:pt-0 h-full  w-full">
+            <motion.img
+              initial={{ scale: 1.2 }}
+              whileInView={{ scale: 1 }}
+              transition={{ duration: 0.2 }}
+              viewport={{ once: true }}
+              src={aboutImg}
+              alt=""
+              className="h-full object-cover w-full"
+            />
           </div>
           <p className="font-clashRegular antialiased mb-3 tracking-wider text-white/90 leading-none px-7 md:px-0 text-[20px] text-wrap  text-center">
             Stratone is a full-service creative agency built for brands that
@@ -42,16 +51,24 @@ function AboutSection() {
                     key={idx}
                     className="h-[clamp(10rem,68vw,390px)] overflow-x-hidden w-full md:w-19 md:h-20 xl:w-25 xl:h-26 bg-black"
                   >
-                    <img
-                      className="h-full md:h-35  w-full object-cover "
+                    <motion.img
+                      initial={{ scale: 1.2 }}
+                      whileInView={{ scale: 1 }}
+                      transition={{ ease: "easeOut", duration: 0.8 }}
+                      viewport={{ once: true }}
+                      className="h-5/6  md:h-35  w-full object-cover "
                       src={team.image}
                       alt=""
                     />
+                    <span className="text-white text-3xl">ali</span>
                   </div>
                 );
               })}
 
-              <Link to="/about#team" className="cursor-pointer hidden md:flex px-2 h-6  md:w-19 md:h-20 text-xl flex-col  xl:w-24 xl:h-26 rounded-lg leading-none text-white uppercase font-Meduim w-full items-center justify-center bg-black">
+              <Link
+                to="/about#team"
+                className="cursor-pointer hidden md:flex px-2 h-6  md:w-19 md:h-20 text-xl flex-col  xl:w-24 xl:h-26 rounded-lg leading-none text-white uppercase font-Meduim w-full items-center justify-center bg-black"
+              >
                 <span>View </span>
                 <span>team</span>
               </Link>

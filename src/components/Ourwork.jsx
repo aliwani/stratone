@@ -5,6 +5,7 @@ import Header from "./resuables/Header";
 import ProjectBtn from "./resuables/ProjectBtn";
 import InfiniteScroll from "./InfiniteScroll";
 import Contactbtn from "./resuables/ContactBtn";
+import OurWorkOnHome from "./OurWorkOnHome";
 
 function Ourwork() {
   return (
@@ -12,7 +13,8 @@ function Ourwork() {
       <SectionHeader Num="[03]" Text="Stories We’ve Told" />
       <div className="flex items-center flex-col h-full w-full">
         <Header heading="our work" />
-        <Skiper16 />
+        {/* <Skiper16 /> */}
+        <OurWorkOnHome/>
         <InfiniteScroll/>
         <div className="flex md:flex-row flex-col justify-center items-center gap-5 mt-5">
           <ProjectBtn text="view all projects" />

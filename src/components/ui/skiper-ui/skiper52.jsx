@@ -18,7 +18,6 @@ const HoverExpand_001 = ({ imageData, className }) => {
   const [activeImage, setActiveImage] = useState(0);
   const [windowWidth, setWindowWidth] = useState(1200);
   const [currentWidth, setcurrentWidth] = useState(1200);
-  const isPc = currentWidth >= 1200 ? true : false;
   // Window width track karna
   useEffect(() => {
     const handleResize = () => {
@@ -70,7 +69,7 @@ const HoverExpand_001 = ({ imageData, className }) => {
 
   return (
     <div className="w-full h-full">
-      {isPc ? (
+      {/* {isPc ? ( */}
         <motion.div
           initial={{ opacity: 0, translateY: 20 }}
           animate={{ opacity: 1, translateY: 0 }}
@@ -110,7 +109,7 @@ const HoverExpand_001 = ({ imageData, className }) => {
                         transition={{ duration: 0.3, delay: 0.1 }}
                         className="absolute inset-0 flex flex-col items-start justify-end gap-8 px-10 py-6 z-20"
                       >
-                        <div className="h-3/7 w-full rounded-2xl">
+                        <div className="h-full w-full rounded-2xl">
                           <img
                             className="w-full h-full object-cover rounded-2xl"
                             src={image.src}
@@ -167,7 +166,7 @@ const HoverExpand_001 = ({ imageData, className }) => {
             </div>
           </motion.div>
         </motion.div>
-      ) : (
+      {/* ) : (
         <div className="grid grid-cols-1 md:grid-cols-2  w-full px-0.5 gap-0.5 bg-white">
           {imageData.map((image, index) => (
             <div className="h-full w-full flex flex-col gap-8 bg-black rounded-2xl px-5 py-6" key={index}>
@@ -223,7 +222,7 @@ const HoverExpand_001 = ({ imageData, className }) => {
             </div>
           ))}
         </div>
-      )}
+      )} */}
     </div>
   );
 };

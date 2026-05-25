@@ -4,7 +4,9 @@ import servicesData from "../Features/services/data";
 import WorkSectionCard from "./WorkSectionCard";
 import PricingButton from "./pricing/PricingButton";
 import ServiceSelect from "./ServiceSelect";
-function WhatWeDo({handleScroll}) {
+import { motion } from "framer-motion";
+import ProjectBtn from "./resuables/ProjectBtn";
+function WhatWeDo({ handleScroll }) {
   const [activeindx, setactiveindx] = useState(1);
   const [activeText, setactiveText] = useState(1);
   const isDesktop = window.innerWidth > 809;
@@ -12,7 +14,7 @@ function WhatWeDo({handleScroll}) {
   const activeService = isDesktop
     ? servicesData[activeindx - 1] || servicesData[0]
     : servicesData[activeText - 1] || servicesData[0];
-    
+
   return (
     <div className="relative z-0 w-full h-full  bg-[#111111]  px-5 md:px-7.5 xl:px-10">
       <video
@@ -22,19 +24,26 @@ function WhatWeDo({handleScroll}) {
         autoPlay
         loop
         muted
-        playsInline 
+        playsInline
         webkit-playsinline="true"
-        disablePictureInPicture 
-        controls={false} 
+        disablePictureInPicture
+        controls={false}
         style={{
-          pointerEvents: "none", 
+          pointerEvents: "none",
           userSelect: "none",
           WebkitUserSelect: "none",
         }}
       />
+
       <section className="z-10 flex flex-col py-20 md:py-40 gap-8 h-full">
         <SectionHeader Num="[02]" Text="What we do" />
-        <div className="flex flex-col md:flex-row justify-between gap-8  md:gap-5 ">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          className="flex flex-col md:flex-row justify-between gap-8  md:gap-5 "
+        >
           <div className="w-auto h-full flex flex-col gap-7 md:gap-12">
             <div className="py-1.5 ">
               {servicesData.map((services, idx) => (
@@ -49,10 +58,17 @@ function WhatWeDo({handleScroll}) {
                 />
               ))}
             </div>
-            <PricingButton   handleScroll={handleScroll} width="37.5" text="see pricing" />
+            <div className="flex gap-4">
+              <PricingButton
+                handleScroll={handleScroll}
+                width="37.5"
+                text="see pricing"
+              />
+              <ProjectBtn text="view work" />
+            </div>
           </div>
           <WorkSectionCard img={activeService.img} list={activeService.list} />
-        </div>
+        </motion.div>
       </section>
     </div>
   );

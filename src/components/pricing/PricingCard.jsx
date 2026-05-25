@@ -1,28 +1,45 @@
-
+import { motion } from "framer-motion";
 import PriceSectionBtn from "./PriceSectionBtn";
 import priceData from "@/data/Pricingdata.js";
 
 function PricingCard() {
-  
   return (
-    <div className="grid grid-col-1 min-w-15 w-full md:grid-cols-2 p-0.5 gap-0.5  md:max-w-240 xl:w-270 h-full min:h-210 md:h-143 xl:h-155 bg-white">
+    <motion.div
+      initial={{ opacity: 0, y: 80 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ ease: "easeOut", duration: 0.5 }}
+      viewport={{ once: true }}
+      className="grid grid-col-1 min-w-15 w-full md:grid-cols-2 p-0.5 gap-0.5  md:max-w-240 xl:w-270 h-full min:h-210 md:h-143 xl:h-155 bg-white"
+    >
       {priceData.map((dets, idx) => {
         return (
           <div
             key={dets.id}
-            className="flex flex-col justify-between md:gap-8 xl:gap-10 w-full h-full p-5 bg-[#111111]  rounded-2xl"
+            className="flex flex-col  overflow-hidden justify-between md:gap-8 xl:gap-10 w-full h-full p-5 bg-[#111111]  rounded-2xl"
           >
             <div className="flex flex-col gap-4 xl:gap-7">
-              <div className="flex flex-col gap-1">
+              <motion.div
+                initial={{ opacity: 0, y: 60 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ ease: "easeOut", duration: 0.5 }}
+                viewport={{ once: true }}
+                className="flex flex-col gap-1"
+              >
                 <h3 className="font-clashMeduim font-semibold uppercase tracking-wide text-[#EDEDED] text-[16px] md:text-lg">
                   {dets.tagline}
                 </h3>
                 <h1 className="font-antonSC text-white text-lg md:text-3xl  tracking-wider">
                   {dets.service}
                 </h1>
-              </div>
+              </motion.div>
 
-              <div className="flex flex-col gap-2 md:gap-3 xl:gap-5 font-clashMeduim tracking-wider text-[16px] md:text-lg">
+              <motion.div
+                initial={{ opacity: 0, y: 60 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ ease: "easeOut", duration: 0.5 }}
+                viewport={{ once: true }}
+                className="flex flex-col gap-2 md:gap-3 xl:gap-5 font-clashMeduim tracking-wider text-[16px] md:text-lg"
+              >
                 <span className=" text-[#EDEDED]  font-semibold  uppercase">
                   includes
                 </span>
@@ -42,13 +59,13 @@ function PricingCard() {
                   })}
                 </ul>
                 <div></div>
-              </div>
+              </motion.div>
             </div>
-            <PriceSectionBtn  text={dets.price} />
+            <PriceSectionBtn text={dets.price} />
           </div>
         );
       })}
-    </div>
+    </motion.div>
   );
 }
 
