@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import Img from "@/assets/footerImg.jpg";
 import { ArrowRight } from "lucide-react";
-
+import fbImg from "@/assets/facebook.png"
+import instaImg from "@/assets/social.png"
+import linkedinImg from "@/assets/linkedin.png"
 function FooterLeftB() {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState("idle"); // idle | loading | success | error
@@ -95,10 +97,10 @@ function FooterLeftB() {
           join our community
         </span>
         <ul className="flex gap-2">
-          <a href="">sad</a>
-          <a href="">sad</a>
-          <a href="">sad</a>
-          <a href="">sad</a>
+          <a className="h-5 w-5 bg-white" href=""><img src={fbImg} alt="" /></a>
+          <a className="h-5 w-5 bg-white" href=""><img src={instaImg} alt="" /></a>
+          <a className="h-5 w-5 bg-white" href=""><img src={linkedinImg} alt="" /></a>
+          <a href=""></a>
         </ul>
       </div>
     </div>
