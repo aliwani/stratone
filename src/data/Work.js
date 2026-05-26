@@ -7,14 +7,14 @@ import RightSrc from "@/assets/portfolioImg/Sanaani-Branding-Right.jpeg";
 import Hero2 from "@/assets/portfolioImg/shopify-Hero.jpeg";
 import Top2 from "@/assets/portfolioImg/Shopify-Down.png";
 import Bottom2 from "@/assets/portfolioImg/Shopify-Bottom.png";
-import Left2 from "@/assets/portfolioImg/Shopify-Left.png";
+import Left2 from "@/assets/portfolioImg/Shopify-left.png";
 import Right2 from "@/assets/portfolioImg/Shopify-Right.png";
 
-import Hero3 from "@/assets/portfolioImg/Top.mp4";
-import Top3 from "@/assets/portfolioImg/down.mp4";
-import Bottom3 from "@/assets/portfolioImg/Bottom.mp4";
-import Left3 from "@/assets/portfolioImg/Left.mp4";
-import Right3 from "@/assets/portfolioImg/Right.mp4";
+import Hero3 from "/video/Top.mp4";
+import Top3 from "/video/down.mp4";
+import Bottom3 from "/video/Bottom.mp4";
+import Left3 from "/video/Left.mp4";
+import Right3 from "/video/Right.mp4";
 
 import Hero4 from "@/assets/portfolioImg/SMM-Hero.png";
 import Top4 from "@/assets/portfolioImg/SMM-Top.png";
@@ -102,11 +102,11 @@ const projects = [
     category: "Video Editing",
     client: "OverAll Work",
     location: "International",
-    HeroSrc: Hero3,
-    TopSrc: "@/assets/portfolioImg/down.mp4",
-    BottomSrc: Bottom3,
-    LeftSrc: Left3,
-    RightSrc: Right3,
+    HeroSrc:"/video/Top.mp4",
+    TopSrc: "/video/down.mp4",
+    BottomSrc: "/video/Bottom.mp4",
+    LeftSrc: "/video/Left.mp4",
+    RightSrc: "/video/Right.mp4",
   },
   {
     id: 3,

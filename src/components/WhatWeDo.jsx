@@ -58,7 +58,7 @@ function WhatWeDo({ handleScroll }) {
                 />
               ))}
             </div>
-            <div className="flex gap-4">
+            <div className="flex justify-center items-center md:justify-start md:items-start flex-col md:flex-row gap-4">
               <PricingButton
                 handleScroll={handleScroll}
                 width="37.5"

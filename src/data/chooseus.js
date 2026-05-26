@@ -2,12 +2,12 @@ const featuresData = [
   {
     id: 0,
     title: "Deep Project Involvement",
-    desc: "We don't skim the surface. Every project receives our full attention, thorough research, and deliberate execution from start to finish.",
+    desc: "Every project receives our full attention, thorough research, and deliberate execution from start to finish.",
   },
   {
     id: 1,
     title: "Diverse Team, Unified Vision",
-    desc: "Our team brings together professionals from different creative and technical backgrounds — giving your brand the advantage of multiple expert perspectives working as one.",
+    desc: "Our team brings together professionals giving your brand the advantage of multiple expert perspectives working as one.",
   },
   {
     id: 2,

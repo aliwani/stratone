@@ -6,7 +6,7 @@ function WorkCardInfoSectionRight({project}) {
   return (
     <div className=" md:sticky flex order-1 md:order-2 top-25 right-0 flex-col gap-12 md:w-1/4 w-full  h-fit ">
       <div className="grid grid-cols-2 md:grid-cols-1  w-full bg-white h-fit p-0.5 gap-px">
-        <div className="flex flex-col  items-start  p-7 h-full  w-full bg-[#111111] rounded-2xl">
+        <div className="flex flex-col  items-start  p-7 h-full  w-full bg-[#111111] rounded-lg md:rounded-2xl">
           <span className="font-clashRegular font-medium tracking-wider text-white text-lg">
             Category:
           </span>
@@ -14,7 +14,7 @@ function WorkCardInfoSectionRight({project}) {
            {project.category}
           </span>
         </div>
-        <div className="flex flex-col items-start  p-7 h-full  w-full bg-[#111111] rounded-2xl">
+        <div className="flex flex-col items-start  p-7 h-full  w-full bg-[#111111] rounded-lg md:rounded-2xl">
           <span className="font-clashRegular font-medium tracking-wider text-white text-lg">
             Year:
           </span>
@@ -22,7 +22,7 @@ function WorkCardInfoSectionRight({project}) {
             {project.year}
           </span>
         </div>
-        <div className="flex flex-col items-start  p-7 h-full  w-full bg-[#111111] rounded-2xl">
+        <div className="flex flex-col items-start  p-7 h-full  w-full bg-[#111111] rounded-lg md:rounded-2xl">
           <span className="font-clashRegular font-medium tracking-wider text-white text-lg">
             Client:
           </span>
@@ -30,7 +30,7 @@ function WorkCardInfoSectionRight({project}) {
             {project.client}
           </span>
         </div>
-        <div className="flex flex-col items-start  p-7 h-full  w-full bg-[#111111] rounded-2xl">
+        <div className="flex flex-col items-start  p-7 h-full  w-full bg-[#111111] rounded-lg md:rounded-2xl">
           <span className="font-clashRegular font-medium tracking-wider text-white text-lg">
             Location:
           </span>

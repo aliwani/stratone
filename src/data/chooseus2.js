@@ -2,7 +2,7 @@ import bgImg from "@/assets/SeasonedProfessionals.png";
 const highlightsData = [
   {
     id: 0,
-    title: "Seasoned Professionals",
+    title: "Seasoned Pro",
     desc: "Every project is handled by experts who have been in the field and know what actually works.",
     img: bgImg,
   },
@@ -10,6 +10,7 @@ const highlightsData = [
     id: 1,
     title: "Full-Service Capability",
     desc: "One agency. Websites, videos, marketing, design, and Shopify — all under one roof.",
+    img: "/video/nav-bg-and-choose-bg.mp4",
   },
 ];
 
