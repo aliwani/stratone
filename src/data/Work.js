@@ -1,6 +1,6 @@
 import HeroSrc from "@/assets/Sanaani-Branding-Hero.jpeg";
 import TopSrc from "@/assets/Sanaani-Branding-Top.jpeg";
-import BottomSrc from "@/assets/Sanaani-Branding-Bottom.jpeg";
+import BottomSrc from "@/assets/Sanaani-Branding-bottom.jpeg";
 import LeftSrc from "@/assets/Sanaani-Branding-Left.jpeg";
 import RightSrc from "@/assets/Sanaani-Branding-Right.jpeg";
 
