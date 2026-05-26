@@ -1,6 +1,5 @@
 import React from "react";
 import SectionHeader from "../resuables/SectionHeader";
-import Img from "@/assets/test1.jpeg";
 import teamMembers from "../../data/Team";
 function About3() {
   return (

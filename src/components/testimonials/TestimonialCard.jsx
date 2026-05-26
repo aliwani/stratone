@@ -1,5 +1,4 @@
 import React from "react";
-import img from "@/assets/hero1.jpg";
 import { motion } from "framer-motion";
 
 function TestimonialCard({ person }) {

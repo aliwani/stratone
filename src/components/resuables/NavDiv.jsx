@@ -2,9 +2,10 @@ import React from "react";
 import { ROUTES } from "@/configs/route";
 import Navlinks from "./Navlinks";
 import NavlinksBottom from "./NavlinksBottom";
+import navLogo from "@/assets/test/2.png"
 function NavDiv({ setIsOpen, isOpen }) {
   const firstCol = ROUTES.slice(0, 5);
-  const secondCol = ROUTES.slice(5,7);
+  const secondCol = ROUTES.slice(5, 7);
 
   return (
     <div
@@ -44,10 +45,34 @@ function NavDiv({ setIsOpen, isOpen }) {
             })}
           </div>
         </div>
-        <div className="flex flex-col justify-between  h-30 md:h-full w-full rounded-lg md:w-2/5 p-5 bg-black">
-          <img className="h-8 md:h-10 w-full" src="" alt="" />
-          <div className="flex flex-col gap-1">
-            <h4 className="text-[16px] md:text-lg leading-none text-white font-clashRegular tracking-wider">
+        <div className="relative flex flex-col justify-between  h-30 md:h-full w-full rounded-lg md:w-2/5 p-5 bg-black">
+          <video
+            // initial={{ scale: 1.3 }}
+            // whileInView={{ scale: 1 }}
+            // transition={{ duration: 0.4 }}
+            // viewport={{ once: true }}
+            type="video/mp4"
+            src="/video/nav-bg-and-choose-bg.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            webkit-playsinline="true"
+            disablePictureInPicture
+            controls={false}
+            style={{
+              pointerEvents: "none",
+              userSelect: "none",
+              WebkitUserSelect: "none",
+            }}
+            className="absolute inset-0 left-0 h-full object-cover w-full"
+            alt=""
+          />
+          <div className="z-10 h-5 w-15 md:h-8 md:w-30">
+            <img className="h-full w-full cover" src={navLogo} alt="" />
+          </div>
+          <div className=" z-10 flex flex-col gap-1">
+            <h4 className="text-[14px] md:text-[16px]  leading-none text-white font-clashRegular tracking-wider">
               Email on
             </h4>
             <h5 className="text-white text-sm md:text-md leading-none font-clashSemi text-wrap">

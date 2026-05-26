@@ -17,7 +17,7 @@ function Work() {
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-  
+
   return (
     <div className="bg-white h-full w-screen p-0.5 pb-0">
       <section className="bg-[#111111] rounded-2xl flex flex-col items-center py-35 md:py-50">
@@ -30,7 +30,7 @@ function Work() {
                   key={idx}
                   slug={project.slug}
                   title={project.title}
-                  src={project.HeroSrc}
+                  src={project.PreviewSrc}
                   year={project.year}
                   category={project.category}
                 />
@@ -40,10 +40,10 @@ function Work() {
             <div className="flex flex-col gap-5  ">
               {projects.map((project, idx) => (
                 <OurWorkCard
-                slug={project.slug}
+                  slug={project.slug}
                   key={idx}
                   title={project.title}
-                  src={project.src}
+                  src={project.PreviewSrc}
                   year={project.year}
                   category={project.category}
                 />
@@ -52,7 +52,7 @@ function Work() {
           )}
         </div>
       </section>
-      <Outlet/>
+      <Outlet />
     </div>
   );
 }

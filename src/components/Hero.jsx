@@ -1,9 +1,7 @@
-import Heroimg from "@/assets/test1.jpeg";
 import eye from "@/assets/eye.png";
 import test3 from "@/assets/heroImg.png";
 import { Crosshair, Star } from "lucide-react";
-import {  motion, useInView } from "framer-motion";
-import { div } from "framer-motion/client";
+import {  motion } from "framer-motion";
 
 function Hero() {
   const isPc = window.innerWidth;

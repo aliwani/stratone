@@ -16,7 +16,7 @@ export const MediaItem = ({ src, className }) =>
       playsInline
       webkit-playsinline="true"
       disablePictureInPicture
-      controls={true}
+      controls={false}
       style={{
         pointerEvents: "none",
         userSelect: "none",

@@ -4,7 +4,23 @@ import SectionHeader from "./resuables/SectionHeader";
 import Header from "./resuables/Header";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import { TbBrandFacebookFilled } from "react-icons/tb";
+import { LuLinkedin } from "react-icons/lu";
+import { FaXTwitter } from "react-icons/fa6";
+import { RiInstagramFill } from "react-icons/ri";
+
 function AboutSection() {
+  const [currentWidth, setcurrentWidth] = useState(1200);
+  const isPc = currentWidth >= 809 ? true : false;
+  useEffect(() => {
+    const handleResize = () => {
+      setcurrentWidth(window.innerWidth);
+    };
+    handleResize(); // Initial call
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <section className="bg-[#111111]  flex flex-col gap-10 md:gap-18 xl:gap-20   w-full py-30 md:py-38 xl:py-50 px-5 md:px-7.5 xl:px-10 border-box overflow-hidden">
       <SectionHeader Num="[01]" Text="Built on vision" />
@@ -46,21 +62,64 @@ function AboutSection() {
             </span>
             <div className="bg-white grid grid-cols-2 md:flex py-0.5 px-0.5 gap-0.5 w-full h-full ">
               {teamMembers.slice(2, 6).map((team, idx) => {
+                console.log(team.socials.linkedin);
+
                 return (
                   <div
                     key={idx}
-                    className="h-[clamp(10rem,68vw,390px)] overflow-x-hidden w-full md:w-19 md:h-20 xl:w-25 xl:h-26 bg-black"
+                    className="h-full overflow-x-hidden w-full md:w-19 md:h-20 xl:w-25 xl:h-26 bg-[#111111]"
                   >
                     <motion.img
                       initial={{ scale: 1.2 }}
                       whileInView={{ scale: 1 }}
                       transition={{ ease: "easeOut", duration: 0.8 }}
                       viewport={{ once: true }}
-                      className="h-5/6  md:h-35  w-full object-cover "
+                      className="h-fit  md:h-full  w-full object-cover  "
                       src={team.image}
                       alt=""
                     />
-                    <span className="text-white text-3xl">ali</span>
+                    {!isPc && (
+                      <div className="w-full h-fit bg- flex gap-3 items-center  justify-between py-4 flex-col ">
+                        <div className="h-fit flex gap-2">
+                          {team.socials?.linkedin && (
+                            <a
+                              href={team.socials.linkedin}
+                              className=" h-full w-full flex items-center justify-center"
+                            >
+                              <LuLinkedin color="white" size={17} />
+                            </a>
+                          )}
+                          {team.socials?.instagram && (
+                            <a
+                              href={team.socials.instagram}
+                              className=" h-full w-full flex items-center justify-center"
+                            >
+                              <RiInstagramFill  color="white" size={17} />
+                            </a>
+                          )}
+
+                          {team.socials?.facebook && (
+                            <a
+                              href={team.socials.facebook}
+                              className=" h-full w-full rounded-full flex items-center justify-center"
+                            >
+                              <TbBrandFacebookFilled color="white" size={17} />
+                            </a>
+                          )}
+                          {team.socials?.x && (
+                            <a
+                              href={team.socials.x}
+                              className=" h-full w-full rounded-full flex items-center justify-center"
+                            >
+                              <FaXTwitter  color="white" size={17} />
+                            </a>
+                          )}
+                        </div>
+                        <div>
+                          <h3 className="text-wrap leading-tight flex items-center justify-center text-center px-5 text-white text-sm tracking-widest font-clashRegular font-semibold uppercase">{team.name}, {team.designation}</h3>
+                        </div>
+                      </div>
+                    )}
                   </div>
                 );
               })}

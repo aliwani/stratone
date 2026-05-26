@@ -12,12 +12,12 @@ const teamMembers = [
     dateOfBirth: "May 20, 2003 /",
     city: "Azad Kashmir",
     image: danyalImg,
-    socials: [
-      { linkedin: "https://linkedin.com/in/fatimakhan" },
-      { twitter: "https://twitter.com/fatimakhan" },
-      { dribbble: "https://dribbble.com/fatimakhan" },
-      { email: "fatima@company.com" },
-    ],
+     socials: {
+      linkedin: "https://linkedin.com/in/fatimakhan",
+      x: "https://twitter.com/fatimakhan",
+      instagram: "https://twitter.com/fatimakhan",
+      email: "fatima@company.com",
+    },
   },
   {
     id: 2,
@@ -26,12 +26,11 @@ const teamMembers = [
     dateOfBirth: "July 27, 2001 /",
     city: "Azad Kashmir",
     image: saffiImg,
-    socials: [
-      { linkedin: "https://linkedin.com/in/fatimakhan" },
-      { twitter: "https://twitter.com/fatimakhan" },
-      { dribbble: "https://dribbble.com/fatimakhan" },
-      { email: "fatima@company.com" },
-    ],
+    socials: {
+      linkedin: "https://linkedin.com/in/fatimakhan",
+      x: "https://twitter.com/fatimakhan",
+      email: "fatima@company.com",
+    },
   },
   {
     id: 3,
@@ -40,12 +39,12 @@ const teamMembers = [
     dateOfBirth: "Dec 25, 1990 /",
     city: "Muzaffarabad",
     image: aliImg,
-    socials: [
-      { linkedin: "https://linkedin.com/in/fatimakhan" },
-      { twitter: "https://twitter.com/fatimakhan" },
-      { dribbble: "https://dribbble.com/fatimakhan" },
-      { email: "fatima@company.com" },
-    ],
+    socials: {
+      linkedin: "https://linkedin.com/in/fatimakhan",
+      x: "https://twitter.com/fatimakhan",
+      instagram: "https://twitter.com/fatimakhan",
+      email: "fatima@company.com",
+    },
   },
   {
     id: 4,
@@ -54,12 +53,11 @@ const teamMembers = [
     dateOfBirth: "Nov 5, 1980 /",
     city: "Muzaffarabad",
     image: usamaImg,
-    socials: [
-      { linkedin: "https://linkedin.com/in/fatimakhan" },
-      { twitter: "https://twitter.com/fatimakhan" },
-      { dribbble: "https://dribbble.com/fatimakhan" },
-      { email: "fatima@company.com" },
-    ],
+    socials: {
+      linkedin: "https://linkedin.com/in/fatimakhan",
+      x: "https://twitter.com/fatimakhan",
+      email: "fatima@company.com",
+    },
   },
   {
     id: 6,
@@ -68,12 +66,11 @@ const teamMembers = [
     dateOfBirth: "Nov 5, 1980 /",
     city: "Muzaffarabad",
     image: essarImg,
-    socials: [
-      { linkedin: "https://linkedin.com/in/fatimakhan" },
-      { twitter: "https://twitter.com/fatimakhan" },
-      { dribbble: "https://dribbble.com/fatimakhan" },
-      { email: "fatima@company.com" },
-    ],
+     socials: {
+      linkedin: "https://linkedin.com/in/fatimakhan",
+      x: "https://twitter.com/fatimakhan",
+      email: "fatima@company.com",
+    },
   },
   {
     id: 5,
@@ -82,12 +79,11 @@ const teamMembers = [
     dateOfBirth: "Nov 5, 1980 /",
     city: "Muzaffarabad",
     image: taimoorImg,
-    socials: [
-      { linkedin: "https://linkedin.com/in/fatimakhan" },
-      { twitter: "https://twitter.com/fatimakhan" },
-      { dribbble: "https://dribbble.com/fatimakhan" },
-      { email: "fatima@company.com" },
-    ],
+   socials: {
+      linkedin: "https://linkedin.com/in/fatimakhan",
+      x: "https://twitter.com/fatimakhan",
+      email: "fatima@company.com",
+    },
   },
 ];
 export default teamMembers;
