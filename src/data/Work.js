@@ -1,14 +1,14 @@
-import HeroSrc from "@/assets/portfolioImg/Sanaani-Branding-Hero.jpeg";
-import TopSrc from "@/assets/portfolioImg/Sanaani-Branding-Top.jpeg";
-import BottomSrc from "@/assets/portfolioImg/Sanaani-Branding-Bottom.jpeg";
-import LeftSrc from "@/assets/portfolioImg/Sanaani-Branding-Left.jpeg";
-import RightSrc from "@/assets/portfolioImg/Sanaani-Branding-Right.jpeg";
+import HeroSrc from "@/assets/Sanaani-Branding-Hero.jpeg";
+import TopSrc from "@/assets/Sanaani-Branding-Top.jpeg";
+import BottomSrc from "@/assets/Sanaani-Branding-Bottom.jpeg";
+import LeftSrc from "@/assets/Sanaani-Branding-Left.jpeg";
+import RightSrc from "@/assets/Sanaani-Branding-Right.jpeg";
 
-import Hero2 from "@/assets/portfolioImg/shopify-Hero.jpeg";
-import Top2 from "@/assets/portfolioImg/Shopify-Down.png";
-import Bottom2 from "@/assets/portfolioImg/Shopify-Bottom.png";
-import Left2 from "@/assets/portfolioImg/Shopify-left.png";
-import Right2 from "@/assets/portfolioImg/Shopify-Right.png";
+import Hero2 from "@/assets/shopify-Hero.jpeg";
+import Top2 from "@/assets/Shopify-Down.png";
+import Bottom2 from "@/assets/Shopify-Bottom.png";
+import Left2 from "@/assets/Shopify-left.png";
+import Right2 from "@/assets/Shopify-Right.png";
 
 import Hero3 from "/video/Top.mp4";
 import Top3 from "/video/down.mp4";
@@ -16,17 +16,17 @@ import Bottom3 from "/video/Bottom.mp4";
 import Left3 from "/video/Left.mp4";
 import Right3 from "/video/Right.mp4";
 
-import Hero4 from "@/assets/portfolioImg/SMM-Hero.png";
-import Top4 from "@/assets/portfolioImg/SMM-Top.png";
-import Bottom4 from "@/assets/portfolioImg/SMM-Bottom.png";
-import Left4 from "@/assets/portfolioImg/SMM-Left.png";
-import Right4 from "@/assets/portfolioImg/SMM-Right.png";
+import Hero4 from "@/assets/SMM-Hero.png";
+import Top4 from "@/assets/SMM-Top.png";
+import Bottom4 from "@/assets/SMM-Bottom.png";
+import Left4 from "@/assets/SMM-Left.png";
+import Right4 from "@/assets/SMM-Right.png";
 
-import Hero5 from "@/assets/portfolioImg/Web-Hero.jpeg";
-import Top5 from "@/assets/portfolioImg/Web-Down.png";
-import Bottom5 from "@/assets/portfolioImg/Web-Bottom.png";
-import Left5 from "@/assets/portfolioImg/Web-left.png";
-import Right5 from "@/assets/portfolioImg/Web-Right.png";
+import Hero5 from "@/assets/Web-Hero.jpeg";
+import Top5 from "@/assets/Web-Down.png";
+import Bottom5 from "@/assets/Web-Bottom.png";
+import Left5 from "@/assets/Web-left.png";
+import Right5 from "@/assets/Web-Right.png";
 
 const projects = [
   {
@@ -102,7 +102,7 @@ const projects = [
     category: "Video Editing",
     client: "OverAll Work",
     location: "International",
-    HeroSrc:"/video/Top.mp4",
+Src:"/video/Top.mp4",
     TopSrc: "/video/down.mp4",
     BottomSrc: "/video/Bottom.mp4",
     LeftSrc: "/video/Left.mp4",
