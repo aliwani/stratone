@@ -2,12 +2,15 @@ import React from "react";
 import img from "@/assets/contact.jpg";
 import img2 from "@/assets/test/3.png";
 import { ArrowRight } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
 function ContactUs() {
   const isPC = window.innerWidth > 809;
   const navigate = useNavigate();
+  const { pathname } = useLocation();
+  if (pathname === "/404") return null;
+
   return (
     <div className="relative bg flex-col h-133 md:h-195 xl:h-287.5  w-full z-0  py-40 px-5 md:px-7.5 xl:px-10 overflow-hidden   ">
       <motion.img
@@ -24,7 +27,7 @@ function ContactUs() {
       <div className="flex flex-col   font-antonSC leading-none   text-white text-[60px] md:text-[110px] xl:text-[200px]">
         <div className="overflow-hidden">
           <motion.h1
-            initial={{ opacity: 0,  y: isPC ?  100 : 50 }}
+            initial={{ opacity: 0, y: isPC ? 100 : 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, ease: "easeOut" }}
@@ -35,7 +38,7 @@ function ContactUs() {
         </div>
         <div className="overflow-hidden">
           <motion.div
-            initial={{ opacity: 0, y: isPC ?  100 : 50 }}
+            initial={{ opacity: 0, y: isPC ? 100 : 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, ease: "easeOut" }}
@@ -52,7 +55,7 @@ function ContactUs() {
         </div>
         <div className="overflow-hidden">
           <motion.h1
-            initial={{ opacity: 0, y: isPC ?  100 : 50 }}
+            initial={{ opacity: 0, y: isPC ? 100 : 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, ease: "easeOut" }}
@@ -64,7 +67,7 @@ function ContactUs() {
       </div>
 
       <motion.div
-        initial={{ opacity: 0, y: isPC ?  200 : 50}}
+        initial={{ opacity: 0, y: isPC ? 200 : 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, ease: "easeOut" }}

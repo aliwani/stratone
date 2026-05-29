@@ -9,6 +9,7 @@ function NavDiv({ setIsOpen, isOpen }) {
 
   return (
     <div
+    onClick={()=>setIsOpen(false)}
       className={`fixed top-0 left-0 z-90 inset-0 bg-black/50 backdrop-blur-lg h-full w-screen transition-all duration-500 ${
         isOpen ? "opacity-100  " : "opacity-0  pointer-events-none"
       } `}

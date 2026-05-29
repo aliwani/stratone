@@ -20,7 +20,7 @@ function Work() {
 
   return (
     <div className="bg-white h-full w-screen p-0.5 pb-0">
-      <section className="bg-[#111111] rounded-2xl flex flex-col items-center py-35 md:py-50">
+      <section className="bg-[#111111] rounded-t-2xl flex flex-col items-center py-35 md:py-50">
         <Heading heading="our work" />
         <div className=" mt-15 md:mt-35 px-5 md:px-7.5 xl:px-10">
           {!isMobile ? (
