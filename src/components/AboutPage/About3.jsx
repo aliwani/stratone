@@ -1,6 +1,10 @@
 import React from "react";
 import SectionHeader from "../resuables/SectionHeader";
 import teamMembers from "../../data/Team";
+import { TbBrandFacebookFilled } from "react-icons/tb";
+import { LuLinkedin } from "react-icons/lu";
+import { FaXTwitter } from "react-icons/fa6";
+import { RiInstagramFill } from "react-icons/ri";
 function About3() {
   return (
     <div id="team" className="h-full w-full ">
@@ -26,11 +30,26 @@ function About3() {
                   </span>
                 </div>
                 <div className="flex items-center  bg-white h-7.5 md:h-10.5 w-fit py-0.5 px-0.5 gap-0.5 ">
-                  {member.socials.map((social, idx) => {
-                    <div className="bg-black flex items-center justify-center rounded-sm text-white text-lg h-full w-6.5 md:w-10  ">
-                      {social}
-                    </div>;
-                  })}
+                  {member.socials?.linkedin &&(
+                    <div className="bg-[#202020] flex items-center justify-center rounded-xs md:rounded-sm text-white text-lg h-full w-6.5 md:w-10  ">
+                      <LuLinkedin color="white" size={18} />
+                    </div>
+                  )}
+                  {member.socials?.facebook &&(
+                    <div className="bg-[#202020] flex items-center justify-center rounded-xs md:rounded-sm text-white text-lg h-full w-6.5 md:w-10  ">
+                      <TbBrandFacebookFilled color="white" size={18} />
+                    </div>
+                  )}
+                  {member.socials?.instagram &&(
+                    <div className="bg-[#202020] flex items-center justify-center rounded-xs md:rounded-sm text-white text-lg h-full w-6.5 md:w-10  ">
+                      <RiInstagramFill color="white" size={18} />
+                    </div>
+                  )}
+                  {member.socials?.x &&(
+                    <div className="bg-[#202020] flex items-center justify-center rounded-xs md:rounded-sm text-white text-lg h-full w-6.5 md:w-10  ">
+                      <FaXTwitter color="white" size={18} />
+                    </div>
+                  )}
                 </div>
               </div>
               <div className="flex flex-row flex-wrap md:flex-col leading-tight">

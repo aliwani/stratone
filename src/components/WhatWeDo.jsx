@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import SectionHeader from "./resuables/SectionHeader";
 import servicesData from "../Features/services/data";
 import WorkSectionCard from "./WorkSectionCard";
@@ -7,10 +7,24 @@ import ServiceSelect from "./ServiceSelect";
 import { motion } from "framer-motion";
 import ProjectBtn from "./resuables/ProjectBtn";
 function WhatWeDo({ handleScroll }) {
+  const ref = useRef(null);
+  const scrollToCard = () => {
+  setTimeout(() => {
+    ref.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, 50);
+};
   const [activeindx, setactiveindx] = useState(1);
   const [activeText, setactiveText] = useState(1);
-  const isDesktop = window.innerWidth > 809;
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 809);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth > 809);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   const activeService = isDesktop
     ? servicesData[activeindx - 1] || servicesData[0]
     : servicesData[activeText - 1] || servicesData[0];
@@ -48,6 +62,7 @@ function WhatWeDo({ handleScroll }) {
             <div className="py-1.5 ">
               {servicesData.map((services, idx) => (
                 <ServiceSelect
+                  scrollToCard={scrollToCard}
                   setactiveText={setactiveText}
                   activeText={activeText}
                   activeindx={activeindx}
@@ -67,7 +82,11 @@ function WhatWeDo({ handleScroll }) {
               <ProjectBtn text="view work" />
             </div>
           </div>
-          <WorkSectionCard img={activeService.img} list={activeService.list} />
+          <WorkSectionCard
+            ref={ref}
+            img={activeService.img}
+            list={activeService.list}
+          />
         </motion.div>
       </section>
     </div>

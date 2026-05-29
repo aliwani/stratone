@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 
-function ServiceSelect({ idx, services , activeText,setactiveText,activeindx,setactiveindx }) {
-
+function ServiceSelect({
+  scrollToCard,
+  idx,
+  services,
+  activeText,
+  setactiveText,
+  activeindx,
+  setactiveindx,
+}) {
   const widthWindow = window.innerWidth;
   const isDesktop = widthWindow > 809;
 
@@ -13,7 +20,14 @@ function ServiceSelect({ idx, services , activeText,setactiveText,activeindx,set
       <div className="group  overflow-hidden w-full  pl-2   ">
         <div
           key={idx}
-          onClick={!isDesktop ? () => setactiveText(idx) : undefined}
+          onClick={
+            !isDesktop
+              ? () => {
+                  setactiveText(idx);
+                  scrollToCard();
+                }
+              : undefined
+          }
           onMouseEnter={isDesktop ? () => setactiveindx(idx) : undefined}
           className={` grid     transition-all duration-500 ease-in-out group  ${isDesktop && activeindx === idx ? "grid-rows-[0fr_1fr]" : "grid-rows-[1fr_0fr]"}  `}
         >

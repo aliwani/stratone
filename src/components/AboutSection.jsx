@@ -39,7 +39,7 @@ function AboutSection() {
               className="h-full object-cover w-full"
             />
           </div>
-          <p className="font-clashRegular antialiased mb-3 tracking-wider text-white/90 leading-none px-7 md:px-0 text-[20px] text-wrap  text-center">
+          <p className="font-clashRegular antialiased mb-3 tracking-wider text-white/90 leading-none px-7 md:px-0  text-[16px] md:text-[20px] text-wrap  md:text-center">
             Stratone is a full-service creative agency built for brands that
             refuse to be ordinary. We combine strategic thinking with bold
             execution to craft identities, digital experiences, and
@@ -53,14 +53,14 @@ function AboutSection() {
           <div className="font-clashSemi  tracking-wider  uppercase flex flex-wrap justify-center items-center gap-5 w-full leading-none  text-white text-[16px] md:text-lg">
             <a href="">Instagram.</a>
             <a href="">Facebook.</a>
-            <a href="">Linked In.</a>
-            <a href="">X</a>
+            <a href="">LinkedIn.</a>
+            <a href="">X.</a>
           </div>
           <div className="w-full flex flex-col items-center justify-center gap-2">
-            <span className="font-clashSemi pt-5 text-white text-[16px] md:text-lg uppercase">
+            <span className="font-clashSemi pt-5 text-white text-[18px] md:text-lg uppercase">
               Our team
             </span>
-            <div className="bg-white grid grid-cols-2 md:flex py-0.5 px-0.5 gap-0.5 w-full h-full ">
+            <div className="bg-white grid grid-cols-2 md:flex py-0.5 px-0.5 gap-0.5 w-full h-fit ">
               {teamMembers.slice(2, 6).map((team, idx) => {
                 console.log(team.socials.linkedin);
 
@@ -74,7 +74,7 @@ function AboutSection() {
                       whileInView={{ scale: 1 }}
                       transition={{ ease: "easeOut", duration: 0.8 }}
                       viewport={{ once: true }}
-                      className="h-fit  md:h-full  w-full object-cover  "
+                      className="h-auto  md:h-full  w-full object-contain md:object-cover  "
                       src={team.image}
                       alt=""
                     />
@@ -126,7 +126,8 @@ function AboutSection() {
 
               <Link
                 to="/about#team"
-                className="cursor-pointer hidden md:flex px-2 h-6  md:w-19 md:h-20 text-xl flex-col  xl:w-24 xl:h-26 rounded-lg leading-none text-white uppercase font-Meduim w-full items-center justify-center bg-black"
+                className="cursor-pointer flex px-2 h-10 col-span-2  md:w-19 md:h-20 text-xl flex-row gap-1 md:flex-col  xl:w-24 xl:h-26 rounded-xs md:rounded-lg leading-none text-white uppercase font-Meduim w-full items-center justify-center bg-black"
+
               >
                 <span>View </span>
                 <span>team</span>
