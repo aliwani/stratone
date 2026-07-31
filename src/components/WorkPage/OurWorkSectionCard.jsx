@@ -2,12 +2,13 @@ import React from "react";
 import WorkCardButton from "../resuables/WorkCardButton";
 import { useNavigate } from "react-router-dom";
 
-function OurWorkSectionCard({slug,year,category, src, title }) {
-    const navigate = useNavigate()
+function OurWorkSectionCard({ slug, year, category, src, title }) {
+  const navigate = useNavigate();
   return (
     <div
-    onClick={()=>navigate(`/work/${slug}`)}
-    className="cursor-pointer relative bg-white  p-0.5 gap-0.5 flex flex-row  md:h-130 w-full   overflow-hidden">
+      onClick={() => navigate(`/work/${slug}`)}
+      className="cursor-pointer relative bg-white  p-0.5 gap-0.5 flex flex-row  md:h-130 w-full   overflow-hidden"
+    >
       <div className="w-3/5 h-full ">
         <img
           src={src}
@@ -16,9 +17,7 @@ function OurWorkSectionCard({slug,year,category, src, title }) {
         />
       </div>
       <div className="w-2/5 p-7.5 h-full gap-20 flex flex-col justify-between bg-[#111111]   rounded-2xl ">
-        <h2 className="font-antonSC text-[26px]  text-white">
-          {title}
-        </h2>
+        <h2 className="font-antonSC text-[26px]  text-white">{title}</h2>
         <div className="flex flex-col gap-5">
           <div className=" flex flex-col  text-white text-[18px]">
             <span className=" font-clashRegular text-[#dbd9d9]">

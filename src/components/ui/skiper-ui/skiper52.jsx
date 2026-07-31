@@ -5,12 +5,16 @@ import React, { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import images from "@/data/AboutWorkPhaseData";
 const Skiper52 = () => {
-  
-
   return (
-    <div className="flex h-full w-full items-center justify-center overflow-hidden bg-white py-0.5 mb-30">
+    <motion.div
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ ease: "easeOut", duration: 0.5 }}
+      viewport={{ once: true }}
+      className="flex h-full w-full items-center justify-center overflow-hidden bg-white py-0.5 mb-30"
+    >
       <HoverExpand_001 imageData={images} />
-    </div>
+    </motion.div>
   );
 };
 
@@ -70,102 +74,84 @@ const HoverExpand_001 = ({ imageData, className }) => {
   return (
     <div className="w-full h-full">
       {/* {isPc ? ( */}
+      <motion.div
+        initial={{ opacity: 0, translateY: 20 }}
+        animate={{ opacity: 1, translateY: 0 }}
+        transition={{ duration: 0.3, delay: 0.5 }}
+        className={cn("relative w-full px-0.5", className)}
+      >
         <motion.div
-          initial={{ opacity: 0, translateY: 20 }}
-          animate={{ opacity: 1, translateY: 0 }}
-          transition={{ duration: 0.3, delay: 0.5 }}
-          className={cn("relative w-full px-0.5", className)}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
+          className="w-full "
         >
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.3 }}
-            className="w-full "
-          >
-            <div className="flex w-full items-center justify-center gap-0.5 ">
-              {imageData.map((image, index) => (
-                <motion.div
-                  key={index}
-                  className="relative cursor-pointer bg-[#111111] flex flex-col items-start justify-between overflow-hidden rounded-xl md:rounded-2xl py-6 px-10"
-                  initial={{ width: "2.5rem", height: "20rem" }}
-                  animate={{
-                    width:
-                      activeImage === index ? dims.activeW : dims.inactiveW,
-                    height: dims.height,
-                  }}
-                  transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
-                  onClick={() => setActiveImage(index)}
-                  onHoverStart={() => setActiveImage(index)}
-                >
-                  <span className="text-white text-lg font-clashMeduim uppercase tracking-wide ">
-                    {image.alt}
-                  </span>
-                  <AnimatePresence>
-                    {activeImage === index && (
-                      <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: 20 }}
-                        transition={{ duration: 0.3, delay: 0.1 }}
-                        className="absolute inset-0 flex flex-col items-start justify-end gap-8 px-10 py-6 z-20"
-                      >
-                        <div className="h-full w-full rounded-2xl">
-                          <img
-                            className="w-full h-full object-cover rounded-2xl"
-                            src={image.src}
-                            alt=""
-                          />
-                        </div>
-                        <div className="flex flex-row items-start justify-center gap-6">
-                          <span className="text-white font-clashRegulartext-[16px]">
-                            {image.code}
-                          </span>
-                          <div className="flex flex-col items-start justify-center gap-7 ">
-                            <div className="flex flex-col items-start justify-center">
-                              <h1
-                                className={cn(
-                                  "text-white font-antonSC text-[40px] tracking-wide mb-2 leading-tight",
-                                  dims.titleSize,
-                                )}
-                              >
-                                {image.title}
-                              </h1>
-                              <p
-                                className={cn(
-                                  "text-white/90 font-clashRegular font-medium tracking-wide max-w-lg text-lg leading-tight",
-                                )}
-                              >
-                                {image.description}
-                              </p>
-                            </div>
-                            <div className="flex items-start justify-center gap-3">
-                              <span className="font-clashSemi font-semibold tracking-wide text-white text-lg uppercase">
-                                included:
-                              </span>
-                              <div className="flex items-start justify-center gap-2">
-                                <span className="text-white font-clashMeduim font-regular text-lg tracking-wide">
-                                  Creative brief
-                                </span>
-                                <span className="text-white text-lg">•</span>
-                                <span className="text-white font-clashMeduim font-regular text-lg tracking-wide">
-                                  Creative brief
-                                </span>
-                                <span className="text-white text-lg">•</span>
-                                <span className="text-white font-clashMeduim font-regular text-lg tracking-wide">
-                                  Creative brief
-                                </span>
-                              </div>
-                            </div>
+          <div className="flex w-full items-center justify-center gap-0.5 ">
+            {imageData.map((image, index) => (
+              <motion.div
+                key={index}
+                className="relative cursor-pointer bg-[#111111] flex flex-col items-start justify-between overflow-hidden rounded-xl md:rounded-2xl py-6 px-10"
+                initial={{ width: "2.5rem", height: "20rem" }}
+                animate={{
+                  width: activeImage === index ? dims.activeW : dims.inactiveW,
+                  height: dims.height,
+                }}
+                transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
+                onClick={() => setActiveImage(index)}
+                onHoverStart={() => setActiveImage(index)}
+              >
+                <span className="text-white text-lg font-clashMeduim uppercase tracking-wide ">
+                  {image.alt}
+                </span>
+                <AnimatePresence>
+                  {activeImage === index && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 20 }}
+                      transition={{ duration: 0.3, delay: 0.1 }}
+                      className="absolute inset-0 flex flex-col items-start justify-end gap-8 px-10 py-6 z-20"
+                    >
+                      <div className="h-full w-full rounded-2xl">
+                        <img
+                          className="w-full h-full object-cover rounded-2xl"
+                          src={image.src}
+                          alt=""
+                        />
+                      </div>
+                      <div className="flex flex-row items-start justify-center gap-6">
+                        <span className="text-white font-clashRegulartext-[16px]">
+                          {image.code}
+                        </span>
+                        <div className="flex flex-col items-start justify-center gap-7 ">
+                          <div className="flex flex-col items-start justify-center">
+                            <h1
+                              className={cn(
+                                "text-white font-antonSC text-[40px] tracking-wide mb-2 leading-tight",
+                                dims.titleSize,
+                              )}
+                            >
+                              {image.title}
+                            </h1>
+                            <p
+                              className={cn(
+                                "text-white/90 font-clashRegular font-medium tracking-wide max-w-lg text-lg leading-tight",
+                              )}
+                            >
+                              {image.description}
+                            </p>
                           </div>
+                          
                         </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </motion.div>
+            ))}
+          </div>
         </motion.div>
+      </motion.div>
       {/* ) : (
         <div className="grid grid-cols-1 md:grid-cols-2  w-full px-0.5 gap-0.5 bg-white">
           {imageData.map((image, index) => (

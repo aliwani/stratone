@@ -62,8 +62,6 @@ function AboutSection() {
             </span>
             <div className="bg-white grid grid-cols-2 md:flex py-0.5 px-0.5 gap-0.5 w-full h-fit ">
               {teamMembers.slice(2, 6).map((team, idx) => {
-                console.log(team.socials.linkedin);
-
                 return (
                   <div
                     key={idx}
@@ -94,7 +92,7 @@ function AboutSection() {
                               href={team.socials.instagram}
                               className=" h-full w-full flex items-center justify-center"
                             >
-                              <RiInstagramFill  color="white" size={17} />
+                              <RiInstagramFill color="white" size={17} />
                             </a>
                           )}
 
@@ -111,12 +109,17 @@ function AboutSection() {
                               href={team.socials.x}
                               className=" h-full w-full rounded-full flex items-center justify-center"
                             >
-                              <FaXTwitter  color="white" size={17} />
+                              <FaXTwitter color="white" size={17} />
                             </a>
                           )}
                         </div>
                         <div>
-                          <h3 className="text-wrap leading-tight flex items-center justify-center text-center px-5 text-white text-sm tracking-widest font-clashRegular font-semibold uppercase">{team.name}, {team.designation}</h3>
+                          <h3 className="text-wrap leading-tight flex items-center justify-center text-center px-5 text-white text-sm tracking-widest font-clashRegular font-semibold uppercase">
+                            {team.name},{" "}
+                          </h3>
+                          <h4 className="text-wrap leading-tight flex items-center justify-center text-center px-5 text-white text-xs tracking-wider font-clashMeduim font-extrabold uppercase">
+                            {team.designation}
+                          </h4>
                         </div>
                       </div>
                     )}
@@ -127,7 +130,6 @@ function AboutSection() {
               <Link
                 to="/about#team"
                 className="cursor-pointer flex px-2 h-10 col-span-2  md:w-19 md:h-20 text-xl flex-row gap-1 md:flex-col  xl:w-24 xl:h-26 rounded-xs md:rounded-lg leading-none text-white uppercase font-Meduim w-full items-center justify-center bg-black"
-
               >
                 <span>View </span>
                 <span>team</span>

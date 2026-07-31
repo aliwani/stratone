@@ -3,7 +3,6 @@ const windowResize = () => {
     return window.removeEventListener("resize", handleResize);
 };
 const handleResize = () => {
-    let windowSize = window.innerWidth;
-  return (windowSize = window.innerWidth);
+  return window.innerWidth
 };
 export default windowResize;

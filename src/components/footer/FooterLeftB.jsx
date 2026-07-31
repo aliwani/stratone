@@ -39,7 +39,7 @@ function FooterLeftB() {
       <img
         className="absolute top-0 left-0 z-0 w-full h-full object-cover rounded-2xl"
         src={Img}
-        alt=""
+        
       />
       <div className="absolute inset-0 -z-1 bg-linear-to-l h-full bg-[#111111] opacity-50 rounded-2xl" />
       <div className="z-1">
@@ -97,17 +97,17 @@ function FooterLeftB() {
             join our community
           </span>
           <ul className="flex gap-2">
-            <a className="h-5 w-5 " href="">
+            <a className="h-5 w-5 " href="https://www.facebook.com/share/1D4JUbsm7V/?mibextid=wwXIfr">
               <FaFacebookF size={20} color="white"/>
 
             </a>
-            <a className="h-5 w-5 " href="">
+            <a className="h-5 w-5 " href="https://www.instagram.com/stratonestudio?igsh=ZG11dDZzcTRyb3o3&utm_source=qr">
               <RiInstagramFill size={20} color="white" />{" "}
             </a>
             <a className="h-5 w-5 " href="">
               <FaXTwitter size={20} color="white" />
             </a>
-            <a className="h-5 w-5 " href="">
+            <a className="h-5 w-5 " href="https://www.linkedin.com/company/stratonestudio">
               <LiaLinkedinIn size={20} color="white" />
             </a>
           </ul>

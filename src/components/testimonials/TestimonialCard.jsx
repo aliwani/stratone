@@ -1,7 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
+import replyImg from "@/assets/Logo.webp"
 
 function TestimonialCard({ person }) {
+  
   return (
     <div className="flex flex-col h-fit md:h-auto justify-start gap-5  bg-[#111111]  rounded-2xl p-5 xl:p-8  w-full">
       <motion.div
@@ -12,7 +14,7 @@ function TestimonialCard({ person }) {
         className="flex items-start   justify-between   gap-3"
       >
         <div className="h-11 w-11 md:h-12 md:w-12  bg-white rounded-full  overflow-hidden shrink-0">
-          <img className="h-full w-full object-cover" src={person.img} alt="" />
+          <img className="h-full w-full object-cover" src={person.img}  />
         </div>
         <div className="text-white w-full rounded-2xl tracking-none leading-none md:tracking-wider md:leading-tight flex flex-col gap-2 p-5 bg-[#282727]">
           <span className="text-[16px] md:text-lg tracking-wider  font-clashSemi  font-semibold uppercase">
@@ -36,7 +38,7 @@ function TestimonialCard({ person }) {
           </p>
         </div>
         <div className="h-12 w-12  bg-white rounded-full  overflow-hidden shrink-0">
-          <img className="h-full w-full object-cover" src={person.img} alt="" />
+          <img className="h-full w-full object-cover" src={replyImg} />
         </div>
       </motion.div>
     </div>

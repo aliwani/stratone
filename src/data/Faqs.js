@@ -1,24 +1,29 @@
 const faqs = [
   {
-    question: "What is your return policy?",
-    answer: "We offer a 7-day return policy for unused products with original packaging  depending on your location."
+    question: "What services does Stratone Studio offer?",
+    answer:
+      "We provide web development, Shopify store development, digital marketing, video editing, branding, and creative design solutions tailored to your business goals.",
   },
   {
-    question: "How long does delivery take?",
-    answer: "Delivery usually takes 3-5 business days depending on your location."
+    question: "How long does it take to complete a project?",
+    answer:
+      "Project timelines depend on the scope and complexity. Most websites are completed within 2–6 weeks, while marketing and creative projects are scheduled based on your requirements.",
   },
   {
-    question: "Do you offer international shipping?",
-    answer: "Yes, we ship worldwide. Shipping charges may vary based on region receive a tracking link via email."
+    question: "Do you work with startups and small businesses?",
+    answer:
+      "Yes. We work with startups, small businesses, and established companies, delivering customized solutions that fit their budget and growth objectives.",
   },
   {
-    question: "How can I track my order?",
-    answer: "Once your order is shipped, you will receive a tracking link via email."
+    question: "Can you redesign my existing website or Shopify store?",
+    answer:
+      "Absolutely. We can redesign, optimize, and modernize your existing website or Shopify store to improve its performance, user experience, and conversions.",
   },
   {
-    question: "What payment methods do you accept?",
-    answer: "We accept credit/debit cards, bank transfer, and cash on delivery."
-  }
+    question: "How do I get started with Stratone Studio?",
+    answer:
+      "Simply contact us through our website or book a free consultation. We'll discuss your requirements, recommend the best solution, and provide a project proposal tailored to your business.",
+  },
 ];
 
-export default faqs
+export default faqs;

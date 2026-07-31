@@ -12,18 +12,7 @@ function TestimonialTrust() {
         playsInline
         className="absolute inset-0 w-full h-full object-cover"
       />
-      <motion.div
-        initial={{ opacity: 0, y: 60 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ ease: "easeOut", duration: 0.5 }}
-        viewport={{ once: true }}
-        className="relative z-10 w-40 h-10 md:w-50 md:h-25 "
-      >
-        <div className="absolute left-0 h-10 w-10 rounded-full bg-cyan-300" ><img src="" alt="" /></div>
-        <div className="absolute left-7 h-10 w-10 rounded-full bg-red-300" ><img src="" alt="" /></div>
-        <div className="absolute left-14 h-10 w-10 rounded-full bg-green-300" ><img src="" alt="" /></div>
-        <div className="absolute left-21 h-10 w-10 rounded-full bg-white flex items-center justify-center" >+20</div>
-      </motion.div>
+      
       <motion.div
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}

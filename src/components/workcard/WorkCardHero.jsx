@@ -2,7 +2,6 @@ import React from "react";
 import MarqueeHeading from "../resuables/MarqueHeading";
 import { isVideo } from "@/utils/MediaItem";
 function WorkCardHero({ project }) {
-  console.log(project);
 
   return (
     <div

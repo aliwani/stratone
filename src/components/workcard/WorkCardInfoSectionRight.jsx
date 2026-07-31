@@ -1,10 +1,14 @@
-import { div } from "framer-motion/client";
-import { Dice1 } from "lucide-react";
+import { motion } from "framer-motion";
 import React from "react";
 
 function WorkCardInfoSectionRight({project}) {
   return (
-    <div className=" md:sticky flex order-1 md:order-2 top-25 right-0 flex-col gap-12 md:w-1/4 w-full  h-fit ">
+    <motion.div 
+    initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ ease: "easeOut", duration: 0.5 }}
+          viewport={{ once: true }}
+    className=" md:sticky flex order-1 md:order-2 top-25 right-0 flex-col gap-12 md:w-1/4 w-full  h-fit ">
       <div className="grid grid-cols-2 md:grid-cols-1  w-full bg-white h-fit p-0.5 gap-px">
         <div className="flex flex-col  items-start  p-7 h-full  w-full bg-[#111111] rounded-lg md:rounded-2xl">
           <span className="font-clashRegular font-medium tracking-wider text-white text-lg">
@@ -44,7 +48,7 @@ function WorkCardInfoSectionRight({project}) {
           view live site
         </div>
       </button>
-    </div>
+    </motion.div>
   );
 }
 

@@ -3,8 +3,8 @@ import SectionHeader from "./resuables/SectionHeader";
 import arrow from "@/assets/right.png";
 import { Plus } from "lucide-react";
 import faqs from "../data/Faqs";
-
-function Faqs({Num}) {
+import { motion } from "framer-motion";
+function Faqs({ Num }) {
   const [hover, sethover] = useState(false);
   const [isOpen, setisOpen] = useState(Array(faqs.length).fill(false));
   const toggleIdx = (idx) => {
@@ -14,7 +14,13 @@ function Faqs({Num}) {
   return (
     <div className="w-full flex flex-col justify-between gap-20 h-fit  bg-[#111111] py-25 md:py-50">
       <SectionHeader Num={Num} Text="before you ask" />
-      <div className="flex flex-col md:flex-row items-start gap-10">
+      <motion.div
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ ease: "easeOut", duration: 0.5 }}
+        viewport={{ once: true }}
+        className="flex flex-col md:flex-row items-start gap-10"
+      >
         <div className="w-full md:w-1/2 flex flex-col justify-between gap-7 md:gap-10">
           <h1 className="font-antonSC uppercase leading-none text-white text-[40px] md:text-[120px]">
             faq's
@@ -63,18 +69,19 @@ function Faqs({Num}) {
                 />
               </div>
               <div
-              
                 className={`w-3/4 overflow-hidden transition-all duration-400 flex items-start ${isOpen[idx] ? "max-h-50" : "max-h-0"}`}
               >
-                <span className={`text-white/90 font-clashRegular leading-tight p-5 pt-0 font-medium text-[16px] tracking-wider  transition-all duration-400 ${isOpen[idx] ? "translate-y-0 opacity-100" : "translate-y-5 opacity-0"}
-                 `}>
+                <span
+                  className={`text-white/90 font-clashRegular leading-tight p-5 pt-0 font-medium text-[16px] tracking-wider  transition-all duration-400 ${isOpen[idx] ? "translate-y-0 opacity-100" : "translate-y-5 opacity-0"}
+                 `}
+                >
                   {item.answer}
                 </span>
               </div>
             </div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

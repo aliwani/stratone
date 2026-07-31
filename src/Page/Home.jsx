@@ -5,6 +5,7 @@ import WhatWeDo from '../components/WhatWeDo'
 import ChooseUS from '../components/chooseUs/ChooseUS'
 import Testimonial from '../components/Testimonial'
 import Pricing from '../components/Pricing'
+import Ourwork from '@/components/Ourwork'
 
 
 function Home() {
@@ -19,9 +20,10 @@ function Home() {
       <Hero/>
       <AboutSection/>
       <WhatWeDo handleScroll={handleScroll}/>
+      <Ourwork/>
       <ChooseUS/>
       <Testimonial/>
-      <Pricing sectionRef={sectionRef}/>
+      {/* <Pricing sectionRef={sectionRef}/> */}
      
     </div>
  

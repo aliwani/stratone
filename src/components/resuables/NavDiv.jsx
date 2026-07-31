@@ -66,7 +66,7 @@ function NavDiv({ setIsOpen, isOpen }) {
               userSelect: "none",
               WebkitUserSelect: "none",
             }}
-            className="absolute inset-0 left-0 h-full object-cover w-full"
+            className="absolute inset-0 rounded-lg left-0 h-full object-cover w-full"
             alt=""
           />
           <div className="z-10 h-5 w-15 md:h-8 md:w-30">

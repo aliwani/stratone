@@ -82,24 +82,7 @@ const HoverExpand_002 = ({ imageData, className }) => {
                         </p>
                       </div>
 
-                      <div className="flex flex-col items-start gap-2">
-                        <span className="font-clashSemi font-semibold tracking-wide text-white text-sm uppercase">
-                          included:
-                        </span>
-                        <div className="flex items-center flex-wrap gap-2">
-                          <span className="text-white font-clashMeduim text-sm tracking-wide">
-                            Creative brief
-                          </span>
-                          <span className="text-white text-sm">•</span>
-                          <span className="text-white font-clashMeduim text-sm tracking-wide">
-                            Creative brief
-                          </span>
-                          <span className="text-white text-sm">•</span>
-                          <span className="text-white font-clashMeduim text-sm tracking-wide">
-                            Creative brief
-                          </span>
-                        </div>
-                      </div>
+                     
                     </div>
                   </motion.div>
                 )}

@@ -10,11 +10,6 @@ import Bottom2 from "@/assets/Shopify-Bottom.png";
 import Left2 from "@/assets/Shopify-left.png";
 import Right2 from "@/assets/Shopify-Right.png";
 
-import Hero3 from "/video/Top.mp4";
-import Top3 from "/video/down.mp4";
-import Bottom3 from "/video/Bottom.mp4";
-import Left3 from "/video/Left.mp4";
-import Right3 from "/video/Right.mp4";
 
 import Hero4 from "@/assets/SMM-Hero.png";
 import Top4 from "@/assets/SMM-Top.png";
@@ -105,7 +100,7 @@ const projects = [
     client: "OverAll Work",
     location: "International",
     HeroSrc:"/video/Top.mp4",
-    PreviewSrc:"/video/Top.mp4",
+    PreviewSrc:"/video/editing.jpg",
     TopSrc: "/video/down.mp4",
     BottomSrc: "/video/Bottom.mp4",
     LeftSrc: "/video/Left.mp4",

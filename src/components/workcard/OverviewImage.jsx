@@ -1,9 +1,15 @@
 import { MediaItem } from "@/utils/MediaItem";
+import { motion } from "framer-motion";
 import React from "react";
 
 function OverviewImage({ project }) {
   return (
-    <div className="w-full relative flex flex-col gap-1  h-fit p-1 bg-white">
+    <motion.div
+    initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ ease: "easeOut", duration: 0.5 }}
+          viewport={{ once: true }}
+    className="w-full relative flex flex-col gap-1  h-fit p-1 bg-white">
       <div className=" overflow-hidden w-fit h-fit flex gap-1">
        <MediaItem
           src={project.LeftSrc}
@@ -26,7 +32,7 @@ function OverviewImage({ project }) {
           className=" w-full h-full object-cover rounded-lg md:rounded-2xl"
         />
       </div>
-    </div>
+    </motion.div>
   );
 }
 

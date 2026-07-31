@@ -1,15 +1,22 @@
+import { motion } from "framer-motion";
 import React from "react";
-
+import img from "@/assets/team/danyalImg.png";
 function ContactInfo() {
   return (
     <div className="flex flex-col h-auto md:h-157 gap-10 justify-between items-start w-full md:w-1/2 ">
-      <div className="h-auto flex flex-col md:flex-row gap-5 justify-between w-full">
+      <motion.div
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ ease: "easeOut", duration: 0.5 }}
+        viewport={{ once: true }}
+        className="h-auto flex flex-col md:flex-row gap-5 justify-between w-full"
+      >
         <div className="flex flex-col gap-1 md:gap-2">
           <h3 className="text-white font-clashRegular tracking-wider font-semibold uppercase text-[16px]">
             contact info
           </h3>
           <span className="font-clashLight font-semibold  text-white text-lg">
-            +92 300 00 75996
+            +92 316 086 522 9
           </span>
           <span className="font-clashSemi tracking-wider  text-white text-lg">
             StudioStratone@gmail.com
@@ -20,39 +27,53 @@ function ContactInfo() {
             socials
           </h3>
           <div className="flex gap-3">
-            <span className="font-clashLight font-semibold  text-white text-lg">
-              Instagram
+            <span className="font-clashLight font-meduim  text-white text-lg">
+              <a href="https://www.instagram.com/stratonestudio?igsh=ZG11dDZzcTRyb3o3&utm_source=qr">Instagram</a>
             </span>
-            <span className="font-clashLight font-semibold  text-white text-lg">
-              Linked In
+            <span className="font-clashLight font-meduim  text-white text-lg">
+              <a href="https://www.linkedin.com/company/stratonestudio">Linked In</a>
             </span>
           </div>
           <div className="flex gap-3">
-            <span className="font-clashLight font-semibold  text-white text-lg">
-              Facebook
+            <span className="font-clashLight font-meduim  text-white text-lg">
+              <a href="https://www.facebook.com/share/1D4JUbsm7V/?mibextid=wwXIfr">Facebook</a>
             </span>
-            <span className="font-clashLight font-semibold  text-white text-lg">
-              X
+            <span className="font-clashLight font-meduim  text-white text-lg">
+              <a href="">X</a>
             </span>
           </div>
         </div>
-      </div>
-      <div className="w-4/5 flex flex-col gap-5">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ ease: "easeOut", duration: 0.5 }}
+        viewport={{ once: true }}
+        className="w-4/5 flex flex-col gap-5"
+      >
         <span className=" text-white text-lg leading-none tracking-wider font-clashMeduim font-semibold">
           From the first meeting to final delivery, everything was seamless.
           Their design instinct is razor sharp, and they brought our vision to
           life better than we imagined.
         </span>
         <div className="flex  gap-3 w-full h-full">
-          <div className="h-12.5 w-12.5 bg-[#111111] ">
-            <img className="h-full w-full " src="" alt="" />
+          <div className="w-15 h-15 overflow-hidden ">
+            <img
+              src={img}
+              alt=""
+              className="w-full h-full object-cover object-top scale-150"
+            />
           </div>
           <div className="flex flex-col leading-none text-white">
-            <span className="text-lg  font-clashSemi tracking-wider font-semibold ">Danyal Wani</span>
-            <span className="text-[16px] font-clashRegular font-medium">Creative Director, Stratone Studio</span>
+            <span className="text-lg  font-clashSemi tracking-wider font-semibold ">
+              Danyal Wani
+            </span>
+            <span className="text-[16px] font-clashRegular font-medium">
+              Creative Director, Stratone Studio
+            </span>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

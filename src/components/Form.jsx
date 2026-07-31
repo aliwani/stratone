@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import FormBtn from "./resuables/FormBtn";
+import { motion } from "framer-motion";
 
 function Form() {
   // 1. Har field ka state banaya
@@ -10,15 +11,12 @@ function Form() {
     message: "",
   });
 
-  // 2. Status track karne ke liye — idle, loading, success, error
   const [status, setStatus] = useState("idle");
 
-  // 3. Ek function jo har input change pe chale
   function handleChange(e) {
     setForm({ ...form, [e.target.name]: e.target.value });
   }
 
-  // 4. Submit function — backend ko request bhejta hai
   async function handleForm(e) {
     e.preventDefault();
     setStatus("loading");
@@ -32,12 +30,11 @@ function Form() {
             "Content-Type": "application/json",
           },
           body: JSON.stringify(form),
-        }
+        },
       );
 
       if (response.ok) {
         setStatus("success");
-        // Form clear kar do submit ke baad
         setForm({ name: "", email: "", subject: "", message: "" });
       } else {
         setStatus("error");
@@ -48,7 +45,13 @@ function Form() {
   }
 
   return (
-    <div className="w-full md:w-1/2 h-157 bg-white p-0.5">
+    <motion.div
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ ease: "easeOut", duration: 0.5 }}
+      viewport={{ once: true }}
+      className="w-full md:w-1/2 h-157 bg-white p-0.5"
+    >
       <form
         onSubmit={handleForm}
         className="w-full h-full flex flex-col gap-5 text-white p-5 md:p-7.5 xl:p-12.5 text-lg font-clashRegular tracking-wider font-meduim rounded-2xl bg-[#111111]"
@@ -61,8 +64,8 @@ function Form() {
             placeholder="Riley Brooks"
             type="text"
             id="name"
-            name="name"           // 5. name attribute zaroori hai handleChange ke liye
-            value={form.name}     // 6. controlled input — state se value aati hai
+            name="name" // 5. name attribute zaroori hai handleChange ke liye
+            value={form.name} // 6. controlled input — state se value aati hai
             onChange={handleChange}
             required
           />
@@ -126,7 +129,7 @@ function Form() {
           disabled={status === "loading"}
         />
       </form>
-    </div>
+    </motion.div>
   );
 }
 

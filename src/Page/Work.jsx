@@ -4,6 +4,8 @@ import projects from "@/data/Work";
 import OurWorkSectionCard from "@/components/WorkPage/OurWorkSectionCard";
 import OurWorkCard from "@/components/OurWorkCard";
 import { Outlet, useParams } from "react-router-dom";
+import { motion } from "framer-motion";
+
 function Work() {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -22,7 +24,13 @@ function Work() {
     <div className="bg-white h-full w-screen p-0.5 pb-0">
       <section className="bg-[#111111] rounded-t-2xl flex flex-col items-center py-35 md:py-50">
         <Heading heading="our work" />
-        <div className=" mt-15 md:mt-35 px-5 md:px-7.5 xl:px-10">
+        <motion.div
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ ease: "easeOut", duration: 0.5 }}
+          viewport={{ once: true }}
+          className=" mt-15 md:mt-35 px-5 md:px-7.5 xl:px-10"
+        >
           {!isMobile ? (
             <div className="grid grid-cols-1 col-span-2 gap-10 xl:grid-cols-2 ">
               {projects.map((project, idx) => (
@@ -50,7 +58,7 @@ function Work() {
               ))}
             </div>
           )}
-        </div>
+        </motion.div>
       </section>
       <Outlet />
     </div>
