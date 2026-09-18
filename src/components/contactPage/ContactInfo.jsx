@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import React from "react";
-import img from "@/assets/team/danyalImg.png";
 function ContactInfo() {
   return (
     <div className="flex flex-col h-auto md:h-157 gap-10 justify-between items-start w-full md:w-1/2 ">
@@ -59,7 +58,7 @@ function ContactInfo() {
         <div className="flex  gap-3 w-full h-full">
           <div className="w-15 h-15 overflow-hidden ">
             <img
-              src={img}
+              src="https://ik.imagekit.io/aliwani101/danyalImg.webp"
               alt=""
               className="w-full h-full object-cover object-top scale-150"
             />

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Img from "@/assets/footerImg.jpg";
 import { ArrowRight } from "lucide-react";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaFacebookF, FaXTwitter } from "react-icons/fa6";
@@ -38,7 +37,7 @@ function FooterLeftB() {
     <div className="relative flex flex-col justify-between rounded-2xl text-white w-full md:w-2/5 md:min-w-95 md:w-max-w-300 h-59 md:h-full p-5 md:p-7.5 xl:p-10">
       <img
         className="absolute top-0 left-0 z-0 w-full h-full object-cover rounded-2xl"
-        src={Img}
+        src="https://ik.imagekit.io/aliwani101/footerImg.jpg"
         
       />
       <div className="absolute inset-0 -z-1 bg-linear-to-l h-full bg-[#111111] opacity-50 rounded-2xl" />

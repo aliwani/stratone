@@ -1,12 +1,10 @@
-import eye from "@/assets/eye.png";
-import test3 from "@/assets/heroImg.png";
 import { Crosshair, Star } from "lucide-react";
 import {  motion } from "framer-motion";
 
 function Hero() {
   const isPc = window.innerWidth;
   const isMobile = window.innerWidth < 768
-  const src = isPc > 809 && test3 ;
+  const src = isPc > 809 && "https://ik.imagekit.io/aliwani101/heroImg.webp?updatedAt=1789726695648" ;
   const container = {
     hidden: {},
     show: {
@@ -121,7 +119,7 @@ function Hero() {
                   transition={{ duration: 0.6, delay: 0.5 }}
                   viewport={{ once: true }}
                   className="  object-cover h-full w-full "
-                  src={eye}
+                  src="https://ik.imagekit.io/aliwani101/eye.png?updatedAt=1785492586073"
                   alt=""
                 />
               </motion.div>

@@ -2,7 +2,6 @@ import React from "react";
 import { ROUTES } from "@/configs/route";
 import Navlinks from "./Navlinks";
 import NavlinksBottom from "./NavlinksBottom";
-import navLogo from "@/assets/test/2.png"
 function NavDiv({ setIsOpen, isOpen }) {
   const firstCol = ROUTES.slice(0, 5);
   const secondCol = ROUTES.slice(5, 7);
@@ -70,7 +69,7 @@ function NavDiv({ setIsOpen, isOpen }) {
             alt=""
           />
           <div className="z-10 h-5 w-15 md:h-8 md:w-30">
-            <img className="h-full w-full cover" src={navLogo} alt="" />
+            <img className="h-full w-full cover" src="https://ik.imagekit.io/aliwani101/2.png?updatedAt=1785492490542" alt="" />
           </div>
           <div className=" z-10 flex flex-col gap-1">
             <h4 className="text-[14px] md:text-[16px]  leading-none text-white font-clashRegular tracking-wider">

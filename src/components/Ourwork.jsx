@@ -1,6 +1,6 @@
 import React from "react";
 import SectionHeader from "./resuables/SectionHeader";
-import workimg from "../assets/ourworkbanner.jpg"
+const workimg = "https://ik.imagekit.io/aliwani101/ourworkbanner.jpg?f-auto,q-80"
 import Header from "./resuables/Header";
 import ProjectBtn from "./resuables/ProjectBtn";
 import Contactbtn from "./resuables/ContactBtn";

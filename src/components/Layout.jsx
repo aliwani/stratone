@@ -3,7 +3,6 @@ import Navbar from "./navbar/Navbar";
 import ContactUs from "./ContactUs";
 import Footer from "./Footer";
 import NavDiv from "./resuables/NavDiv";
-import { div } from "framer-motion/client";
 
 function Layout({ children }) {
   const [isOpen, setIsOpen] = useState(false);

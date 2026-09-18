@@ -7,7 +7,7 @@ function Hero() {
           whileInView={{ opacity: 1, }}
           transition={{ ease: "easeOut", duration: 0.3 }}
           viewport={{ once: true }}
-    className="relative flex flex-col items-center justify-center    bg-[url(@/assets/AboutHero.jpg)] bg-cover w-full min-h-110    md:h-135 xl:h-188 rounded-2xl z-0 px-10">
+    className="relative flex flex-col items-center justify-center bg-[url('https://ik.imagekit.io/aliwani101/AboutHero.webp')] bg-cover w-full min-h-110    md:h-135 xl:h-188 rounded-2xl z-0 px-10">
       {/* Overlay */}
       <div className="absolute top-0 left-0 -z-1 w-full h-full bg-linear-to-l from-black to-black opacity-50 rounded-2xl"></div>
       <div className="h-1/2 mt-40 md:h-[55%] flex items-end xl:mb-20 ">
@@ -22,9 +22,12 @@ function Hero() {
       >
         <div className="flex md:flex-row flex-col h-auto md:h-15 items-center md:items-start justify-center w-full xl:w-fit gap-4 md:gap-3">
           <div className="relative z-0 flex items-start justify-end h-10 md:h-15 w-30 md:w-45 md:mb-40  rounded-full ">
-            <div className="absolute -z-3 left-0  h-full w-1/3 md:w-15 bg-amber-500 rounded-full" />
-            <div className="absolute -z-2 left-[22%]  h-full w-1/3 md:w-15 bg-emerald-500 rounded-full" />
-            <div className="absolute -z-1 left-[44%]  h-full w-1/3 md:w-15 bg-red-500 rounded-full " />
+            <img src="https://ik.imagekit.io/aliwani101/Mr%20Faisal.jpeg" 
+            className="absolute -z-3 left-0  h-full w-1/3 md:w-15  object-cover rounded-full" />
+            <img src="https://ik.imagekit.io/aliwani101/Mr%20Khalid.jpeg"
+             className="absolute -z-2 left-[22%]  h-full w-1/3 md:w-15  object-cover rounded-full" />
+            <img src="https://ik.imagekit.io/aliwani101/Mr%20Tanveer.jpeg"
+             className="absolute -z-1 left-[44%]  h-full w-1/3 md:w-15   object-cover rounded-full " />
             <div className="h-10 w-10 md:h-15 md:w-15 bg-white rounded-full flex items-center justify-center">
               {" "}
               +10{" "}

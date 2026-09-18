@@ -1,5 +1,4 @@
 import React from "react";
-import Img404 from "@/assets/404.png";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -13,7 +12,7 @@ function Page404() {
           transition={{ ease: "easeOut", duration: 0.5 }}
           viewport={{ once: true }}
           className=" h-fit w-fit cover"
-          src={Img404}
+          src="https://ik.imagekit.io/aliwani101/404.png?updatedAt=1785492504738"
           alt="404"
         />
       </motion.div>

@@ -1,4 +1,3 @@
-import aboutImg from "@/assets/test/aboutimg.png";
 import teamMembers from "../data/Team";
 import SectionHeader from "./resuables/SectionHeader";
 import Header from "./resuables/Header";
@@ -34,7 +33,7 @@ function AboutSection() {
               whileInView={{ scale: 1 }}
               transition={{ duration: 0.2 }}
               viewport={{ once: true }}
-              src={aboutImg}
+              src="https://ik.imagekit.io/aliwani101/aboutimg.png?f-auto,q-80"
               alt=""
               className="h-full object-cover w-full"
             />
@@ -51,9 +50,9 @@ function AboutSection() {
             impossible to ignore.
           </p>
           <div className="font-clashSemi  tracking-wider  uppercase flex flex-wrap justify-center items-center gap-5 w-full leading-none  text-white text-[16px] md:text-lg">
-            <a href="">Instagram.</a>
-            <a href="">Facebook.</a>
-            <a href="">LinkedIn.</a>
+            <a target="blank" href="https://www.instagram.com/stratonestudio?igsh=ZG11dDZzcTRyb3o3&utm_source=qr">Instagram.</a>
+            <a target="blank" href="https://www.facebook.com/share/1D4JUbsm7V/?mibextid=wwXIfr">Facebook.</a>
+            <a target="blank" href="https://www.linkedin.com/company/stratonestudio">LinkedIn.</a>
             <a href="">X.</a>
           </div>
           <div className="w-full flex flex-col items-center justify-center gap-2">

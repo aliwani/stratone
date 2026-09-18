@@ -1,28 +1,4 @@
-import HeroSrc from "@/assets/Sanaani-Branding-Hero.jpeg";
-import TopSrc from "@/assets/Sanaani-Branding-top.jpeg";
-import BottomSrc from "@/assets/Sanaani-Branding-bottom.jpeg";
-import LeftSrc from "@/assets/Sanaani-Branding-Left.jpeg";
-import RightSrc from "@/assets/Sanaani-Branding-Right.jpeg";
-
-import Hero2 from "@/assets/shopify-Hero.jpeg";
-import Top2 from "@/assets/Shopify-Down.png";
-import Bottom2 from "@/assets/Shopify-Bottom.png";
-import Left2 from "@/assets/Shopify-left.png";
-import Right2 from "@/assets/Shopify-Right.png";
-
-
-import Hero4 from "@/assets/SMM-Hero.png";
-import Top4 from "@/assets/SMM-Top.png";
-import Bottom4 from "@/assets/SMM-Bottom.png";
-import Left4 from "@/assets/SMM-Left.png";
-import Right4 from "@/assets/SMM-Right.png";
-
-import Hero5 from "@/assets/Web-Hero.jpeg";
-import Top5 from "@/assets/Web-Down.png";
-import Bottom5 from "@/assets/Web-Bottom.png";
-import Left5 from "@/assets/Web-left.png";
-import Right5 from "@/assets/Web-Right.png";
-
+const img = "@/assets/SMM-Hero.webp"
 const projects = [
   {
     id: 0,
@@ -44,21 +20,29 @@ const projects = [
     category: "Graphic Design",
     client: "Sana'ani-Coffee-House",
     location: "Middle East",
-    HeroSrc: HeroSrc,
-    PreviewSrc: HeroSrc,
-    TopSrc: TopSrc,
-    BottomSrc: BottomSrc,
-    LeftSrc: LeftSrc,
-    RightSrc: RightSrc,
+
+    // ImageKit direct URLs
+    HeroSrc:
+      "https://ik.imagekit.io/aliwani101/Sanaani-Branding-Hero.jpeg?updatedAt=1785492505818",
+    PreviewSrc:
+      "https://ik.imagekit.io/aliwani101/Sanaani-Branding-Hero.jpeg?updatedAt=1785492505818",
+    TopSrc:
+      "https://ik.imagekit.io/aliwani101/Sanaani-Branding-top.jpeg?updatedAt=1785492495469",
+    BottomSrc:
+      "https://ik.imagekit.io/aliwani101/Sanaani-Branding-bottom.jpeg?updatedAt=1785492504419",
+    LeftSrc:
+      "https://ik.imagekit.io/aliwani101/Sanaani-Branding-Left.jpeg?updatedAt=1785492491309",
+    RightSrc:
+      "https://ik.imagekit.io/aliwani101/Sanaani-Branding-Right.jpeg?updatedAt=1785492490671",
   },
 
   {
     id: 1,
     title: "Shopify store",
     year: "2023-2026",
-    desc: "Every Shopify store we build is designed to convert — combining clean aesthetics with purposeful structure. From product layout to checkout flow, each element is shaped to reflect the brand's identity while guiding customers effortlessly toward a decision. ",
+    desc: "Every Shopify store we build is designed to convert — combining clean aesthetics with purposeful structure. From product layout to checkout flow, each element is shaped to reflect the brand's identity while guiding customers effortlessly toward a decision.",
     desc2:
-      " The result is a store that looks premium and performs with precision.",
+      "The result is a store that looks premium and performs with precision.",
     approach:
       "We treat every store as a brand experience, not just a product listing — built with clarity and intent.",
     approachPoints: [
@@ -72,18 +56,20 @@ const projects = [
     category: "Shopify Store",
     client: "Overall",
     location: "International",
-    HeroSrc: Hero2,
-    PreviewSrc: Hero2,
-    TopSrc: Top2,
-    BottomSrc: Bottom2,
-    LeftSrc: Left2,
-    RightSrc: Right2,
+
+    HeroSrc: "https://ik.imagekit.io/aliwani101/Shopify-Right.webp",
+    PreviewSrc: "https://ik.imagekit.io/aliwani101/shopify-Hero.webp",
+    TopSrc: "https://ik.imagekit.io/aliwani101/Shopify-Down.webp",
+    BottomSrc: "https://ik.imagekit.io/aliwani101/Shopify-Bottom.webp",
+    LeftSrc: "https://ik.imagekit.io/aliwani101/Shopify-left.webp",
+    RightSrc: "https://ik.imagekit.io/aliwani101/Shopify-Right.webp",
   },
+
   {
     id: 2,
     title: "Video Editing",
     year: "2024-2026",
-    desc: " Each frame is crafted to bring architectural vision to life through cinematic motion, precise pacing, and purposeful storytelling. ",
+    desc: "Each frame is crafted to bring architectural vision to life through cinematic motion, precise pacing, and purposeful storytelling.",
     desc2:
       "From design walkthroughs to explainer edits, every cut is guided by clarity and visual depth, transforming raw footage into a seamless narrative that speaks to both emotion and intellect.",
     approach:
@@ -94,23 +80,25 @@ const projects = [
       "Sound — layered audio that deepens the visual narrative",
     ],
     Results:
-      " Cinematic architecture videos that build trust, elevate brand perception, accelerate client decisions, and turn compelling visual storytelling into measurable conversions.",
+      "Cinematic architecture videos that build trust, elevate brand perception, accelerate client decisions, and turn compelling visual storytelling into measurable conversions.",
     slug: "Video-Editing",
     category: "Video Editing",
     client: "OverAll Work",
     location: "International",
-    HeroSrc:"/video/Top.mp4",
-    PreviewSrc:"/video/editing.jpg",
+
+    HeroSrc: "/video/Top.mp4",
+    PreviewSrc: "/video/editing.jpg",
     TopSrc: "/video/down.mp4",
     BottomSrc: "/video/Bottom.mp4",
     LeftSrc: "/video/Left.mp4",
     RightSrc: "/video/Right.mp4",
   },
+
   {
     id: 3,
     title: "NexArc Studio",
     year: "2026",
-    desc: "Nexarc Studio's social media presence was shaped to reflect the precision and artistry behind their architectural and design work. ",
+    desc: "Nexarc Studio's social media presence was shaped to reflect the precision and artistry behind their architectural and design work.",
     desc2:
       "Every post, visual, and campaign was crafted to position the studio as a premium design authority — turning scroll-stopping content into meaningful client conversations and lasting brand recognition.",
     approach:
@@ -126,26 +114,30 @@ const projects = [
     category: "Social Media Marketing",
     client: "OverAll",
     location: "International",
-    HeroSrc: Hero4,
-    PreviewSrc: Hero4,
-    TopSrc: Top4,
-    BottomSrc: Bottom4,
-    LeftSrc: Left4,
-    RightSrc: Right4,
+
+    // ImageKit direct URLs
+    HeroSrc: img,
+    PreviewSrc: img,
+    TopSrc:
+      "https://ik.imagekit.io/aliwani101/SMM-Top.png?updatedAt=1785492490872",
+    BottomSrc: "https://ik.imagekit.io/aliwani101/SMM-Bottom.webp",
+    LeftSrc: "https://ik.imagekit.io/aliwani101/SMM-Left.webp",
+    RightSrc: "https://ik.imagekit.io/aliwani101/SMM-Right.webp",
   },
+
   {
     id: 4,
     title: "Website Development",
     year: "2025",
     desc: "Every website we develop is built to represent your brand with clarity, credibility, and purpose.",
     desc2:
-      " From architecture to interaction, each detail is designed to create a seamless user experience — one that communicates value instantly, holds attention, and transforms visitors into clients with confidence",
+      "From architecture to interaction, each detail is designed to create a seamless user experience — one that communicates value instantly, holds attention, and transforms visitors into clients with confidence",
     approach:
       "We begin with brand intent and build outward — every decision rooted in purpose and precision.",
     approachPoints: [
       "Design — clean, brand-aligned visuals that establish credibility from the first scroll",
       "Development — fast, responsive, and scalable builds crafted for seamless performance",
-      "Experience — intuitive structure and flow that guides every visitor toward meaningful action"
+      "Experience — intuitive structure and flow that guides every visitor toward meaningful action",
     ],
     Results:
       "Websites that work as hard as your business — building instant trust, reducing bounce rates, and turning purposeful design into a consistent stream of qualified leads and client conversions.",
@@ -153,12 +145,14 @@ const projects = [
     category: "Website & App Development",
     client: "OverAll",
     location: "International",
-    HeroSrc: Hero5,
-    PreviewSrc: Hero5,
-    TopSrc: Top5,
-    BottomSrc: Bottom5,
-    LeftSrc: Left5,
-    RightSrc: Right5,
+
+    // ImageKit direct URLs
+    HeroSrc: "https://ik.imagekit.io/aliwani101/Web-Hero.webp",
+    PreviewSrc: "https://ik.imagekit.io/aliwani101/Web-Hero.webp",
+    TopSrc: "https://ik.imagekit.io/aliwani101/Web-Down.webp",
+    BottomSrc: "https://ik.imagekit.io/aliwani101/Web-Bottom.webp",
+    LeftSrc: "https://ik.imagekit.io/aliwani101/Web-left.webp",
+    RightSrc: "https://ik.imagekit.io/aliwani101/Web-Right.webp",
   },
 ];
 

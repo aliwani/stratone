@@ -1,9 +1,4 @@
-import aliImg from "@/assets/team/aliImg.jpeg";
-import taimoorImg from "@/assets/team/taimoorImg.png";
-import saffiImg from "@/assets/team/saffiImg.png";
-import usamaImg from "@/assets/team/usamaImg.png";
-import essarImg from "@/assets/team/essarImg.png";
-import danyalImg from "@/assets/team/danyalImg.png";
+
 const teamMembers = [
   {
     id: 1,
@@ -11,7 +6,7 @@ const teamMembers = [
     designation: "Marketing Head",
     dateOfBirth: "May 20, /",
     city: "Islamabad",
-    image: danyalImg,
+    image: "https://ik.imagekit.io/aliwani101/danyalImg.webp",
      socials: {
       linkedin: "/linkedin.com/in/fatimakhan",
       x: "twitter.com/fatimakhan",
@@ -25,7 +20,7 @@ const teamMembers = [
     designation: "Lead Developer",
     dateOfBirth: "July 27,/",
     city: "Muzaffarabad",
-    image: saffiImg,
+    image: "https://ik.imagekit.io/aliwani101/saffiImg.webp",
     socials: {
       linkedin: "/linkedin.com/in/fatimakhan",
       x: "//twitter.com/fatimakhan",
@@ -38,7 +33,7 @@ const teamMembers = [
     designation: "Web developer",
     dateOfBirth: "Dec 25, /",
     city: "Muzaffarabad",
-    image: aliImg,
+    image: "https://ik.imagekit.io/aliwani101/aliImg.jpeg?f-auto,q-80",
     socials: {
       linkedin: "\/linkedin.com/in/fatimakhan",
       x: "\/twitter.com/fatimakhan",
@@ -52,7 +47,7 @@ const teamMembers = [
     designation: "Ecommerce Developer",
     dateOfBirth: "Nov 5, /",
     city: "Islamabad",
-    image: usamaImg,
+    image: "https://ik.imagekit.io/aliwani101/usamaImg.webp",
     socials: {
       linkedin: "linkedin.com/fatimakhan",
       x: "twitter.com/fatimakhan",
@@ -65,7 +60,7 @@ const teamMembers = [
     designation: "Graphic Designer",
     dateOfBirth: "Nov 5, /",
     city: "Islamabad",
-    image: essarImg,
+    image:"https://ik.imagekit.io/aliwani101/essarImg.webp",
      socials: {
       linkedin: "//linkedin.com/in/fatimakhan",
       x: "/twitter.com/fatimakhan",
@@ -78,7 +73,7 @@ const teamMembers = [
     designation: "Social Media Manager",
     dateOfBirth: "Nov 5, 1980 /",
     city: "Muzaffarabad",
-    image: taimoorImg,
+    image: "https://ik.imagekit.io/aliwani101/taimoorImg.webp",
    socials: {
       linkedin: "/linkedin.com/in/fatimakhan",
       x: "/twitter.com/fatimakhan",
