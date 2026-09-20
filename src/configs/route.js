@@ -15,5 +15,7 @@ export const ROUTES = [
   { path: "/blog", name: "Blog", element: Blog },
   { path: "/policy", name: "Privacy Policy", element: PrivacyPolicy },
   { path: "/404", name: "404", element: Page404 },
+  { path: "*",  element: Page404 },
+  
   { path: "/work/:slug", element: WorkCardPage },
 ];
