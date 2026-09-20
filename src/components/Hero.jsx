@@ -51,6 +51,7 @@ function Hero() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, ease: "easeOut" }}
             src={src}
+            loading="lazy"
             alt=""
             className="  w-full object-cover "
           />

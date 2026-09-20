@@ -47,7 +47,7 @@ function Faqs({ Num }) {
                 href="https://www.flaticon.com/free-icons/right-arrow"
                 title="right arrow icons"
               >
-                <img className="h-4 w-4" src={arrow} alt="" />
+                <img loading="lazy" className="h-4 w-4" src={arrow} alt="" />
               </a>
             </div>
           </div>

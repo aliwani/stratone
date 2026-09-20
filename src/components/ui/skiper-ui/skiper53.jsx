@@ -60,7 +60,7 @@ const HoverExpand_002 = ({ imageData, className }) => {
                   >
                     {/* Image */}
                     <div className="h-[55%] w-full rounded-2xl overflow-hidden">
-                      <img
+                      <img  loading="lazy"
                         className="w-full h-full object-cover rounded-2xl"
                         src={image.src}
                         alt=""

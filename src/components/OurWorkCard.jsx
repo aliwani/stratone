@@ -7,6 +7,7 @@ function OurWorkCard({slug,year, category,title,src}) {
       {" "}
       <div className="w-full ">
         <img
+        loading="lazy"
           src={src}
           alt={title}
           className=" w-full object-cover rounded-md"

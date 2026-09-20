@@ -21,6 +21,7 @@ function About3() {
           <div key={member.id} className="flex w-full bg-[#222222]">
             <div className="w-[43%] md:w-60 h-70">
               <img
+              loading="lazy"
                 className="h-full w-full object-cover"
                 src={member.image}
                 alt=""

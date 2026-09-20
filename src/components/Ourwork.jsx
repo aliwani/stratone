@@ -33,7 +33,7 @@ function Ourwork() {
             </motion.p>
             
             <div className="md:w-1/2 w-full h-full  md:h-100 bg-white">
-            <img className="h-full w-full object-cover" src={workimg} alt="" />
+            <img loading="lazy" className="h-full w-full object-cover" src={workimg} alt="" />
             </div>
           </div>
         </div>

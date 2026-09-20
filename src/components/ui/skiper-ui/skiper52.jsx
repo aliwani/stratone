@@ -113,7 +113,7 @@ const HoverExpand_001 = ({ imageData, className }) => {
                       className="absolute inset-0 flex flex-col items-start justify-end gap-8 px-10 py-6 z-20"
                     >
                       <div className="h-full w-full rounded-2xl">
-                        <img
+                        <img  loading="lazy"
                           className="w-full h-full object-cover rounded-2xl"
                           src={image.src}
                           alt=""
@@ -157,7 +157,7 @@ const HoverExpand_001 = ({ imageData, className }) => {
           {imageData.map((image, index) => (
             <div className="h-full w-full flex flex-col gap-8 bg-black rounded-2xl px-5 py-6" key={index}>
               <div className="h-[clamp(2rem,35vw,15rem)] md:h-50 w-full ">
-                <img
+                <img  loading="lazy"
                   className="w-full h-full object-cover rounded-2xl"
                   src={image.src}
                   alt=""

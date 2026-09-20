@@ -22,7 +22,7 @@ function OverviewImage({ project }) {
         />
       </div>
       <div className=" h-fit w-fit overflow-hidden rounded-lg md:rounded-2xl">
-        {/* <img
+        {/* <img  loading="lazy"
           className="w-fit h-fit cover rounded-2xl"
           src={project.TopSrc}
           alt=""

@@ -10,7 +10,7 @@ function OurWorkSectionCard({ slug, year, category, src, title }) {
       className="cursor-pointer relative bg-white  p-0.5 gap-0.5 flex flex-row  md:h-130 w-full   overflow-hidden"
     >
       <div className="w-3/5 h-full ">
-        <img
+        <img  loading="lazy"
           src={src}
           alt={title}
           className="h-full w-full object-cover rounded-2xl"

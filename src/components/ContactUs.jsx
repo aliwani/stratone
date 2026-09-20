@@ -16,6 +16,7 @@ function ContactUs() {
         whileInView={{ scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, ease: "easeIn" }}
+        loading="lazy"
         src="https://ik.imagekit.io/aliwani101/contact.jpg?updatedAt=1785492498703"
         className="absolute  top-0 -z-1 left-0 h-full w-full   object-cover"
         alt=""
@@ -46,7 +47,7 @@ function ContactUs() {
             <div
               className={`h-11 w-12 md:h-22 md:w-24 xl:h-38 xl:w-40  mb-1.5 xl:mb-3.5   `}
             >
-              <img src="https://ik.imagekit.io/aliwani101/3.png?updatedAt=1785492489913" className="h-full w-full" alt="" />
+              <img loading="lazy" src="https://ik.imagekit.io/aliwani101/3.png?updatedAt=1785492489913" className="h-full w-full" alt="" />
             </div>
             <h1>mething</h1>
           </motion.div>

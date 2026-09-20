@@ -57,7 +57,7 @@ function ContactInfo() {
         </span>
         <div className="flex  gap-3 w-full h-full">
           <div className="w-15 h-15 overflow-hidden ">
-            <img
+            <img  loading="lazy"
               src="https://ik.imagekit.io/aliwani101/danyalImg.webp"
               alt=""
               className="w-full h-full object-cover object-top scale-150"
