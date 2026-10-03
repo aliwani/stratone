@@ -16,7 +16,7 @@ function Home() {
     });
   };
   return (
-    <div className='h-full w-screen md:mt-0.5 pl-0.5 md:px-0.5   bg-white border-box' >
+    <div className='h-full w-screen   bg-white border-box' >
       <Hero/>
       <AboutSection/>
       <WhatWeDo handleScroll={handleScroll}/>

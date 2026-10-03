@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 function Page404() {
   return (
-    <div className="bg-white h-full w-full p-0.5 pb-0 flex flex-col md:flex-row gap-0.5">
+    <div className="bg-white h-full w-full md:p-0.5 pb-0 flex flex-col md:flex-row gap-0.5">
       <motion.div className="bg-[#111111] flex items-center justify-center h-fit md:h-screen p-20 w-full md:w-1/2 rounded-2xl">
         <motion.img
           initial={{ opacity: 0, y: 60 }}

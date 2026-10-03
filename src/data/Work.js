@@ -1,4 +1,4 @@
-const img = "@/assets/SMM-Hero.webp"
+
 const projects = [
   {
     id: 0,
@@ -116,8 +116,8 @@ const projects = [
     location: "International",
 
     // ImageKit direct URLs
-    HeroSrc: img,
-    PreviewSrc: img,
+    HeroSrc: "https://ik.imagekit.io/aliwani101/compressed-SMM-Prreview.webp",
+    PreviewSrc: "https://ik.imagekit.io/aliwani101/compressed-SMM-Prreview.webp",
     TopSrc:
       "https://ik.imagekit.io/aliwani101/SMM-Top.png?updatedAt=1785492490872",
     BottomSrc: "https://ik.imagekit.io/aliwani101/SMM-Bottom.webp",

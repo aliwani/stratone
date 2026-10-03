@@ -12,7 +12,7 @@ function ChooseCard({ img, title, desc }) {
         className="absolute top-0 left-0 -z-2 rounded-lg md:rounded-3xl h-full w-full object-cover"
       />
 
-      <div className="absolute bottom-0 left-0  bg-linear-to-t from-black to-transparent  h-3/5 w-full rounded-b-lg md:rounded-b-3xl opacity-90   -z-1" />
+      <div className="absolute bottom-0 left-0  bg-linear-to-t from-black to-transparent  h-5/5 md:3/5 w-full rounded-b-lg md:rounded-b-3xl opacity-90   -z-1" />
       <motion.h1
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}

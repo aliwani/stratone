@@ -84,6 +84,19 @@ const servicesData = [
     desc: "Scalable, fast, and modern web & app solutions tailored to your business needs.",
     tools: ["React", "Next.js", "Node.js", "MongoDB"],
   },
+  {
+    id: 5,
+    num: "(06)",
+    title: "Search Engine Optimization",
+    img: "https://ik.imagekit.io/aliwani101/websiteandappdevelopment.webp",
+    list: [
+      "Local GMB Optimization",
+      "Website Local Visibility",
+      "Website SEO",
+    ],
+    desc: "Scalable, fast, and modern web & app solutions tailored to your business needs.",
+    tools: ["React", "Next.js", "Node.js", "MongoDB"],
+  },
 ];
 
 export default servicesData;

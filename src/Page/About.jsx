@@ -10,8 +10,8 @@ import Faqs from "../components/FAQS";
 function About() {
   
   return (
-    <div className="h-full w-screen md:mt-0.5 pl-0.5 md:px-0.5 bg-white border-box overflow-hidden">
-      <div className="bg-[#111111] rounded-t-2xl">
+    <div className="h-full w-screen  bg-white border-box overflow-hidden">
+      <div className="bg-[#111111]">
         <Hero />
         <div className="px-5 md:px-7.5 xl:px-10">
         <About1/>

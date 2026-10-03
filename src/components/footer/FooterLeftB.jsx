@@ -34,14 +34,14 @@ function FooterLeftB() {
   }
 
   return (
-    <div className="relative flex flex-col justify-between rounded-2xl text-white w-full md:w-2/5 md:min-w-95 md:w-max-w-300 h-59 md:h-full p-5 md:p-7.5 xl:p-10">
-      <img  loading="lazy"
+    <div className="relative flex flex-col justify-between rounded-2xl bg-[#111111] text-white w-full md:w-2/5 md:min-w-95 md:w-max-w-300 h-59 md:h-full p-5 md:p-7.5 xl:p-10">
+      {/* <img  loading="lazy"
         className="absolute top-0 left-0 z-0 w-full h-full object-cover rounded-2xl"
         src="https://ik.imagekit.io/aliwani101/footerImg.jpg"
         
-      />
-      <div className="absolute inset-0 -z-1 bg-linear-to-l h-full bg-[#111111] opacity-50 rounded-2xl" />
-      <div className="z-1">
+      /> */}
+      {/* <div className="absolute inset-0 -z-1 bg-linear-to-l h-full bg-[#111111] opacity-50 rounded-2xl" /> */}
+      <div className="z-1 ">
         <div className="flex flex-col gap-3 xl:gap-5 pb-7.5">
           <span
             style={{

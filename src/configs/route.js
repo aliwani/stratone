@@ -9,8 +9,8 @@ import WorkCardPage from "@/components/WorkCardPage";
 
 export const ROUTES = [
   { path: "/", name: "Home", element: Home },
-  { path: "/about", name: "About", element: About },
-  { path: "/work", name: "Work", element: Work },
+  { path: "/work", name: "Our Work", element: Work },
+  { path: "/about", name: "About US", element: About },
   { path: "/contact", name: "Contact", element: Contact },
   { path: "/blog", name: "Blog", element: Blog },
   { path: "/policy", name: "Privacy Policy", element: PrivacyPolicy },

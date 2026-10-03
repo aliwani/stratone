@@ -6,7 +6,7 @@ import { Skiper53 } from "../ui/skiper-ui/skiper53";
 function About2() {
   const [windowWidth, setWindowWidth] = useState(1200);
   const [currentWidth, setcurrentWidth] = useState(1200);
-  const isPc = currentWidth >= 809 ? true : false;
+  const isPc = currentWidth >= 1199 ? true : false;
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);

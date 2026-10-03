@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import WorkCardInfo from "./workcard/WorkCardInfo";
 import WorkCardHero from "./workcard/WorkCardHero";
 import Page404 from "@/Page/Page404";
+import WorkCardToggle from "./WorkCardToggle";
 function WorkCardPage() {
   const { slug } = useParams();
   const project = projects.find((item) => item.slug === slug);
@@ -11,8 +12,8 @@ function WorkCardPage() {
   } 
 
   return (
-    <div className="px-0.5 ">
-      <div className="flex flex-col justify-center items-center  *: bg-[#111111] rounded-t-2xl">
+    <div className=" ">
+      <div className="flex flex-col justify-center items-center  *: bg-[#111111] ">
         <WorkCardHero project={project} />
         <WorkCardInfo project={project} />
       </div>

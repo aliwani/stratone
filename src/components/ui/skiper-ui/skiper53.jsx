@@ -38,7 +38,7 @@ const HoverExpand_002 = ({ imageData, className }) => {
               className="relative cursor-pointer bg-[#111111] flex flex-col items-start justify-between overflow-hidden rounded-xl w-full px-6 py-5"
               initial={{ height: "3.5rem" }}
               animate={{
-                height: activeImage === index ? "32rem" : "3.5rem",
+                height: activeImage === index ? "auto" : "3.5rem",
               }}
               transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
               onClick={() => setActiveImage(index)}
@@ -56,10 +56,10 @@ const HoverExpand_002 = ({ imageData, className }) => {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 20 }}
                     transition={{ duration: 0.3, delay: 0.1 }}
-                    className="absolute inset-0 flex flex-col items-start justify-end gap-5 px-6 py-5 z-20"
+                    className=" flex flex-col items-start justify-start gap-5 px-1 py-5 z-20"
                   >
                     {/* Image */}
-                    <div className="h-[55%] w-full rounded-2xl overflow-hidden">
+                    <div className="h-40 w-full rounded-2xl overflow-hidden">
                       <img  loading="lazy"
                         className="w-full h-full object-cover rounded-2xl"
                         src={image.src}

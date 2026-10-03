@@ -5,7 +5,7 @@ function WorkCardHero({ project }) {
 
   return (
     <div
-      className={`relative flex items-center justify-center bg-cover bg-center w-full min-h-85    md:h-125 xl:h-188 rounded-none md:rounded-t-2xl`}
+      className={`relative flex items-center justify-center bg-cover bg-center w-full min-h-85    md:h-125 xl:h-188 `}
     >
         {isVideo(project.HeroSrc) ? (
     <video
@@ -22,7 +22,7 @@ function WorkCardHero({ project }) {
       className="absolute inset-0 w-full h-full bg-cover bg-center"
     />
   )}
-      <div className="absolute h-85 md:h-125 xl:h-188 rounded-none md:rounded-t-2xl mt-0 m-0.5 inset-0 bg-black/50" />{" "}
+      <div className="absolute h-85 md:h-125 xl:h-188   inset-0 bg-black/50" />{" "}
       <MarqueeHeading project={project} />
     </div>
   );

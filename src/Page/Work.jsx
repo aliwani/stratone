@@ -21,8 +21,8 @@ function Work() {
   }, []);
 
   return (
-    <div className="bg-white h-full w-screen p-0.5 pb-0">
-      <section className="bg-[#111111] rounded-t-2xl flex flex-col items-center py-35 md:py-50">
+    <div className="bg-white h-full w-screen">
+      <section className="bg-[#111111] flex flex-col items-center py-35 md:py-50">
         <Heading heading="our work" />
         <motion.div
           initial={{ opacity: 0, y: 60 }}

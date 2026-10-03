@@ -35,7 +35,7 @@ function Hero() {
       initial={{ opacity: isMobile ? 0 : 1}}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className={`bg-[#111111]   md:rounded-t-2xl md:gap-5 md:h-[clamp(530px,60vw,620px)] pt-35 md:pt-0  w-full xl:h-[clamp(700px,49vw,100rem)]  flex md:flex-row flex-col md:items-center justify-between  border-box overflow-hidden`}
+      className={`bg-[#111111]    md:gap-5 md:h-[clamp(530px,60vw,620px)] pt-35 md:pt-0  w-full xl:h-[clamp(700px,49vw,100rem)]  flex md:flex-row flex-col md:items-center justify-between  border-box overflow-hidden`}
     >
     
       {isPc > 809 && (

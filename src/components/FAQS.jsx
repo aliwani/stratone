@@ -4,7 +4,10 @@ import arrow from "@/assets/right.png";
 import { Plus } from "lucide-react";
 import faqs from "../data/Faqs";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+
 function Faqs({ Num }) {
+   const navigate = useNavigate();
   const [hover, sethover] = useState(false);
   const [isOpen, setisOpen] = useState(Array(faqs.length).fill(false));
   const toggleIdx = (idx) => {
@@ -25,8 +28,11 @@ function Faqs({ Num }) {
           <h1 className="font-antonSC uppercase leading-none text-white text-[40px] md:text-[120px]">
             faq's
           </h1>
-          <div className="min-h-30  md:w-auto md:h-45 max-w-105 bg-[#202020] rounded-2xl p-5 flex flex-row gap-5 justify-between items-end">
-            <div className="w-auto flex flex-col gap-6  items-start justify-between">
+          <div
+          onClick={()=>navigate("/contact")}
+          className="cursor-pointer min-h-30  md:w-auto md:h-45 max-w-105 bg-[#202020] rounded-2xl p-5 flex flex-row gap-5 justify-between items-end">
+            <div 
+            className=" w-auto flex flex-col gap-6  items-start justify-between">
               <h3 className="font-antonSC text-white tracking-wider text-lg md:text-[26px] uppercase">
                 still have a question?
               </h3>
@@ -35,6 +41,8 @@ function Faqs({ Num }) {
               </span>
             </div>
             <div
+            
+            
               onMouseEnter={() => sethover(true)}
               onMouseLeave={() => sethover(false)}
               style={{
@@ -44,7 +52,7 @@ function Faqs({ Num }) {
               className="bg-white flex   items-center justify-center h-8 w-8 rounded-full"
             >
               <a
-                href="https://www.flaticon.com/free-icons/right-arrow"
+               
                 title="right arrow icons"
               >
                 <img loading="lazy" className="h-4 w-4" src={arrow} alt="" />
@@ -69,7 +77,7 @@ function Faqs({ Num }) {
                 />
               </div>
               <div
-                className={`w-3/4 overflow-hidden transition-all duration-400 flex items-start ${isOpen[idx] ? "max-h-50" : "max-h-0"}`}
+                className={`w-full md:w-3/4 overflow-hidden transition-all duration-400 flex items-start ${isOpen[idx] ? "max-h-50" : "max-h-0"}`}
               >
                 <span
                   className={`text-white/90 font-clashRegular leading-tight p-5 pt-0 font-medium text-[16px] tracking-wider  transition-all duration-400 ${isOpen[idx] ? "translate-y-0 opacity-100" : "translate-y-5 opacity-0"}

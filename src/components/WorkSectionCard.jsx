@@ -3,7 +3,7 @@ import React from "react";
 const WorkSectionCard = React.forwardRef(({ img, list }, ref)  =>{
   
   return (
-    <div ref={ref}  className="flex flex-col gap-4 md:gap-6 xl:gap-10 md:w-55  xl:min-w-84 p-2 ">
+    <div ref={ref}  className="sticky top-20 self-start flex flex-col gap-4 md:gap-6 xl:gap-10 md:w-55  xl:min-w-84 p-2 ">
       <div className="w-full md:h-41.25 xl:h-57.5 p-0.5 md:p-1 bg-white">
         <img
         loading="lazy"

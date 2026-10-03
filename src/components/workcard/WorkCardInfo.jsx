@@ -2,6 +2,7 @@ import React from "react";
 import SectionHeader from "../resuables/SectionHeader";
 import WorkCardInfoSectionLeft from "./WorkCardInfoSectionLeft";
 import WorkCardInfoSectionRight from "./WorkCardInfoSectionRight";
+import WorkCardToggle from "../WorkCardToggle";
 
 function WorkCardInfo({project}) {
   return (
@@ -12,6 +13,7 @@ function WorkCardInfo({project}) {
         <WorkCardInfoSectionLeft   project={project}/>
         <WorkCardInfoSectionRight project={project} />
         </div>
+        <WorkCardToggle/>
       </div>
     </section>
   );

@@ -7,9 +7,9 @@ function Hero() {
           whileInView={{ opacity: 1, }}
           transition={{ ease: "easeOut", duration: 0.3 }}
           viewport={{ once: true }}
-    className="relative flex flex-col items-center justify-center bg-[url('https://ik.imagekit.io/aliwani101/AboutHero.webp')] bg-cover w-full min-h-110    md:h-135 xl:h-188 rounded-2xl z-0 px-10">
+    className="relative flex flex-col items-center justify-center bg-[url('https://ik.imagekit.io/aliwani101/AboutHero.webp')] bg-cover w-full min-h-110    md:h-135 xl:h-188  z-0 px-10">
       {/* Overlay */}
-      <div className="absolute top-0 left-0 -z-1 w-full h-full bg-linear-to-l from-black to-black opacity-50 rounded-2xl"></div>
+      <div className="absolute top-0 left-0 -z-1 w-full h-full bg-linear-to-l from-black to-black opacity-50 "></div>
       <div className="h-1/2 mt-40 md:h-[55%] flex items-end xl:mb-20 ">
         <img 
         loading="lazy"

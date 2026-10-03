@@ -49,14 +49,14 @@ function WhatWeDo({ handleScroll }) {
         }}
       />
 
-      <section className="z-10 flex flex-col py-20 md:py-40 gap-8 h-full">
+      <section className=" z-10 flex flex-col py-20 md:py-40 gap-8 h-full">
         <SectionHeader Num="[02]" Text="What we do" />
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="flex flex-col md:flex-row justify-between gap-8  md:gap-5 "
+          className=" flex flex-col md:flex-row justify-between items-start gap-8  md:gap-5 "
         >
           <div className="w-auto h-full flex flex-col gap-7 md:gap-12">
             <div className="py-1.5 ">
@@ -83,6 +83,7 @@ function WhatWeDo({ handleScroll }) {
             </div>
           </div>
           <WorkSectionCard
+           
             ref={ref}
             img={activeService.img}
             list={activeService.list}

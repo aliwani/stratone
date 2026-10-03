@@ -110,9 +110,9 @@ const HoverExpand_001 = ({ imageData, className }) => {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 20 }}
                       transition={{ duration: 0.3, delay: 0.1 }}
-                      className="absolute inset-0 flex flex-col items-start justify-end gap-8 px-10 py-6 z-20"
+                      className="absolute inset-0 flex flex-col items-start justify-start mt-10 gap-8 px-10 py-6 z-20"
                     >
-                      <div className="h-full w-full rounded-2xl">
+                      <div className="h-3/5 w-full rounded-2xl">
                         <img  loading="lazy"
                           className="w-full h-full object-cover rounded-2xl"
                           src={image.src}
