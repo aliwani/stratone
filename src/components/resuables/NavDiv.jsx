@@ -8,6 +8,9 @@ function NavDiv({ setIsOpen, isOpen }) {
 
   return (
     <div
+    id="main-menu"
+    role="dialog"
+    aria-label="Navigation menu"
     onClick={()=>setIsOpen(false)}
       className={`fixed top-0 left-0 z-90 inset-0 bg-black/50 backdrop-blur-lg h-full w-screen transition-all duration-500 ${
         isOpen ? "opacity-100  " : "opacity-0  pointer-events-none"
@@ -69,7 +72,7 @@ function NavDiv({ setIsOpen, isOpen }) {
             alt=""
           />
           <div className="z-10 h-5 w-15 md:h-8 md:w-30">
-            <img  loading="lazy" className="h-full w-full cover" src="https://ik.imagekit.io/aliwani101/2.png?updatedAt=1785492490542" alt="" />
+            <img  loading="lazy" className="h-full w-full cover" src="https://ik.imagekit.io/aliwani101/2.png?updatedAt=1785492490542" alt="Stratone Studio logo" />
           </div>
           <div className=" z-10 flex flex-col gap-1">
             <h4 className="text-[14px] md:text-[16px]  leading-none text-white font-clashRegular tracking-wider">

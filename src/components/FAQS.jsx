@@ -5,6 +5,7 @@ import { Plus } from "lucide-react";
 import faqs from "../data/Faqs";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import { FAQPageSchema } from "./StructuredData";
 
 function Faqs({ Num }) {
    const navigate = useNavigate();
@@ -15,7 +16,8 @@ function Faqs({ Num }) {
   };
 
   return (
-    <div className="w-full flex flex-col justify-between gap-20 h-fit  bg-[#111111] py-25 md:py-50">
+    <section className="w-full flex flex-col justify-between gap-20 h-fit  bg-[#111111] py-25 md:py-50" aria-labelledby="faq-heading">
+      <FAQPageSchema faqs={faqs} />
       <SectionHeader Num={Num} Text="before you ask" />
       <motion.div
         initial={{ opacity: 0, y: 60 }}
@@ -25,9 +27,9 @@ function Faqs({ Num }) {
         className="flex flex-col md:flex-row items-start gap-10"
       >
         <div className="w-full md:w-1/2 flex flex-col justify-between gap-7 md:gap-10">
-          <h1 className="font-antonSC uppercase leading-none text-white text-[40px] md:text-[120px]">
-            faq's
-          </h1>
+          <h2 id="faq-heading" className="font-antonSC uppercase leading-none text-white text-[40px] md:text-[120px]">
+            Frequently Asked Questions
+          </h2>
           <div
           onClick={()=>navigate("/contact")}
           className="cursor-pointer min-h-30  md:w-auto md:h-45 max-w-105 bg-[#202020] rounded-2xl p-5 flex flex-row gap-5 justify-between items-end">
@@ -63,20 +65,28 @@ function Faqs({ Num }) {
         <div className="w-full md:w-1/2 h-fit flex flex-col justify-center gap-0.5 p-0.5 bg-white">
           {faqs.map((item, idx) => (
             <div
-              onClick={() => toggleIdx(idx)}
               key={idx}
               className=" flex justify-between flex-col  cursor-pointer bg-[#111111] w-full h-full rounded-lg "
             >
-              <div className="flex justify-between w-full gap-3 items-start p-4.5">
+              <button
+                onClick={() => toggleIdx(idx)}
+                aria-expanded={isOpen[idx]}
+                aria-controls={`faq-answer-${idx}`}
+                className="flex justify-between w-full gap-3 items-start p-4.5 bg-transparent border-none text-left"
+              >
                 <span className="text-white/90 w-[90%] text-[16px] md:text-lg font-clashRegular font-medium leading-none  tracking-wider uppercase ">
                   {item.question}
                 </span>
                 <Plus
                   className={`transition-transform  duration-300  ${isOpen[idx] ? "rotate-45" : "rotate-0"} `}
                   color="white"
+                  aria-hidden="true"
                 />
-              </div>
+              </button>
               <div
+                id={`faq-answer-${idx}`}
+                role="region"
+                aria-labelledby={`faq-question-${idx}`}
                 className={`w-full md:w-3/4 overflow-hidden transition-all duration-400 flex items-start ${isOpen[idx] ? "max-h-50" : "max-h-0"}`}
               >
                 <span
@@ -90,7 +100,7 @@ function Faqs({ Num }) {
           ))}
         </div>
       </motion.div>
-    </div>
+    </section>
   );
 }
 

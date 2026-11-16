@@ -52,7 +52,7 @@ function Hero() {
             transition={{ duration: 0.5, ease: "easeOut" }}
             src={src}
             loading="lazy"
-            alt=""
+            alt="Stratone Studio creative agency team at work"
             className="  w-full object-cover "
           />
         </motion.div>
@@ -97,13 +97,15 @@ function Hero() {
           viewport={{ once: true }}
           className="flex flex-col items-start gap-2 justify-center w-full overflow-hidden  h-fit border-box "
         >
+          <h1 className="sr-only">Stratone Studio — Where Strategy Meets Vision</h1>
           <motion.div className="h-fit w-fit overflow-hidden">
-            <motion.h1
+            <motion.span
               variants={item}
-              className="font-antonSC w-fit text-[calc(100cqw*0.2)] md:text-[clamp(5rem,12.1vw,30rem)] xl:text-[clamp(5rem,12.8vw,33rem)]   leading-[0.95]  "
+              aria-hidden="true"
+              className="font-antonSC block w-fit text-[calc(100cqw*0.2)] md:text-[clamp(5rem,12.1vw,30rem)] xl:text-[clamp(5rem,12.8vw,33rem)]   leading-[0.95]  "
             >
               STRATEGY
-            </motion.h1>
+            </motion.span>
           </motion.div>
           <div className="w-full flex md:flex-row flex-col gap-2 items-start md:items-end overflow-hidden">
             <motion.div
@@ -121,27 +123,29 @@ function Hero() {
                   viewport={{ once: true }}
                   className="  object-cover h-full w-full "
                   src="https://ik.imagekit.io/aliwani101/eye.png?updatedAt=1785492586073"
-                  alt=""
+                  alt="Creative eye illustration representing Stratone Studio's design vision"
                 />
               </motion.div>
             </motion.div>
 
             <div className=" flex  md:flex-col h-fit min-w-0 md:w-fit  items-start justify-between gap-1 md:gap-2 xl:gap-3   order-1 md:order-2 ">
               <motion.div className="overflow-hidden">
-                <motion.h1
+                <motion.span
                   variants={item}
-                  className="font-antonSC h-fit text-[calc(100cqw*0.21)] md:text-[clamp(3.9rem,8.5vw,20rem)]  xl:text-[clamp(4rem,8.9vw,20rem)] w-fit leading-none md:leading-[clamp(3.9rem,8.1vw,20rem)] overflow-hidden   "
+                  aria-hidden="true"
+                  className="font-antonSC block h-fit text-[calc(100cqw*0.21)] md:text-[clamp(3.9rem,8.5vw,20rem)]  xl:text-[clamp(4rem,8.9vw,20rem)] w-fit leading-none md:leading-[clamp(3.9rem,8.1vw,20rem)] overflow-hidden   "
                 >
                   MEETS
-                </motion.h1>
+                </motion.span>
               </motion.div>
               <motion.div className="overflow-hidden">
-                <motion.h1
+                <motion.span
                   variants={item}
-                  className="font-antonSC h-fit text-[calc(100cqw*0.21)] md:text-[clamp(3.9rem,8.7vw,20rem)] xl:text-[clamp(3.9rem,9vw,20rem)] w-fit leading-none overflow-hidden md:leading-[clamp(3.9rem,8.1vw,20rem)] "
+                  aria-hidden="true"
+                  className="font-antonSC block h-fit text-[calc(100cqw*0.21)] md:text-[clamp(3.9rem,8.7vw,20rem)] xl:text-[clamp(3.9rem,9vw,20rem)] w-fit leading-none overflow-hidden md:leading-[clamp(3.9rem,8.1vw,20rem)] "
                 >
                   VISION
-                </motion.h1>
+                </motion.span>
               </motion.div>
             </div>
           </div>

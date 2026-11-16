@@ -14,7 +14,7 @@ function TestimonialCard({ person }) {
         className="flex items-start   justify-between   gap-3"
       >
         <div className="h-11 w-11 md:h-12 md:w-12  bg-white rounded-full  overflow-hidden shrink-0">
-          <img  loading="lazy" className="h-full w-full object-cover" src={person.img}  />
+          <img  loading="lazy" className="h-full w-full object-cover" src={person.img} alt={`${person.name} — client testimonial`}  />
         </div>
         <div className="text-white w-full rounded-2xl tracking-none leading-none md:tracking-wider md:leading-tight flex flex-col gap-2 p-5 bg-[#282727]">
           <span className="text-[16px] md:text-lg tracking-wider  font-clashSemi  font-semibold uppercase">
@@ -38,7 +38,7 @@ function TestimonialCard({ person }) {
           </p>
         </div>
         <div className="h-12 w-12  bg-white rounded-full  overflow-hidden shrink-0">
-          <img  loading="lazy" className="h-full w-full object-cover" src={replyImg} />
+          <img  loading="lazy" className="h-full w-full object-cover" src={replyImg} alt="Stratone Studio logo" />
         </div>
       </motion.div>
     </div>

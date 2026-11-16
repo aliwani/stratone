@@ -24,7 +24,7 @@ function About3() {
               loading="lazy"
                 className="h-full w-full object-cover"
                 src={member.image}
-                alt=""
+                alt={`${member.name} — ${member.designation}`}
               />
             </div>
             <div className="w-[57%] md:w-full h-full p-5 gap-8 flex flex-col justify-between">

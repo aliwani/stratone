@@ -27,18 +27,18 @@ function ContactInfo() {
           </h3>
           <div className="flex gap-3">
             <span className="font-clashLight font-meduim  text-white text-lg">
-              <a href="https://www.instagram.com/stratonestudio?igsh=ZG11dDZzcTRyb3o3&utm_source=qr">Instagram</a>
+              <a href="https://www.instagram.com/stratonestudio?igsh=ZG11dDZzcTRyb3o3&utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a>
             </span>
             <span className="font-clashLight font-meduim  text-white text-lg">
-              <a href="https://www.linkedin.com/company/stratonestudio">Linked In</a>
+              <a href="https://www.linkedin.com/company/stratonestudio" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </span>
           </div>
           <div className="flex gap-3">
             <span className="font-clashLight font-meduim  text-white text-lg">
-              <a href="https://www.facebook.com/share/1D4JUbsm7V/?mibextid=wwXIfr">Facebook</a>
+              <a href="https://www.facebook.com/share/1D4JUbsm7V/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Facebook</a>
             </span>
             <span className="font-clashLight font-meduim  text-white text-lg">
-              <a href="">X</a>
+              <a href="#" aria-label="X (coming soon)">X</a>
             </span>
           </div>
         </div>
@@ -59,7 +59,7 @@ function ContactInfo() {
           <div className="w-15 h-15 overflow-hidden ">
             <img  loading="lazy"
               src="https://ik.imagekit.io/aliwani101/danyalImg.webp"
-              alt=""
+              alt="Danyal Wani, Creative Director at Stratone Studio"
               className="w-full h-full object-cover object-top scale-150"
             />
           </div>

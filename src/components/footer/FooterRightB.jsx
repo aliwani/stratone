@@ -13,16 +13,16 @@ function FooterRightB() {
         <span>Developed by Stratone Studio</span>
       </div>
       <div className="w-full md:w-1/2 h-full order-1 md:order-2 flex flex-col gap-3 xl:gap-5 ">
-        {/* <span className="text-white text-[16px] md:text-lg font-clashSemi font-semibold tracking-wider uppercase">
+        <span className="text-white text-[16px] md:text-lg font-clashSemi font-semibold tracking-wider uppercase">
           contact info
-        </span> */}
-        <div className="flex flex-col gap-1 text-white text-[16px] md:text-lg font-clashMeduim tracking-wider">
-          {/* <span>03000075996</span> */}
-          {/* <span>stratone@gmail.com</span> */}
-          {/* <span className="leading-none">
-            Near Pm House, Jalalabad, Muzaffarabad, AJK{" "}
-          </span> */}
-        </div>
+        </span>
+        <address className="flex flex-col gap-1 text-white text-[16px] md:text-lg font-clashMeduim tracking-wider not-italic">
+          <a href="tel:+923160865229" className="hover:underline">+92 316 086 522 9</a>
+          <a href="mailto:StudioStratone@gmail.com" className="hover:underline">StudioStratone@gmail.com</a>
+          <span className="leading-none">
+            Muzaffarabad, AJK, Pakistan
+          </span>
+        </address>
       </div>
     </div>
   );

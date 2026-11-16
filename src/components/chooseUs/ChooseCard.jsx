@@ -13,7 +13,7 @@ function ChooseCard({ img, title, desc }) {
       />
 
       <div className="absolute bottom-0 left-0  bg-linear-to-t from-black to-transparent  h-5/5 md:3/5 w-full rounded-b-lg md:rounded-b-3xl opacity-90   -z-1" />
-      <motion.h1
+      <motion.h3
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ ease: "easeOut", duration: 0.5 }}
@@ -21,7 +21,7 @@ function ChooseCard({ img, title, desc }) {
         className="font-antonSC tracking-wide text-center"
       >
         {title}
-      </motion.h1>
+      </motion.h3>
       <motion.span
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}

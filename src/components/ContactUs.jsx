@@ -19,21 +19,22 @@ function ContactUs() {
         loading="lazy"
         src="https://ik.imagekit.io/aliwani101/contact.jpg?updatedAt=1785492498703"
         className="absolute  top-0 -z-1 left-0 h-full w-full   object-cover"
-        alt=""
+        alt="Creative workspace background"
       />
       <div className="absolute inset-0 -z-1  bg-linear-to-l h-full bg-[#111111]  opacity-50" />
 
-      <div className="flex flex-col   font-antonSC leading-none   text-white text-[60px] md:text-[110px] xl:text-[200px]">
+      <div className="flex flex-col   font-antonSC leading-none   text-white text-[60px] md:text-[110px] xl:text-[200px]" aria-label="Let's build something timeless">
         <div className="overflow-hidden">
-          <motion.h1
+          <motion.span
             initial={{ opacity: 0, y: isPC ? 100 : 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className=""
+            className="block"
+            aria-hidden="true"
           >
             let's build
-          </motion.h1>
+          </motion.span>
         </div>
         <div className="overflow-hidden">
           <motion.div
@@ -42,27 +43,30 @@ function ContactUs() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, ease: "easeOut" }}
             className="flex overflow-hidden items-end justify-end gap-0.5 md:gap-1 xl:gap-2 h-15 max-w-100 md:h-25 xl:h-50  md:max-w-190 xl:max-w-335"
+            aria-hidden="true"
           >
-            <h1>s</h1>
+            <span>s</span>
             <div
               className={`h-11 w-12 md:h-22 md:w-24 xl:h-38 xl:w-40  mb-1.5 xl:mb-3.5   `}
             >
-              <img loading="lazy" src="https://ik.imagekit.io/aliwani101/3.png?updatedAt=1785492489913" className="h-full w-full" alt="" />
+              <img loading="lazy" src="https://ik.imagekit.io/aliwani101/3.png?updatedAt=1785492489913" className="h-full w-full" alt="" role="presentation" />
             </div>
-            <h1>mething</h1>
+            <span>mething</span>
           </motion.div>
         </div>
         <div className="overflow-hidden">
-          <motion.h1
+          <motion.span
             initial={{ opacity: 0, y: isPC ? 100 : 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="md:pl-25 xl:pl-44"
+            className="block md:pl-25 xl:pl-44"
+            aria-hidden="true"
           >
             timeless
-          </motion.h1>
+          </motion.span>
         </div>
+        <h2 className="sr-only">Let's Build Something Timeless — Start Your Project with Stratone Studio</h2>
       </div>
 
       <motion.div

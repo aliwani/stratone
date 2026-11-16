@@ -42,7 +42,7 @@ function OurWorkOnHome() {
         {
             projects.map((project,idx)=>(
                 <div>
-                    <h1></h1>
+                    <h3 className="font-antonSC text-white">{project.title}</h3>
                 </div>
               
             ))

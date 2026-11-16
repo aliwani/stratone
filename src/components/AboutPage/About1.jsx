@@ -7,7 +7,7 @@ function About1() {
     <div className="w-full  h-auto flex flex-col  pt-17.5 md:pt-25 mb-30">
       <SectionHeader Num="[01]" Text="built on vision" />
       <div className="flex flex-col pt-15 md:pt-30 xl:pt-50 gap-10 justify-center items-center h-full w-full">
-        <motion.h1
+        <motion.h2
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ ease: "easeOut", duration: 0.5 }}
@@ -15,7 +15,7 @@ function About1() {
           className="font-antonSC text-white text-7xl md:text-9xl"
         >
           who are we
-        </motion.h1>
+        </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}

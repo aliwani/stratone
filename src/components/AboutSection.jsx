@@ -34,7 +34,7 @@ function AboutSection() {
               transition={{ duration: 0.2 }}
               viewport={{ once: true }}
               src="https://ik.imagekit.io/aliwani101/aboutimg.png?f-auto,q-80"
-              alt=""
+              alt="Stratone Studio team collaboration"
               className="h-full object-cover w-full"
             />
           </div>
@@ -50,10 +50,10 @@ function AboutSection() {
             impossible to ignore.
           </p>
           <div className="font-clashSemi  tracking-wider  uppercase flex flex-wrap justify-center items-center gap-5 w-full leading-none  text-white text-[16px] md:text-lg">
-            <a target="blank" href="https://www.instagram.com/stratonestudio?igsh=ZG11dDZzcTRyb3o3&utm_source=qr">Instagram.</a>
-            <a target="blank" href="https://www.facebook.com/share/1D4JUbsm7V/?mibextid=wwXIfr">Facebook.</a>
-            <a target="blank" href="https://www.linkedin.com/company/stratonestudio">LinkedIn.</a>
-            <a href="">X.</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/stratonestudio?igsh=ZG11dDZzcTRyb3o3&utm_source=qr" aria-label="Follow Stratone Studio on Instagram">Instagram.</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/share/1D4JUbsm7V/?mibextid=wwXIfr" aria-label="Follow Stratone Studio on Facebook">Facebook.</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/stratonestudio" aria-label="Follow Stratone Studio on LinkedIn">LinkedIn.</a>
+            <a href="#" aria-label="Follow Stratone Studio on X (coming soon)">X.</a>
           </div>
           <div className="w-full flex flex-col items-center justify-center gap-2">
             <span className="font-clashSemi pt-5 text-white text-[18px] md:text-lg uppercase">
@@ -73,7 +73,7 @@ function AboutSection() {
                       viewport={{ once: true }}
                       className="h-auto  md:h-full  w-full object-contain md:object-cover  "
                       src={team.image}
-                      alt=""
+                      alt={`${team.name} — ${team.designation}`}
                     />
                     {!isPc && (
                       <div className="w-full h-fit bg- flex gap-3 items-center  justify-between py-4 flex-col ">

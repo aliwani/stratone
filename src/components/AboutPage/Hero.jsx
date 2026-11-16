@@ -11,9 +11,9 @@ function Hero() {
       {/* Overlay */}
       <div className="absolute top-0 left-0 -z-1 w-full h-full bg-linear-to-l from-black to-black opacity-50 "></div>
       <div className="h-1/2 mt-40 md:h-[55%] flex items-end xl:mb-20 ">
-        <img 
+        <img
         loading="lazy"
-        className="h-10.5 w-17 md:h-15 md:w-24" src={circleImg} alt="" />
+        className="h-10.5 w-17 md:h-15 md:w-24" src={circleImg} alt="" role="presentation" />
       </div>
       <motion.div
         initial={{ opacity: 0, y: 60 }}

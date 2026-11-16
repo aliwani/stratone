@@ -58,7 +58,9 @@ function FooterLeftB() {
             onSubmit={handleSubmit}
             className="flex max-w-120 flex-row gap-3"
           >
+            <label htmlFor="newsletter-email" className="sr-only">Email address for newsletter</label>
             <input
+              id="newsletter-email"
               className="border-[0.5px] transition-colors duration-400 ease-in-out focus:border-white focus:outline-none border-[#434242] w-full h-12.5 py-2.5 pl-5 pr-11 rounded-lg bg-[#202020] placeholder:text-[16px] placeholder:font-clashRegular placeholder:text-white"
               type="email"
               placeholder="Enter your email"
@@ -66,6 +68,8 @@ function FooterLeftB() {
               onChange={(e) => setEmail(e.target.value)}
               required
               disabled={status === "loading"}
+              name="email"
+              autoComplete="email"
             />
             <button
               className="flex items-center p-3.5 justify-center h-full w-12 rounded-lg border-[0.5px] border-[#434242] bg-[#202020] disabled:opacity-50"
@@ -96,17 +100,16 @@ function FooterLeftB() {
             join our community
           </span>
           <ul className="flex gap-2">
-            <a className="h-5 w-5 " href="https://www.facebook.com/share/1D4JUbsm7V/?mibextid=wwXIfr">
+            <a className="h-5 w-5" href="https://www.facebook.com/share/1D4JUbsm7V/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Stratone Studio on Facebook">
               <FaFacebookF size={20} color="white"/>
-
             </a>
-            <a className="h-5 w-5 " href="https://www.instagram.com/stratonestudio?igsh=ZG11dDZzcTRyb3o3&utm_source=qr">
-              <RiInstagramFill size={20} color="white" />{" "}
+            <a className="h-5 w-5" href="https://www.instagram.com/stratonestudio?igsh=ZG11dDZzcTRyb3o3&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Stratone Studio on Instagram">
+              <RiInstagramFill size={20} color="white" />
             </a>
-            <a className="h-5 w-5 " href="">
+            <a className="h-5 w-5" href="#" aria-label="Stratone Studio on X (coming soon)">
               <FaXTwitter size={20} color="white" />
             </a>
-            <a className="h-5 w-5 " href="https://www.linkedin.com/company/stratonestudio">
+            <a className="h-5 w-5" href="https://www.linkedin.com/company/stratonestudio" target="_blank" rel="noopener noreferrer" aria-label="Stratone Studio on LinkedIn">
               <LiaLinkedinIn size={20} color="white" />
             </a>
           </ul>
