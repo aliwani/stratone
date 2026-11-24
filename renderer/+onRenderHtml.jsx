@@ -1,6 +1,7 @@
 import React from "react";
 import { renderToString } from "react-dom/server";
 import { StaticRouter } from "react-router";
+import { HelmetProvider } from "react-helmet-async";
 import {
   escapeInject,
   dangerouslySkipEscape,
@@ -8,16 +9,19 @@ import {
 
 export default async function onRenderHtml(pageContext) {
   const { Page, urlPathname } = pageContext;
+  const pageProps = pageContext.pageProps || {};
 
   const helmetContext = {};
 
   const pageHtml = renderToString(
-    <StaticRouter location={urlPathname}>
-      <Page
-        {...pageProps}
-        helmetContext={helmetContext}
-      />
-    </StaticRouter>
+    <HelmetProvider context={helmetContext}>
+      <StaticRouter location={urlPathname}>
+        <Page
+          {...pageProps}
+          helmetContext={helmetContext}
+        />
+      </StaticRouter>
+    </HelmetProvider>
   );
 
   const helmet = helmetContext.helmet;
