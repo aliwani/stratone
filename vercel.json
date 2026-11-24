@@ -1,4 +1,9 @@
 {
+  "functions": {
+    "api/ssr.js": {
+      "includeFiles": "dist/server/**"
+    }
+  },
   "rewrites": [
     {
       "source": "/((?!assets/).*)",
