@@ -126,13 +126,13 @@ function AboutSection() {
                 );
               })}
 
-              <Link
-                to="/about#team"
+              <a
+                href="/about#team"
                 className="cursor-pointer flex px-2 h-10 col-span-2  md:w-19 md:h-20 text-xl flex-row gap-1 md:flex-col  xl:w-24 xl:h-26 rounded-xs md:rounded-lg leading-none text-white uppercase font-Meduim w-full items-center justify-center bg-black"
               >
                 <span>View </span>
                 <span>team</span>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
