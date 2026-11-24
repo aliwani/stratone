@@ -1,3 +1,5 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "buildCommand": "vike build",
+  "outputDirectory": "dist",
+  "framework": "vike"
 }
