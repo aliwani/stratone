@@ -9,19 +9,26 @@ export default async function handler(req, res) {
     return;
   }
 
-  const pageContextInit = { urlOriginal: url };
-  const pageContext = await renderPage(pageContextInit);
-  const { httpResponse } = pageContext;
+  try {
+    const pageContextInit = { urlOriginal: url };
+    const pageContext = await renderPage(pageContextInit);
+    const { httpResponse } = pageContext;
 
-  if (!httpResponse) {
-    res.statusCode = 200;
-    res.end();
-    return;
+    if (!httpResponse) {
+      res.statusCode = 200;
+      res.end();
+      return;
+    }
+
+    const { body, statusCode, headers } = httpResponse;
+
+    res.statusCode = statusCode;
+    headers.forEach(([name, value]) => res.setHeader(name, value));
+    res.end(body);
+  } catch (error) {
+    console.error("SSR Error:", error);
+    res.statusCode = 500;
+    res.setHeader("Content-Type", "text/html");
+    res.end(`<pre>SSR Error: ${error.message}\n\n${error.stack}</pre>`);
   }
-
-  const { body, statusCode, headers } = httpResponse;
-
-  res.statusCode = statusCode;
-  headers.forEach(([name, value]) => res.setHeader(name, value));
-  res.end(body);
 }
