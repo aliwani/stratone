@@ -3,6 +3,7 @@ import "../src/index.css";
 import { hydrateRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
+import Layout from "../pages/+Layout";
 
 import { initLenis } from "../src/lib/lenis";
 
@@ -16,7 +17,9 @@ export default async function onRenderClient(pageContext) {
     document.getElementById("root"),
     <HelmetProvider>
       <BrowserRouter>
-        <Page {...pageProps} />
+        <Layout>
+          <Page {...pageProps} />
+        </Layout>
       </BrowserRouter>
     </HelmetProvider>
   );

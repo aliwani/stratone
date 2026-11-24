@@ -6,6 +6,7 @@ import {
   escapeInject,
   dangerouslySkipEscape,
 } from "vike/server";
+import Layout from "../pages/+Layout";
 
 export default async function onRenderHtml(pageContext) {
   const { Page, urlPathname } = pageContext;
@@ -16,10 +17,12 @@ export default async function onRenderHtml(pageContext) {
   const pageHtml = renderToString(
     <HelmetProvider context={helmetContext}>
       <StaticRouter location={urlPathname}>
-        <Page
-          {...pageProps}
-          helmetContext={helmetContext}
-        />
+        <Layout>
+          <Page
+            {...pageProps}
+            helmetContext={helmetContext}
+          />
+        </Layout>
       </StaticRouter>
     </HelmetProvider>
   );
