@@ -14,7 +14,7 @@ export function OrganizationSchema() {
     telephone: "+923160865229",
     sameAs: [
       "https://www.instagram.com/stratonestudio",
-      "https://www.facebook.com/share/1D4JUbsm7V/",
+      "https://www.facebook.com/stratonestudio",
       "https://www.linkedin.com/company/stratonestudio",
     ],
     contactPoint: {

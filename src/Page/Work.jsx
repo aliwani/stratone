@@ -5,6 +5,7 @@ import OurWorkSectionCard from "@/components/WorkPage/OurWorkSectionCard";
 import OurWorkCard from "@/components/OurWorkCard";
 import { Outlet, useParams } from "react-router-dom";
 import { motion } from "framer-motion";
+import SEO from "@/components/SEO";
 
 function Work() {
   const [isMobile, setIsMobile] = useState(false);
@@ -22,6 +23,11 @@ function Work() {
 
   return (
     <div className="bg-white h-full w-screen">
+      <SEO
+        title="Our Work | Stratone Studio Portfolio & Case Studies"
+        description="Explore Stratone Studio's portfolio of web design, branding, and digital marketing projects. See how we help businesses stand out with bold, creative solutions."
+        canonical="/work"
+      />
       <section className="bg-[#111111] flex flex-col items-center py-35 md:py-50">
         <Heading heading="our work" />
         <motion.div

@@ -74,9 +74,9 @@ const HoverExpand_002 = ({ imageData, className }) => {
                       </span>
 
                       <div className="flex flex-col items-start justify-center gap-2">
-                        <h1 className="text-white font-antonSC text-2xl tracking-wide leading-tight">
+                        <h2 className="text-white font-antonSC text-2xl tracking-wide leading-tight">
                           {image.title}
-                        </h1>
+                        </h2>
                         <p className="text-white/90 font-clashRegular font-medium tracking-wide text-sm leading-snug">
                           {image.description}
                         </p>

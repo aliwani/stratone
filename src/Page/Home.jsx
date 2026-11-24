@@ -6,6 +6,7 @@ import ChooseUS from '../components/chooseUs/ChooseUS'
 import Testimonial from '../components/Testimonial'
 import Pricing from '../components/Pricing'
 import Ourwork from '@/components/Ourwork'
+import SEO from '@/components/SEO'
 
 
 function Home() {
@@ -17,6 +18,11 @@ function Home() {
   };
   return (
     <div className='h-full w-screen   bg-white border-box' >
+      <SEO
+        title="Stratone Studio | Creative Agency — Web Design, Branding & Marketing"
+        description="Stratone Studio is a full-service creative agency specializing in web design, brand identity, Shopify development, and digital marketing for ambitious businesses worldwide."
+        canonical="/"
+      />
       <Hero/>
       <AboutSection/>
       <WhatWeDo handleScroll={handleScroll}/>

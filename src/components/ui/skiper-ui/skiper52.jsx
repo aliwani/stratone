@@ -132,7 +132,7 @@ const HoverExpand_001 = ({ imageData, className }) => {
                               )}
                             >
                               {image.title}
-                            </h1>
+                            </h2>
                             <p
                               className={cn(
                                 "text-white/90 font-clashRegular font-medium tracking-wide max-w-lg text-lg leading-tight",
@@ -176,7 +176,7 @@ const HoverExpand_001 = ({ imageData, className }) => {
                       )}
                     >
                       {image.title}
-                    </h1>
+                    </h2>
                     <p
                       className={cn(
                         "text-white/90 font-clashRegular font-medium tracking-wide max-w-xl text-lg leading-tight",
