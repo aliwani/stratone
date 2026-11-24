@@ -1,5 +1,8 @@
 {
-  "buildCommand": "vike build",
-  "outputDirectory": "dist",
-  "framework": "vike"
+  "rewrites": [
+    {
+      "source": "/((?!assets/).*)",
+      "destination": "/api/ssr.js"
+    }
+  ]
 }
