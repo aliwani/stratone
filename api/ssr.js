@@ -1,11 +1,21 @@
-import { renderPage } from "vike/server";
+let renderPage;
+let importError = null;
+
+try {
+  const mod = await import("vike/server");
+  renderPage = mod.renderPage;
+} catch (e) {
+  importError = e;
+}
 
 export default async function handler(req, res) {
   const { url } = req;
 
-  if (url === undefined) {
-    res.statusCode = 400;
-    res.end("req.url is undefined");
+  // If vike/server failed to import, show that error
+  if (importError) {
+    res.statusCode = 500;
+    res.setHeader("Content-Type", "text/html");
+    res.end(`<pre>Import Error: ${importError.message}\n\n${importError.stack}</pre>`);
     return;
   }
 
@@ -14,25 +24,18 @@ export default async function handler(req, res) {
     const pageContext = await renderPage(pageContextInit);
     const { httpResponse } = pageContext;
 
-    // Debug: expose pageContext error info
-    if (url.includes("__debug")) {
-      res.statusCode = 200;
-      res.setHeader("Content-Type", "application/json");
-      res.end(JSON.stringify({
-        url,
-        hasHttpResponse: !!httpResponse,
-        statusCode: httpResponse?.statusCode,
-        errorWhileRendering: pageContext.errorWhileRendering?.message,
-        errorStack: pageContext.errorWhileRendering?.stack,
-        is404: pageContext.is404,
-        pageContextKeys: Object.keys(pageContext),
-      }, null, 2));
+    // If there was an error while rendering, show it
+    if (pageContext.errorWhileRendering) {
+      res.statusCode = 500;
+      res.setHeader("Content-Type", "text/html");
+      const err = pageContext.errorWhileRendering;
+      res.end(`<pre>Render Error: ${err.message}\n\nStack: ${err.stack}</pre>`);
       return;
     }
 
     if (!httpResponse) {
       res.statusCode = 200;
-      res.end();
+      res.end("No httpResponse from Vike");
       return;
     }
 
@@ -42,9 +45,8 @@ export default async function handler(req, res) {
     headers.forEach(([name, value]) => res.setHeader(name, value));
     res.end(body);
   } catch (error) {
-    console.error("SSR Error:", error);
     res.statusCode = 500;
     res.setHeader("Content-Type", "text/html");
-    res.end(`<pre>SSR Error: ${error.message}\n\n${error.stack}</pre>`);
+    res.end(`<pre>Handler Error: ${error.message}\n\n${error.stack}</pre>`);
   }
 }
