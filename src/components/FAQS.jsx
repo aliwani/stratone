@@ -57,7 +57,7 @@ function Faqs({ Num }) {
                
                 title="right arrow icons"
               >
-                <img loading="lazy" className="h-4 w-4" src={arrow} alt="" />
+                <img loading="lazy" className="h-4 w-4" src={arrow} alt="" role="presentation" />
               </a>
             </div>
           </div>

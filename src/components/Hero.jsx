@@ -74,7 +74,8 @@ function Hero() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, ease: "easeOut" }}
             src={src}
-            loading="lazy"
+            loading="eager"
+            fetchPriority="high"
             alt="Stratone Studio creative agency team at work"
             className="w-full object-cover"
           />
