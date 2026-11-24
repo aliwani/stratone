@@ -1,13 +1,3 @@
 {
-  "functions": {
-    "api/ssr.js": {
-      "includeFiles": "dist/server/**"
-    }
-  },
-  "rewrites": [
-    {
-      "source": "/((?!assets/).*)",
-      "destination": "/api/ssr.js"
-    }
-  ]
+  "buildCommand": "npm run vercel-build"
 }
