@@ -87,7 +87,7 @@ const servicesData = [
   {
     id: 5,
     num: "(06)",
-    title: "Search Engine Optimization",
+    title: "Search Engine Optimization (SEO)",
     img: "https://ik.imagekit.io/aliwani101/websiteandappdevelopment.webp",
     list: [
       "Local GMB Optimization",
