@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 function ServiceSelect({
   scrollToCard,
@@ -9,8 +9,14 @@ function ServiceSelect({
   activeindx,
   setactiveindx,
 }) {
-  const widthWindow = window.innerWidth;
-  const isDesktop = widthWindow > 809;
+  const [isDesktop, setIsDesktop] = useState(true);
+
+  useEffect(() => {
+    const handleResize = () => setIsDesktop(window.innerWidth > 809);
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <div key={idx} className="flex gap-2.5 md:gap-5 py-1.5 xl:py-2.5 ">

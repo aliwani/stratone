@@ -4,11 +4,10 @@ import { ROUTES } from "./configs/route";
 import Layout from "./components/Layout";
 import ScrollToTop from "./components/ScrollToTop";
 import RecursiveRender from "./utils/RecursiveRender";
-import { useEffect } from "react";
 
-function App() {
+function App({ helmetContext }) {
   return (
-    <HelmetProvider>
+    <HelmetProvider context={helmetContext}>
       <Layout>
         <ScrollToTop />
         <Routes>{RecursiveRender(ROUTES)}</Routes>

@@ -10,6 +10,7 @@ function Hero() {
     className="relative flex flex-col items-center justify-center bg-[url('https://ik.imagekit.io/aliwani101/AboutHero.webp')] bg-cover w-full min-h-110    md:h-135 xl:h-188  z-0 px-10">
       {/* Overlay */}
       <div className="absolute top-0 left-0 -z-1 w-full h-full bg-linear-to-l from-black to-black opacity-50 "></div>
+      <h1 className="sr-only">About Stratone Studio — Creative Digital & Marketing Agency</h1>
       <div className="h-1/2 mt-40 md:h-[55%] flex items-end xl:mb-20 ">
         <img
         loading="lazy"

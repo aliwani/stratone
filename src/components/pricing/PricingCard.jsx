@@ -28,9 +28,9 @@ function PricingCard() {
                 <h3 className="font-clashMeduim font-semibold uppercase tracking-wide text-[#EDEDED] text-[16px] md:text-lg">
                   {dets.tagline}
                 </h3>
-                <h1 className="font-antonSC text-white text-lg md:text-3xl  tracking-wider">
+                <h2 className="font-antonSC text-white text-lg md:text-3xl  tracking-wider">
                   {dets.service}
-                </h1>
+                </h2>
               </motion.div>
 
               <motion.div
