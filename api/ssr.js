@@ -14,6 +14,22 @@ export default async function handler(req, res) {
     const pageContext = await renderPage(pageContextInit);
     const { httpResponse } = pageContext;
 
+    // Debug: expose pageContext error info
+    if (url.includes("__debug")) {
+      res.statusCode = 200;
+      res.setHeader("Content-Type", "application/json");
+      res.end(JSON.stringify({
+        url,
+        hasHttpResponse: !!httpResponse,
+        statusCode: httpResponse?.statusCode,
+        errorWhileRendering: pageContext.errorWhileRendering?.message,
+        errorStack: pageContext.errorWhileRendering?.stack,
+        is404: pageContext.is404,
+        pageContextKeys: Object.keys(pageContext),
+      }, null, 2));
+      return;
+    }
+
     if (!httpResponse) {
       res.statusCode = 200;
       res.end();
