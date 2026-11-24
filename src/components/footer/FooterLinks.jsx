@@ -1,13 +1,12 @@
-import { a } from "framer-motion/client";
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 function FooterLinks({ to, children }) {
   const location = useLocation();
   const isActive = location.pathname === to;
 
-  return <Link
-  to={to}
+  return <a
+  href={to}
   className="relative inline-block text-white font-clashRegular font-medium group"
 >
   <span className="relative inline-block">
@@ -19,7 +18,7 @@ function FooterLinks({ to, children }) {
         group-hover:w-full group-hover:opacity-100`}
     ></span>
   </span>
-</Link>
+</a>
 }
 
 export default FooterLinks;

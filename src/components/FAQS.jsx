@@ -4,11 +4,9 @@ import arrow from "@/assets/right.png";
 import { Plus } from "lucide-react";
 import faqs from "../data/Faqs";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
 import { FAQPageSchema } from "./StructuredData";
 
 function Faqs({ Num }) {
-   const navigate = useNavigate();
   const [hover, sethover] = useState(false);
   const [isOpen, setisOpen] = useState(Array(faqs.length).fill(false));
   const toggleIdx = (idx) => {
@@ -30,9 +28,10 @@ function Faqs({ Num }) {
           <h2 id="faq-heading" className="font-antonSC uppercase leading-none text-white text-[40px] md:text-[120px]">
             Frequently Asked Questions
           </h2>
-          <div
-          onClick={()=>navigate("/contact")}
-          className="cursor-pointer min-h-30  md:w-auto md:h-45 max-w-105 bg-[#202020] rounded-2xl p-5 flex flex-row gap-5 justify-between items-end">
+          <a
+          href="/contact"
+          className="cursor-pointer min-h-30  md:w-auto md:h-45 max-w-105 bg-[#202020] rounded-2xl p-5 flex flex-row gap-5 justify-between items-end"
+          style={{ textDecoration: 'none', color: 'inherit' }}>
             <div 
             className=" w-auto flex flex-col gap-6  items-start justify-between">
               <h3 className="font-antonSC text-white tracking-wider text-lg md:text-[26px] uppercase">
@@ -60,7 +59,7 @@ function Faqs({ Num }) {
                 <img loading="lazy" className="h-4 w-4" src={arrow} alt="" role="presentation" />
               </a>
             </div>
-          </div>
+          </a>
         </div>
         <div className="w-full md:w-1/2 h-fit flex flex-col justify-center gap-0.5 p-0.5 bg-white">
           {faqs.map((item, idx) => (

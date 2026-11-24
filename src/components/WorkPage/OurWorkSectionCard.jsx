@@ -1,13 +1,12 @@
 import React from "react";
 import WorkCardButton from "../resuables/WorkCardButton";
-import { useNavigate } from "react-router-dom";
 
 function OurWorkSectionCard({ slug, year, category, src, title }) {
-  const navigate = useNavigate();
   return (
-    <div
-      onClick={() => navigate(`/work/${slug}`)}
+    <a
+      href={`/work/${slug}`}
       className="cursor-pointer relative bg-white  p-0.5 gap-0.5 flex flex-row  md:h-130 w-full   overflow-hidden"
+      style={{ textDecoration: 'none', color: 'inherit' }}
     >
       <div className="w-3/5 h-full ">
         <img  loading="lazy"
@@ -30,7 +29,7 @@ function OurWorkSectionCard({ slug, year, category, src, title }) {
           <WorkCardButton slug={slug} text="view detail" />
         </div>
       </div>
-    </div>
+    </a>
   );
 }
 

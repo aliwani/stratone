@@ -1,13 +1,12 @@
 
 import React, { useEffect, useState } from "react";
 import { ArrowRight } from "lucide-react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 
 function ContactUs() {
   const [isPC, setIsPC] = useState(false);
 
-  const navigate = useNavigate();
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -108,9 +107,10 @@ function ContactUs() {
         transition={{ duration: 0.5, ease: "easeOut" }}
         className="h-15 md:h-26 cursor-pointer xl:h-32.5 max-w-100 md:max-w-190 xl:max-w-315 flex items-center justify-center mt-5"
       >
-        <div
-          onClick={() => navigate("/Contact")}
+        <a
+          href="/contact"
           className="group bg-white flex p-0.5 md:p-1 h-full gap-0.5 md:gap-1 w-62.5 md:w-95 xl:w-117"
+          style={{ textDecoration: 'none' }}
         >
           <div className="group-hover:rounded-none duration-400 transition-all font-antonSC text-[36px] md:text-[42px] xl:text-[60px] flex items-center justify-center text-white bg-[#111111] w-3/4 rounded-sm md:rounded-lg xl:rounded-xl h-full">
             get in touch
@@ -119,7 +119,7 @@ function ContactUs() {
           <div className="group-hover:rounded-none duration-400 transition-all flex items-center justify-center bg-[#111111] w-1/4 rounded-sm md:rounded-lg xl:rounded-xl h-full">
             <ArrowRight size={45} color="white" />
           </div>
-        </div>
+        </a>
       </motion.div>
     </div>
   );
