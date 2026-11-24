@@ -18,7 +18,7 @@ export default async function onRenderClient(pageContext) {
     <HelmetProvider>
       <BrowserRouter>
         <Layout>
-          <Page {...pageProps} />
+          <Page {...pageProps} routeParams={pageContext.routeParams} />
         </Layout>
       </BrowserRouter>
     </HelmetProvider>

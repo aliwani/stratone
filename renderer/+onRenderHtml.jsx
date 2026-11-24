@@ -20,6 +20,7 @@ export default async function onRenderHtml(pageContext) {
         <Layout>
           <Page
             {...pageProps}
+            routeParams={pageContext.routeParams}
             helmetContext={helmetContext}
           />
         </Layout>

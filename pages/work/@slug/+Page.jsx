@@ -3,8 +3,8 @@ import WorkCardInfo from "@/components/workcard/WorkCardInfo";
 import WorkCardHero from "@/components/workcard/WorkCardHero";
 import Page404 from "@/Page/Page404";
 
-export default function WorkDetailPage(pageContext) {
-  const { slug } = pageContext.routeParams || {};
+export default function WorkDetailPage({ routeParams }) {
+  const { slug } = routeParams || {};
   const project = projects.find((item) => item.slug === slug);
 
   if (!project) {
