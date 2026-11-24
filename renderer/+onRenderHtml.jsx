@@ -1,22 +1,16 @@
 import React from "react";
 import { renderToString } from "react-dom/server";
 import { StaticRouter } from "react-router";
-import {
-  escapeInject,
-  dangerouslySkipEscape,
-} from "vike/server";
+import { escapeInject, dangerouslySkipEscape } from "vike/server";
 
 export default async function onRenderHtml(pageContext) {
-  const { Page, pageProps, urlPathname } = pageContext;
+  const { Page, urlPathname } = pageContext;
 
   const helmetContext = {};
 
   const pageHtml = renderToString(
     <StaticRouter location={urlPathname}>
-      <Page
-        {...pageProps}
-        helmetContext={helmetContext}
-      />
+      <Page {...pageContext} helmetContext={helmetContext} />
     </StaticRouter>
   );
 
