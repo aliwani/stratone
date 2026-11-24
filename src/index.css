@@ -11,12 +11,12 @@
     --breakpoint-myxl:1680px;
     --breakpoint-my2xl:2000px;
     --font-antonSC: "AntonSC";
-    --font-clashExtraLight: "ClashGrotesk-ExtraLight";
-    --font-clashLight: "ClashGrotesk-ExtraLight";
-    --font-clashMeduim: "ClashGrotesk-Light";
-    --font-clashRegular: "ClashGrotesk-Regular";
-    --font-clashSemi: "ClashGrotesk-Semibold";
-    --font-clashBold: "ClashGrotesk-Bold";
+    --font-clashExtraLight: "ClashGrotesk";
+    --font-clashLight: "ClashGrotesk";
+    --font-clashMeduim: "ClashGrotesk";
+    --font-clashRegular: "ClashGrotesk";
+    --font-clashSemi: "ClashGrotesk";
+    --font-clashBold: "ClashGrotesk";
     --animate-scroll-right: scrollRight 10s linear infinite;
     @keyframes scrollRight {
     0% {
@@ -28,83 +28,29 @@
   }
 }
 @font-face {
-    font-family: 'AntonSC';
-    src: url('/fonts/AntonSC-Regular.woff2') format('woff2'),
-        url('/fonts/AntonSC-Regular.woff') format('woff');
-    font-weight:600 ;
-    font-style: normal;
-}
-@font-face {
-  font-family: 'ClashGrotesk-Extralight';
-  src: url('/fonts/ClashGrotesk-Extralight.woff2') format('woff2'),
-       url('/fonts/ClashGrotesk-Extralight.woff') format('woff'),
-       url('/fonts/ClashGrotesk-Extralight.ttf') format('truetype');
-  font-weight: 200;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'ClashGrotesk-Light';
-  src: url('/fonts/ClashGrotesk-Light.woff2') format('woff2'),
-       url('/fonts/ClashGrotesk-Light.woff') format('woff'),
-       url('/fonts/ClashGrotesk-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'ClashGrotesk-Regular';
-  src: url('/fonts/ClashGrotesk-Regular.woff2') format('woff2'),
-       url('/fonts/ClashGrotesk-Regular.woff') format('woff'),
-       url('/fonts/ClashGrotesk-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'ClashGrotesk-Medium';
-  src: url('/fonts/ClashGrotesk-Medium.woff2') format('woff2'),
-       url('/fonts/ClashGrotesk-Medium.woff') format('woff'),
-       url('/fonts/ClashGrotesk-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'ClashGrotesk-Semibold';
-  src: url('/fonts/ClashGrotesk-Semibold.woff2') format('woff2'),
-       url('/fonts/ClashGrotesk-Semibold.woff') format('woff'),
-       url('/fonts/ClashGrotesk-Semibold.ttf') format('truetype');
+  font-family: 'AntonSC';
+  src: url('/fonts/AntonSC-Regular.woff2') format('woff2'),
+       url('/fonts/AntonSC-Regular.woff') format('woff');
   font-weight: 600;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: 'ClashGrotesk-Bold';
-  src: url('/fonts/ClashGrotesk-Bold.woff2') format('woff2'),
-       url('/fonts/ClashGrotesk-Bold.woff') format('woff'),
-       url('/fonts/ClashGrotesk-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
-}
-/**
-* This is a variable font
-* You can control variable axes as shown below:
-* font-variation-settings: wght 700.0;
-*
-* available axes:
-'wght' (range from 200.0 to 700.0
-*/
-@font-face {
-  font-family: 'ClashGrotesk-Variable';
+  font-family: 'ClashGrotesk';
   src: url('/fonts/ClashGrotesk-Variable.woff2') format('woff2'),
-       url('/fonts/ClashGrotesk-Variable.woff') format('woff'),
-       url('/fonts/ClashGrotesk-Variable.ttf') format('truetype');
+       url('/fonts/ClashGrotesk-Variable.woff') format('woff');
   font-weight: 200 700;
   font-display: swap;
   font-style: normal;
 }
+
+/* Map Tailwind font utilities to correct variable-font weights */
+@utility font-clashExtraLight { font-family: 'ClashGrotesk'; font-weight: 200; }
+@utility font-clashLight { font-family: 'ClashGrotesk'; font-weight: 300; }
+@utility font-clashMeduim { font-family: 'ClashGrotesk'; font-weight: 300; }
+@utility font-clashRegular { font-family: 'ClashGrotesk'; font-weight: 400; }
+@utility font-clashSemi { font-family: 'ClashGrotesk'; font-weight: 600; }
+@utility font-clashBold { font-family: 'ClashGrotesk'; font-weight: 700; }
 
 body,html{
     width: 100%;

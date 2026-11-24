@@ -50,6 +50,9 @@ export default async function onRenderHtml(pageContext) {
         <meta name="theme-color" content="#111111" />
         <meta name="robots" content="index, follow" />
 
+        <link rel="preload" href="/fonts/AntonSC-Regular.woff2" as="font" type="font/woff2" crossorigin />
+        <link rel="preload" href="/fonts/ClashGrotesk-Variable.woff2" as="font" type="font/woff2" crossorigin />
+
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
