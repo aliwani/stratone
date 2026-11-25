@@ -32,11 +32,11 @@ export default async function onRenderHtml(pageContext) {
 
   const title =
     helmet?.title?.toString() ||
-    "<title>Stratone Studio | Creative Digital & Marketing Agency</title>";
+    "<title>Stratone Studio — Creative Agency | Web Design, Branding & Marketing</title>";
 
   const meta =
     helmet?.meta?.toString() ||
-    `<meta name="description" content="Stratone Studio helps businesses grow through creative branding, digital marketing, Shopify development, web development and video editing." />`;
+    `<meta name="description" content="Stratone Studio is a full-service creative agency specializing in web design, branding, Shopify development, video production, and digital marketing for ambitious brands worldwide." />`;
 
   const link = helmet?.link?.toString() || "";
 

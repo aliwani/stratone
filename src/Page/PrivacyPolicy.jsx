@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
+import SEO from "@/components/SEO";
 
 function PrivacyPolicy() {
   const container = {
@@ -30,6 +31,11 @@ function PrivacyPolicy() {
   };
   return (
     <div className="h-full w-full p-0.5 pb-0 bg-white">
+      <SEO
+        title="Privacy Policy | Stratone Studio"
+        description="Read Stratone Studio's privacy policy — how we collect, use, and protect your data when you use our website and services."
+        canonical="/policy"
+      />
       <div className="flex text-[#e7e3e3] flex-col items-center justify-center h-full w-full rounded-t-2xl bg-[#111111]">
         <motion.div
           initial={{ opacity: 0, y: 60 }}

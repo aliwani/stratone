@@ -7,12 +7,12 @@ function NavlinksBottom({ to, children, setIsOpen }) {
 
   return (
     <a href={to} onClick={() => setIsOpen(false)}>
-      <h3
+      <span
         className={` font-clashMeduim flex items-center justify-between text-[16px] md:text-[18px] rounded-lg px-2 py-1 tracking-widest   text-white transition-all duration-300 `}
       >
         {children}
-       
-      </h3>
+
+      </span>
     </a>
   );
 }
