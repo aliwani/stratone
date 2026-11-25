@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 export const isVideo = (src) => /\.(mp4|webm|ogg|mov)$/i.test(src);
-export const MediaItem = ({ src, className }) =>
+export const MediaItem = ({ src, className, alt = "" }) =>
   isVideo(src) ? (
     <motion.video
       initial={{ scale: 1.3 }}
@@ -32,6 +32,6 @@ export const MediaItem = ({ src, className }) =>
       viewport={{ once: true }}
       src={src}
       className={className}
-      alt="error"
+      alt={alt}
     />
   );

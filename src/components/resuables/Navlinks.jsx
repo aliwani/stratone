@@ -8,7 +8,7 @@ function Navlinks({ to, children, setIsOpen }) {
 
   return (
     <a href={to} onClick={() => setIsOpen(false)}>
-      <h3
+      <span
         className={`group font-antonSC flex items-center justify-between text-[18px] md:text-[22px] rounded-lg px-2 py-1 tracking-wider  uppercase text-white transition-all duration-300 hover:bg-[#202020] ${isActive ? " bg-[#202020]" : "bg-none"}`}
       >
         {children}
@@ -17,7 +17,7 @@ function Navlinks({ to, children, setIsOpen }) {
           color="white"
           className={`transition-all duration-300 transform   ${isActive ? "opacity-100 scale-100" : "opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100"}`}
         />
-      </h3>
+      </span>
     </a>
   );
 }
