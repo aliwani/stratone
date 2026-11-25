@@ -95,7 +95,7 @@ function WhatWeDo({ handleScroll }) {
               <PricingButton
                 handleScroll={handleScroll}
                 width="37.5"
-                text="see pricing"
+                text="Our Services"
               />
 
               <ProjectBtn text="view work" />

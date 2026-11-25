@@ -20,7 +20,7 @@ function TestimonialCard({ person }) {
           <span className="text-[16px] md:text-lg tracking-wider  font-clashSemi  font-semibold uppercase">
             {person.name}
           </span>
-          <p className="font-clashLight font-semibold  text-white text-[16px] md:text-[18px] text-wrap  ">
+          <p className="font-clashLight   text-white text-[16px] md:text-[18px] text-wrap  ">
             {person.text}
           </p>
         </div>
@@ -33,7 +33,7 @@ function TestimonialCard({ person }) {
         className="flex items-start justify-between  gap-3"
       >
         <div className="text-white w-full rounded-2xl flex flex-col  p-5 bg-[#282727]">
-          <p className="font-clashLight font-semibold text-[16px] xl:text-[18px] text-wrap tracking-none leading-none md:tracking-wide md:leading-snug">
+          <p className="font-clashLight  text-[16px] xl:text-[18px] text-wrap tracking-none leading-none md:tracking-wide md:leading-snug">
             {person.reply}
           </p>
         </div>

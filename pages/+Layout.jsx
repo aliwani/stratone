@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import NavDiv from "@/components/resuables/NavDiv";
 import { OrganizationSchema, WebSiteSchema } from "@/components/StructuredData";
 import ScrollToTop from "@/components/ScrollToTop";
+import WhatsAppButton from "@/components/WhatsappButton";
 
 export default function Layout({ children }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +19,10 @@ export default function Layout({ children }) {
       <header>
         <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
       </header>
-      <main>{children}</main>
+      <main>
+        {children}
+        <WhatsAppButton />
+      </main>
       <ContactUs />
       <footer>
         <Footer />

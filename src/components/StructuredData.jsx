@@ -73,3 +73,53 @@ export function FAQPageSchema({ faqs }) {
     </Helmet>
   );
 }
+export function ServicesSchema({ services }) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Stratone Studio Services",
+    itemListElement: services.map((service, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      item: {
+        "@type": "Service",
+        name: service.title,
+        serviceType: service.title,
+        description: service.desc,
+        image: service.img,
+        url: "https://stratonestudio.com/services",
+        areaServed: "Worldwide",
+        provider: {
+          "@type": "Organization",
+          name: "Stratone Studio",
+          url: "https://stratonestudio.com",
+        },
+      },
+    })),
+  };
+
+  return (
+    <Helmet>
+      <script type="application/ld+json">{JSON.stringify(schema)}</script>
+    </Helmet>
+  );
+}
+
+export function BreadcrumbSchema({ items }) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: `https://stratonestudio.com${item.path}`,
+    })),
+  };
+
+  return (
+    <Helmet>
+      <script type="application/ld+json">{JSON.stringify(schema)}</script>
+    </Helmet>
+  );
+}

@@ -24,11 +24,11 @@ function Home() {
         canonical="/"
       />
       <Hero/>
-      <AboutSection/>
       <WhatWeDo handleScroll={handleScroll}/>
       <Ourwork/>
-      <ChooseUS/>
       <Testimonial/>
+      <AboutSection/>
+      <ChooseUS/>
       {/* <Pricing sectionRef={sectionRef}/> */}
      
     </div>

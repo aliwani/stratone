@@ -1,19 +1,19 @@
 import React from "react";
 import SectionHeader from "./resuables/SectionHeader";
-const workimg = "https://ik.imagekit.io/aliwani101/ourworkbanner.jpg?f-auto,q-80"
+const workimg =
+  "https://ik.imagekit.io/aliwani101/ourworkbanner.jpg?f-auto,q-80";
 import Header from "./resuables/Header";
 import ProjectBtn from "./resuables/ProjectBtn";
 import Contactbtn from "./resuables/ContactBtn";
 import { motion } from "framer-motion";
 
 function Ourwork() {
-  
   return (
-    <section className="flex flex-col gap-10 w-full py-2 md:py-10 px-5 md:px-7.5 xl:px-10 bg-[#111111]  h-fit">
+    <section className="flex flex-col gap-10 w-full py-10 md:py-10 px-5 md:px-7.5 xl:px-10 bg-[#111111]   h-fit">
       <SectionHeader Num="[03]" Text="Stories We’ve Told" />
       <div className="flex items-center justify-center gap-10 flex-col h-full w-full">
         <div>
-          <Header heading="our work" />
+          <Header heading="portfolio" />
           <div className="flex flex-col mt-10 md:mt-20 gap-5 md:flex-row w-full">
             <motion.p
               initial={{ opacity: 0 }}
@@ -26,14 +26,23 @@ function Ourwork() {
               digital solutions. From high-converting websites and Shopify
               stores to engaging video editing and result-driven marketing
               campaigns, every project is crafted with a focus on quality,
-              innovation, and measurable results. 
-<br />
-<br />
-              We've partnered with startups, small businesses, and growing brands to deliver impactful digital solutions. Our portfolio includes custom business websites, Shopify stores, digital marketing campaigns, professional video editing, and branding projects across a variety of industries. 
+              innovation, and measurable results.
+              <br />
+              <br />
+              We've partnered with startups, small businesses, and growing
+              brands to deliver impactful digital solutions. Our portfolio
+              includes custom business websites, Shopify stores, digital
+              marketing campaigns, professional video editing, and branding
+              projects across a variety of industries.
             </motion.p>
-            
+
             <div className="md:w-1/2 w-full h-full  md:h-100 bg-white">
-            <img loading="lazy" className="h-full w-full object-cover" src={workimg} alt="Stratone Studio portfolio showcase — creative agency work samples" />
+              <img
+                loading="lazy"
+                className="h-full w-full object-cover"
+                src={workimg}
+                alt="Stratone Studio portfolio showcase — creative agency work samples"
+              />
             </div>
           </div>
         </div>

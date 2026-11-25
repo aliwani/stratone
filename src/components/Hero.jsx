@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { Crosshair, Star } from "lucide-react";
 import { motion } from "framer-motion";
+import CTA from "./CTA";
 
 function Hero() {
   const [screenWidth, setScreenWidth] = useState(
@@ -87,8 +88,9 @@ function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className="w-full md:w-1/2 md:pr-12 md:pb-0 pb-12 flex flex-col items-start justify-end h-full order-1 md:order-2 text-white font-black overflow-hidden px-5 md:px-0 @container"
-      >
+        className="w-full md:w-1/2 md:pr-12 md:pb-0 pb-12 flex flex-col items-end justify-end h-full order-1 md:order-2 text-white font-black overflow-hidden px-5 md:px-0 @container"
+        >
+        <CTA/>
         <motion.div
           initial={{
             opacity: 0,

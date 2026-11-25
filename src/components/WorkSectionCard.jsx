@@ -22,7 +22,7 @@ const WorkSectionCard = React.forwardRef(({ img, list }, ref)  =>{
                 <span className="pb-1 pr-2 text-white font-bold text-[20px] leading-none">
                   •
                 </span>
-                <span className="font-clashMeduim font-semibold tracking-widest ">
+                <span className="font-clashMeduim  tracking-widest ">
                   {desc}
                 </span>
               </li>

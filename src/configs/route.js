@@ -11,7 +11,7 @@ import WorkCardPage from "@/components/WorkCardPage";
 export const ROUTES = [
   { path: "/", name: "Home", element: Home },
   { path: "/services", name: "Our Services", element: OurServices },
-  { path: "/work", name: "Our Work", element: Work },
+  { path: "/work", name: "Portfolio", element: Work },
   { path: "/about", name: "About US", element: About },
   { path: "/contact", name: "Contact", element: Contact },
   { path: "/blog", name: "Blog", element: Blog },

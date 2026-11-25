@@ -21,7 +21,7 @@ function AboutSection() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
   return (
-    <section className="bg-[#111111]  flex flex-col gap-10 md:gap-18 xl:gap-20   w-full py-30 md:py-38 xl:py-50 px-5 md:px-7.5 xl:px-10 border-box overflow-hidden">
+    <section className="bg-[#111111]  flex flex-col gap-10 md:gap-18 xl:gap-20   w-full  py-20 md:py-20 xl:py-30 px-5 md:px-7.5 xl:px-10 border-box overflow-hidden">
       <SectionHeader Num="[01]" Text="Built on vision" />
       <div className="relative  flex flex-col items-center justify-center">
         <Header heading="about stratone" />
@@ -60,7 +60,7 @@ function AboutSection() {
               Our team
             </span>
             <div className="bg-white grid grid-cols-2 md:flex py-0.5 px-0.5 gap-0.5 w-full h-fit ">
-              {teamMembers.slice(2, 6).map((team, idx) => {
+              {teamMembers.slice(1, 5).map((team, idx) => {
                 return (
                   <div
                     key={idx}
