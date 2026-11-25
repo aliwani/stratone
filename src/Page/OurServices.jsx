@@ -1,9 +1,10 @@
+import ServicesHero from "@/components/ServicesHero";
 import React from "react";
 
-const OurServices = () => {
+function OurServices () {
   return (
-    <div>
-      <h1>Hello</h1>
+    <div className="w-full h-screen bg-[#111111]">
+      <ServicesHero/>
     </div>
   );
 };
