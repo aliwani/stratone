@@ -30,13 +30,19 @@ export default async function onRenderHtml(pageContext) {
 
   const helmet = helmetContext.helmet;
 
+  // Only use fallback if helmet didn't extract anything
+  // helmet.title.toString() returns a full <title> tag, or empty string
+  const helmetTitle = helmet?.title?.toString();
   const title =
-    helmet?.title?.toString() ||
-    "<title>Stratone Studio — Creative Agency | Web Design, Branding & Marketing</title>";
+    helmetTitle && helmetTitle.length > 0
+      ? helmetTitle
+      : "<title>Stratone Studio — Creative Agency | Web Design, Branding & Marketing</title>";
 
+  const helmetMeta = helmet?.meta?.toString();
   const meta =
-    helmet?.meta?.toString() ||
-    `<meta name="description" content="Stratone Studio is a full-service creative agency specializing in web design, branding, Shopify development, video production, and digital marketing for ambitious brands worldwide." />`;
+    helmetMeta && helmetMeta.length > 0
+      ? helmetMeta
+      : `<meta name="description" content="Stratone Studio is a full-service creative agency specializing in web design, branding, Shopify development, video production, and digital marketing for ambitious brands worldwide." />`;
 
   const link = helmet?.link?.toString() || "";
 
