@@ -1,5 +1,6 @@
 import Home from "@/Page/Home";
 import Work from "@/Page/Work";
+import OurServices from "@/Page/OurServices";
 import Blog from "@/Page/Blog";
 import Contact from "@/Page/Contact";
 import About from "@/Page/About";
@@ -9,6 +10,7 @@ import WorkCardPage from "@/components/WorkCardPage";
 
 export const ROUTES = [
   { path: "/", name: "Home", element: Home },
+  { path: "/services", name: "Our Services", element: OurServices },
   { path: "/work", name: "Our Work", element: Work },
   { path: "/about", name: "About US", element: About },
   { path: "/contact", name: "Contact", element: Contact },
