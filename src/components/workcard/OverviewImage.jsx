@@ -25,7 +25,7 @@ function OverviewImage({ project }) {
         {/* <img  loading="lazy"
           className="w-fit h-fit cover rounded-2xl"
           src={project.TopSrc}
-          alt=""
+          alt={project.title}
         /> */}
         <MediaItem
           src={project.TopSrc}

@@ -4,13 +4,9 @@ import { Crosshair, Star } from "lucide-react";
 import { motion } from "framer-motion";
 
 function Hero() {
-  const [screenWidth, setScreenWidth] = useState(
-    typeof window !== "undefined" ? window.innerWidth : 1024
-  );
-  const [mounted, setMounted] = useState(false);
+  const [screenWidth, setScreenWidth] = useState(0);
 
   useEffect(() => {
-    setMounted(true);
     const updateScreenWidth = () => {
       setScreenWidth(window.innerWidth);
     };
@@ -25,7 +21,7 @@ function Hero() {
   }, []);
 
   const isPc = screenWidth;
-  const isMobile = screenWidth < 768;
+  const isMobile = screenWidth > 0 && screenWidth < 768;
   const isDesktopImage = screenWidth > 809;
 
   const src =
@@ -60,7 +56,7 @@ function Hero() {
 
   return (
     <motion.div
-      initial={{ opacity: mounted && isMobile ? 0 : 1 }}
+      initial={{ opacity: isMobile ? 0 : 1 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
       className="bg-[#111111] md:gap-5 md:h-[clamp(530px,60vw,620px)] pt-35 md:pt-0 w-full xl:h-[clamp(700px,49vw,100rem)] flex md:flex-row flex-col md:items-center justify-between border-box overflow-hidden"
@@ -87,17 +83,17 @@ function Hero() {
       )}
 
       <motion.div
-        initial={mounted ? { opacity: 0 } : { opacity: 1 }}
+        initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.5 }}
         viewport={{ once: true }}
         className="w-full md:w-1/2 md:pr-12 md:pb-0 pb-12 flex flex-col items-start justify-end h-full order-1 md:order-2 text-white font-black overflow-hidden px-5 md:px-0 @container"
       >
         <motion.div
-          initial={mounted ? {
+          initial={{
             opacity: 0,
-            y: isMobile ? 200 : -200,
-          } : { opacity: 1, y: 0 }}
+            y: isPc > 0 && isPc < 809 ? 200 : -200,
+          }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ ease: "easeOut", duration: 0.75 }}
           viewport={{ once: true }}

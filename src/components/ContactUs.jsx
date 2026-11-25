@@ -73,7 +73,7 @@ function ContactUs() {
                 loading="lazy"
                 src="https://ik.imagekit.io/aliwani101/3.png?updatedAt=1785492489913"
                 className="h-full w-full"
-                alt=""
+                alt="presentation"
                 role="presentation"
               />
             </div>

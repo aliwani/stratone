@@ -116,7 +116,7 @@ const HoverExpand_001 = ({ imageData, className }) => {
                         <img  loading="lazy"
                           className="w-full h-full object-cover rounded-2xl"
                           src={image.src}
-                          alt=""
+                          alt={image.title}
                         />
                       </div>
                       <div className="flex flex-row items-start justify-center gap-6">
@@ -160,7 +160,7 @@ const HoverExpand_001 = ({ imageData, className }) => {
                 <img  loading="lazy"
                   className="w-full h-full object-cover rounded-2xl"
                   src={image.src}
-                  alt=""
+                  alt={image.title}
                 />
               </div>
               <div className="flex flex-col items-start justify-center gap-3">

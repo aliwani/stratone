@@ -38,11 +38,11 @@ function ServiceSelect({
           >
             {services.title}
           </h3>
-          <h3
+          <span aria-hidden="true"
             className={`font-antonSC text-[40px] md:text-[64px] xl:text-[110px] leading-9 md:leading-14 xl:leading-25 text-wrap overflow-hidden duration-500  transition-colors ${!isDesktop && activeText === idx ? "text-[#7F7F7F]" : "text-white "} `}
           >
             {services.title}
-          </h3>
+          </span>
         </div>
       </div>
     </div>

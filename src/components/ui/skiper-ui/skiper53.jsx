@@ -63,7 +63,7 @@ const HoverExpand_002 = ({ imageData, className }) => {
                       <img  loading="lazy"
                         className="w-full h-full object-cover rounded-2xl"
                         src={image.src}
-                        alt=""
+                        alt={image.title}
                       />
                     </div>
 

@@ -10,7 +10,6 @@ function Layout({ children }) {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="relative">
-      <SEO />
       <OrganizationSchema />
       <WebSiteSchema />
       <NavDiv isOpen={isOpen} setIsOpen={setIsOpen} />
