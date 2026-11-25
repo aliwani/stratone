@@ -29,7 +29,13 @@ export default async function onRenderHtml(pageContext) {
   );
 
   const helmet = helmetContext.helmet;
-
+ const preloadImageRegex = /<link\s+rel="preload"\s+as="image"[^>]*\/?>|<link\s+as="image"\s+rel="preload"[^>]*\/?>/g;
+  const imagePreloads = [];
+  let cleanedPageHtml = pageHtml.replace(preloadImageRegex, (match) => {
+    imagePreloads.push(match);
+    return "";
+  });
+  const imagePreloadTags = imagePreloads.join("\n        ");
   // Only use fallback if helmet didn't extract anything
   // helmet.title.toString() returns a full <title> tag, or empty string
   const helmetTitle = helmet?.title?.toString();
@@ -65,6 +71,7 @@ export default async function onRenderHtml(pageContext) {
         <meta name="apple-mobile-web-app-title" content="Stratone" />
 
         ${dangerouslySkipEscape(title)}
+        ${dangerouslySkipEscape(imagePreloadTags)}
         ${dangerouslySkipEscape(meta)}
         ${dangerouslySkipEscape(link)}
         ${dangerouslySkipEscape(script)}
