@@ -79,7 +79,7 @@ export default async function onRenderHtml(pageContext) {
 
       <body>
         <div id="root">
-          ${dangerouslySkipEscape(pageHtml)}
+          ${dangerouslySkipEscape(cleanedPageHtml)}
         </div>
       </body>
     </html>`;
